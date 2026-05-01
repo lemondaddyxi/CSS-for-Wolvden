@@ -1,0 +1,11 @@
+/*Font import*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Quicksand:wght@400;600&display=swap');
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+
+    background: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG9la2szM2g1OGk4b2trMXdvMTRsMzQyZHA2OHE0enY1dXVqbDdwNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Dfne6TERzn0SfOgJrp/giphy.gif") center/cover fixed no-repeat;
+    position: relative;
+}
