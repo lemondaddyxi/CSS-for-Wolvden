@@ -360,8 +360,8 @@ tr:nth-of-type(odd) /* Individual 'Stripes' of Pack Information + Caves */ {
 }
 
 .border-none .card-img-top, .table .form-row img /* Lead wolf icon */ {
-    border-radius: 120px;
-    margin-top: 30px;
+    border-radius: 160px;
+    margin-top: 20px;
 }
 
 
@@ -374,8 +374,8 @@ i.fas.fa-mars.text-danger /* Breeding Male, Heat, etc. Symbol of Lead Wolf */ {
 /* ########## Featured Wolf ########## */
 
 .featured-wolf img {
-    border-radius: 120px;
-    margin-top: 30px;
+    border-radius: 160px;
+    margin-top: 20px;
 
     width: 230px !important;   /* increased size */
     height: auto !important;
