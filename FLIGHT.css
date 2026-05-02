@@ -708,7 +708,7 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
     overflow: hidden;
 }
 
-/* petal */
+/* petal asset */
 .petal {
     position: absolute;
     top: -10px;
@@ -718,17 +718,17 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
     background: #87b8ec;
     border-radius: 50% 50% 50% 0;
     transform: rotate(45deg);
+    opacity: 0.55;
 
     /* glow */
     filter:
-        drop-shadow(0 0 6px #87b8ec)
-        drop-shadow(0 0 12px #87b8ec)
-        drop-shadow(0 0 18px #87b8ec);
+        drop-shadow(0 0 3px rgba(135, 184, 236, 0.35))
+        drop-shadow(0 0 6px rgba(135, 184, 236, 0.25));
 
     animation: fall linear infinite;
 }
 
-/* random pathing */
+/* petal animation */
 .petal:nth-child(1)  { left: 2%;  animation-duration: 8s;  animation-delay: -1s; }
 .petal:nth-child(2)  { left: 6%;  animation-duration: 10s; animation-delay: -6s; }
 .petal:nth-child(3)  { left: 10%; animation-duration: 7s;  animation-delay: -3s; }
