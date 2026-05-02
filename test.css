@@ -1,10 +1,8 @@
-```css
 /* ## ------------------------------------------------------- GENERAL ------------------------------------------------------- ## */
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
-/* Background Image, font family, font color */
-body, .table th {
+body, .table th /* Background Image, font family, font color */ {
     background:url(https://i.imgur.com/Sc3MGgg.jpeg)
     center fixed !important;
     background-size:cover !important;
@@ -12,83 +10,60 @@ body, .table th {
     color: rgba(255, 235, 215, 1);
 }
 
-/* CURSOR */
+/*CURSOR */
 * {
     cursor: url('https://i.imgur.com/g8bArUu.png'), progress !important;
 }
 
-/* Links on entire page */
-a {
+a /* Links on entire page */ {
     color: rgba(185, 160, 150, 1);
 }
-a:hover {
-    color: rgba(215, 255, 255, 1);
+a:hover /* Hover of links on entire page */ {
+    color: rgba(255, 235, 215, 1);
     text-decoration: none;
 }
 
-/* Alerts and notifications that appear at the top of the page */
-.alert {
+.alert /* Alerts and notifications that appear at the top of the page. */ {
     background: rgba(25, 60, 90, 0.8);
-    border: 2px solid rgba(105, 200, 235, 0.6);
+    border: 2px dashed rgba(10, 20, 30, 1);
     font-weight: bold;
-    color: rgba(255, 235, 215, 1);
+    color: rgba(255, 240, 215, 1);
     border-radius: 10px;
-}
-.alert a {
+} .alert a /* Separate alert links if desired */ {
     color: rgba(215, 255, 255, 1) !important;
 }
 
-/* SC and GC icons */
-.icon-beetle-gold,
-.icon-gold-cone::before {
-    content: '';
-    background-image: url('https://i.imgur.com/9pEMC9d.png') !important;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 26px;
-    height: 26px;
-}
-
-.icon-beetle-silver,
-.icon-silver-cone::before {
-    content: '';
-    background-image: url('https://i.imgur.com/n2lE2Vo.png') !important;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 26px;
-    height: 26px;
-}
-
-
 /* ## ------------------------------------------------------- REPORT, UPDATE/SAVE, BOOKMARK ------------------------------------------------------- ## */
 
-/* Report button */
-.btn-danger {
+.btn-danger /* Report button */ {
     background: rgba(70, 90, 105, 0.8);
     color: rgba(255, 240, 215, 1);
     border-radius: 10px;
     border: none;
-}
-.btn-danger:hover {
+}.btn-danger:hover {
     background: rgba(60, 80, 95, 0.8);
     color: rgba(220, 195, 165, 1);
+    border-radius: 10px;
+    border: none;
 }
 
-/* Update/Save buttons */
-.btn-primary, .btn-success {
+
+.btn-primary, .btn-success /* Update/Save buttons on entire page */ {
     background: rgba(70, 90, 105, 0.8);
     color: rgba(255, 240, 215, 1);
     font-weight: bold;
     border-radius: 10px;
     border: none;
 }
-.btn-primary:hover, .btn-success:hover {
+.btn-primary, .btn-success:hover /* Hover of the above */ {
     background: rgba(60, 80, 95, 0.8);
     color: rgba(220, 195, 165, 1);
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
 }
 
-/* Bookmark Icon */
-#bookmarkPage.fas.fa-bookmark.text-danger {
+#bookmarkPage.fas.fa-bookmark.text-danger /* Bookmark Icon */ {
     color: rgba(105, 200, 235, 1) !important;
 }
 
@@ -96,52 +71,39 @@ a:hover {
 /* ## ------------------------------------------------------- BOXES ------------------------------------------------------- ## */
 
 .box1 {
-    background-color: rgba(10, 30, 60, 0.6);
+	background-color: rgba(10, 30, 60, 0.6);
     color: rgba(255, 235, 215, 1);
-    text-align: center;
-    font-size: 13px;
-    padding: 15px;
-    margin: 0 2% 30px;
-    border-radius: 10px;
-    float: left;
-    width: 30%;
-    height: 145px;
-    overflow: auto;
-    border: none;
-    box-shadow: 2px 2px 3px rgba(150, 230, 255, 0.3);
+	border: none;
 }
 
 .box2 {
-    background-color: rgba(150, 230, 255, 0.2);
+	background-color: rgba(150, 230, 255, 0.3);
     color: rgba(10, 20, 30, 1);
-    text-align: center;
-    font-size: 13px;
-    padding: 15px;
-    margin: 0 2% 30px;
-    border-radius: 100px;
-    float: left;
-    width: 28%;
-    height: 145px;
-    overflow: auto;
+	border: none;
 }
 
-.box3, .box4, .box5, .box6 {
-    background-color: rgba(10, 30, 60, 0.6);
+.box3 {
+	background-color: rgba(10, 30, 60, 0.6);
     color: rgba(255, 235, 215, 1);
-    text-align: center;
-    padding: 15px;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 2px 2px 3px rgba(150, 230, 255, 0.3);
+	border: none;
 }
 
-/* Scrollbar */
-::-webkit-scrollbar {
-    width: 10px;
+.box4 {
+	background-color: rgba(10, 30, 60, 0.6);
+    color: rgba(255, 235, 215, 1);
+	border: none;
 }
-::-webkit-scrollbar-thumb {
-    background: rgba(90, 230, 250, 1);
-    border-radius: 8px;
+
+.box5 {
+	background-color: rgba(10, 30, 60, 0.6);
+    color: rgba(255, 235, 215, 1);
+	border: none;
+}
+
+.box6 {
+	background-color: rgba(10, 30, 60, 0.6);
+    color: rgba(255, 235, 215, 1);
+	border: none;
 }
 
 
@@ -149,13 +111,14 @@ a:hover {
 
 #header .navbar-main {
     background-color: rgba(10, 20, 30, 1);
+    border-bottom: none;
 }
 
 .navbar-main .nav-link {
-    color: rgba(105, 200, 235, 1) !important;
+    color: rgba(215, 255, 255, 1) !important;
 }
 .navbar-main .nav-link:hover {
-    color: rgba(215, 255, 255, 1) !important;
+    color: rgba(245, 255, 255, 1) !important;
 }
 
 #header .navbar-main .nav-link .fa {
@@ -165,51 +128,61 @@ a:hover {
     color: rgba(215, 255, 255, 1);
 }
 
-/* Status bar */
 .navbar-status {
-    background: rgba(25, 35, 55, 0.8) !important;
+    background: rgba(25, 35, 55, 0.7) !important;
+    color: rgba(105, 200, 235, 1) !important;
+    border-radius: 0px 0px 10px 10px;
+}
+.btn-group-vertical>.btn, .btn-group>.btn {
     color: rgba(105, 200, 235, 1) !important;
 }
 
 .navbar-status a {
     color: rgba(105, 200, 235, 1) !important;
 }
+#header .navbar-status a:hover {
+    color: rgba(215, 255, 255, 1) !important;
+}
 
+/* ########## BREADCRUMB BAR ########## */
+
+.breadcrumb-item+.breadcrumb-item:before {
+    color: rgba(185, 160, 150, 1);
+}
+
+.breadcrumb-item.active {
+    color: rgba(215, 255, 255, 1);
+}
 
 /* ## ------------------------------------------------------- MAIN PAGE ------------------------------------------------------- ## */
 
 #main {
     background: rgba(10, 20, 30, 0.7);
     border-radius: 10px 10px 0px 0px;
-}
-
-/* Pack Name Title */
-h1 {
-    color: rgba(255, 235, 215, 1);
-    text-align: center;
-    font-size: 70px;
-    text-shadow: 0 0 10px rgba(150, 230, 255, 0.6);
-}
-
-
-/* Tabs */
-.nav-tabs {
-    justify-content: center;
     border: none;
 }
+
+h1 {
+    color: rgba(250, 230, 210, 1);
+    text-shadow:0 0 5px #fff;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
 .nav-tabs .nav-link {
-    background: rgba(10, 20, 30, 0.4);
+    background: rgba(10, 20, 30, 0.3);
     color: rgba(105, 200, 235, 1);
+    border: none;
 }
 .nav-tabs .nav-link:hover {
-    background: rgba(10, 20, 30, 0.6);
+    background: rgba(10, 20, 30, 0.5);
     color: rgba(215, 255, 255, 1);
 }
 .nav-tabs .nav-link.active {
-    background: rgba(10, 20, 30, 0.8);
+    background-color: rgba(10, 20, 30, 0.8);
     color: rgba(105, 200, 235, 1);
 }
-
 
 /* ## ------------------------------------------------------- TABLES ------------------------------------------------------- ## */
 
@@ -217,30 +190,21 @@ h1 {
     background: rgba(10, 30, 60, 0.6);
     color: rgba(255, 235, 215, 1);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(150, 230, 255, 0.3);
+    border: none;
 }
 
 .table th {
-    background: rgba(25, 60, 90, 1);
     color: rgba(255, 235, 215, 1);
 }
 
 tr:nth-of-type(odd) {
-    background: rgba(150, 230, 255, 0.1) !important;
+    background: rgba(150, 230, 255, 0.2) !important;
 }
 
-
-/* ## ------------------------------------------------------- BUTTONS ------------------------------------------------------- ## */
-
-.btn-info {
-    background: rgba(70, 90, 105, 0.8);
-    color: rgba(255, 240, 215, 1) !important;
+.subheader {
+    background: rgba(45, 80, 115, 0.8) !important;
+    color: rgba(255, 235, 215, 1);
 }
-.btn-info:hover {
-    background: rgba(60, 80, 95, 0.8);
-    color: rgba(220, 195, 165, 1) !important;
-}
-
 
 /* ## ------------------------------------------------------- PROGRESS BARS ------------------------------------------------------- ## */
 
@@ -252,14 +216,17 @@ tr:nth-of-type(odd) {
     background-color: rgba(100, 220, 235, 1) !important;
 }
 
-.bg-danger, .bg-primary {
+#sidebar .bg-danger, .bg-primary {
     background-color: rgba(75, 180, 215, 1) !important;
 }
 
-.bg-info {
+#sidebar .bg-info, .bg-danger {
     background-color: rgba(25, 140, 190, 1) !important;
 }
 
+#sidebar .bg-success, .bg-info {
+    background-color: rgba(15, 70, 120, 1) !important;
+}
 
 /* ## ------------------------------------------------------- FOOTER ------------------------------------------------------- ## */
 
@@ -276,23 +243,180 @@ tr:nth-of-type(odd) {
 }
 
 
+
+
+
 /* ## ------------------------------------------------------- REMOVE SIDEBAR ------------------------------------------------------- ## */
 
 #sidebar {
     display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
 }
 
+/* Expand main content to fill space left by sidebar */
 #main {
     width: 100% !important;
+    margin: 0 auto !important;
 }
 
 
-/* ## ------------------------------------------------------- FALLING PETALS (kept, recolored) ------------------------------------------------------- ## */
 
+
+/* =========================
+   LEAD & FEATURED OVERLAY
+   ========================= */
+
+/* LEAD WOLF OVERLAY */
+#main .table .card.mb-3 a {
+    position: relative;
+}
+
+#main .table .card.mb-3 a:before {
+    content: '';
+    background-image: url('https://i.imgur.com/XSFj4XT.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10.5%);
+
+    width: 230px;
+    height: 805px;
+
+    pointer-events: none;
+    z-index: 10;
+    filter: brightness(75%);
+}
+
+/* FEATURED WOLF OVERLAY */
+#main .featured-wolf a:first-of-type {
+    position: relative;
+}
+
+#main .featured-wolf a:first-of-type:before {
+    content: '';
+    background-image: url('https://i.imgur.com/TW6vfwB.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10.5%);
+
+    width: 230px;
+    height: 805px;
+
+    pointer-events: none;
+    z-index: 10;
+    filter: brightness(75%);
+}
+
+/* MOBILE FIXES */
+@media (max-width: 768px) {
+    #main .table .card.mb-3 a:before {
+        width: 180px;
+        height: auto;
+    }
+
+    #main .featured-wolf a:first-of-type:before {
+        width: 180px;
+        height: auto;
+    }
+}
+
+/*Blue flower falling effect*/
+.petal-container {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* petal asset */
 .petal {
-    background: rgba(150, 230, 255, 0.8);
+    position: absolute;
+    top: -10px;
+
+    width: 6px;
+    height: 11px;
+
+    background: #87b8ec;
+
+    border-radius: 60% 60% 60% 0;
+    transform: rotate(35deg);
+
+    opacity: 0.65;
+
+    /* glow*/
     filter:
-        drop-shadow(0 0 6px rgba(150, 230, 255, 0.6))
-        drop-shadow(0 0 12px rgba(150, 230, 255, 0.3));
+        drop-shadow(0 0 6px rgba(135, 184, 236, 0.65))
+        drop-shadow(0 0 12px rgba(135, 184, 236, 0.35))
+        drop-shadow(0 0 18px rgba(135, 184, 236, 0.20));
+
+    animation: fall linear infinite;
 }
-```
+
+/* animation */
+.petal:nth-child(1)  { left: 4%;  animation-duration: 8s;  animation-delay: -1s; }
+.petal:nth-child(2)  { left: 17%; animation-duration: 10s; animation-delay: -6s; }
+.petal:nth-child(3)  { left: 33%; animation-duration: 7s;  animation-delay: -3s; }
+.petal:nth-child(4)  { left: 61%; animation-duration: 11s; animation-delay: -8s; }
+.petal:nth-child(5)  { left: 88%; animation-duration: 9s;  animation-delay: -5s; }
+
+.petal:nth-child(6)  { left: 11%; animation-duration: 12s; animation-delay: -7s; }
+.petal:nth-child(7)  { left: 46%; animation-duration: 8.5s; animation-delay: -2s; }
+.petal:nth-child(8)  { left: 72%; animation-duration: 13s; animation-delay: -9s; }
+.petal:nth-child(9)  { left: 26%; animation-duration: 9.5s; animation-delay: -4s; }
+.petal:nth-child(10) { left: 95%; animation-duration: 7.5s; animation-delay: -6s; }
+
+.petal:nth-child(11) { left: 39%; animation-duration: 11s; animation-delay: -3s; }
+.petal:nth-child(12) { left: 58%; animation-duration: 8s; animation-delay: -7s; }
+.petal:nth-child(13) { left: 81%; animation-duration: 12s; animation-delay: -2s; }
+.petal:nth-child(14) { left: 7%;  animation-duration: 9s; animation-delay: -8s; }
+.petal:nth-child(15) { left: 52%; animation-duration: 10s; animation-delay: -5s; }
+
+.petal:nth-child(16) { left: 19%; animation-duration: 7s; animation-delay: -1s; }
+.petal:nth-child(17) { left: 67%; animation-duration: 13s; animation-delay: -9s; }
+.petal:nth-child(18) { left: 43%; animation-duration: 8s; animation-delay: -4s; }
+.petal:nth-child(19) { left: 90%; animation-duration: 11s; animation-delay: -6s; }
+.petal:nth-child(20) { left: 31%; animation-duration: 9s; animation-delay: -2s; }
+
+.petal:nth-child(21) { left: 75%; animation-duration: 12s; animation-delay: -7s; }
+.petal:nth-child(22) { left: 14%; animation-duration: 8.5s; animation-delay: -3s; }
+.petal:nth-child(23) { left: 63%; animation-duration: 10s; animation-delay: -5s; }
+.petal:nth-child(24) { left: 97%; animation-duration: 7.5s; animation-delay: -8s; }
+.petal:nth-child(25) { left: 36%; animation-duration: 11s; animation-delay: -4s; }
+
+.petal:nth-child(26) { left: 50%; animation-duration: 9s; animation-delay: -6s; }
+.petal:nth-child(27) { left: 22%; animation-duration: 12s; animation-delay: -2s; }
+.petal:nth-child(28) { left: 84%; animation-duration: 8s; animation-delay: -9s; }
+.petal:nth-child(29) { left: 57%; animation-duration: 10s; animation-delay: -3s; }
+.petal:nth-child(30) { left: 9%;  animation-duration: 13s; animation-delay: -7s; }
+
+/* swirl motion  */
+@keyframes fall {
+    0% {
+        transform: translateY(-10vh) translateX(0) rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(25vh) translateX(40px) rotate(90deg);
+    }
+
+    50% {
+        transform: translateY(55vh) translateX(-40px) rotate(180deg);
+    }
+
+    75% {
+        transform: translateY(85vh) translateX(30px) rotate(270deg);
+    }
+
+    100% {
+        transform: translateY(120vh) translateX(-30px) rotate(360deg);
+    }
+}
