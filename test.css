@@ -369,7 +369,7 @@ h1 /* Pack Name Title */ {
 
 .table th a /* Pack Leader Name in that table */ {
     color: rgba(255, 235, 215, 1) !Important;
-    display: block;
+    display: inline-block;
     text-align: left !important;
 }
 
