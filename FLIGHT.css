@@ -694,15 +694,20 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
     margin-top: 0 !important;
 }
 
-/* Make BOTH wolves same size + perfect circle */
+/* Make BOTH wolves same size + perfect circle (slightly smaller) */
 .table .row .card a img,
 .featured-wolf img {
-    width: 150px !important;
-    height: 150px !important;
+    width: 140px !important;
+    height: 140px !important;
     object-fit: cover !important;
     border-radius: 50% !important;
     display: block;
     margin: 0 auto;
+}
+
+/* Lower ONLY the lead wolf slightly */
+.table .row .card a img {
+    margin-top: 10px !important;
 }
 
 /* Ensure positioning for frame overlay */
@@ -717,10 +722,10 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
     background-image: url('https://i.imgur.com/XSFj4XT.png');
     background-size: 100% auto;
     background-repeat: no-repeat;
-    width: 180px;
-    height: 180px;
+    width: 170px;
+    height: 170px;
     position: absolute;
-    top: -15px;
+    top: -10px;
     left: 50%;
     transform: translateX(-50%);
     pointer-events: none;
@@ -733,10 +738,10 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
     background-image: url('https://i.imgur.com/XSFj4XT.png');
     background-size: 100% auto;
     background-repeat: no-repeat;
-    width: 180px;
-    height: 180px;
+    width: 170px;
+    height: 170px;
     position: absolute;
-    top: -15px;
+    top: -10px;
     left: 50%;
     transform: translateX(-50%);
     pointer-events: none;
@@ -747,14 +752,14 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
 @media (max-width: 768px) {
     .table .row .card a img,
     .featured-wolf img {
-        width: 130px !important;
-        height: 130px !important;
+        width: 120px !important;
+        height: 120px !important;
     }
 
     #main .table .card.mb-3 a:before,
     #main .featured-wolf a:first-of-type:before {
-        width: 150px;
-        height: 150px;
-        top: -10px;
+        width: 140px;
+        height: 140px;
+        top: -8px;
     }
 }
