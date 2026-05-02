@@ -700,6 +700,7 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
     }
 }
 
+/*Blue flower falling effect*/
 .petal-container {
     position: fixed;
     inset: 0;
@@ -708,25 +709,34 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
 }
 
 /* Neon petal base */
+.petal-container {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* Neon blue petal */
 .petal {
     position: absolute;
     top: -10px;
     width: 10px;
     height: 10px;
 
-    /* neon gradient */
-    background: linear-gradient(45deg, #ff4fd8, #4fd8ff);
+    /* pure neon blue */
+    background: #4fd8ff;
     border-radius: 50% 50% 50% 0;
     transform: rotate(45deg);
 
-    /* glow effect */
-    filter: drop-shadow(0 0 6px #ff4fd8)
-            drop-shadow(0 0 10px #4fd8ff);
+    /* strong blue glow */
+    filter: drop-shadow(0 0 6px #4fd8ff)
+            drop-shadow(0 0 12px #4fd8ff)
+            drop-shadow(0 0 18px #4fd8ff);
 
     animation: fall linear infinite;
 }
 
-/* same density system, just motion timing */
+/*motion timing*/
 .petal:nth-child(1)  { left: 2%;  animation-duration: 8s;  animation-delay: -1s; }
 .petal:nth-child(2)  { left: 6%;  animation-duration: 10s; animation-delay: -6s; }
 .petal:nth-child(3)  { left: 10%; animation-duration: 7s;  animation-delay: -3s; }
@@ -762,7 +772,7 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
 .petal:nth-child(29) { left: 60%; animation-duration: 10s; animation-delay: -3s; }
 .petal:nth-child(30) { left: 76%; animation-duration: 13s; animation-delay: -7s; }
 
-/* swirl motion stays the same */
+/*swirl motion*/
 @keyframes fall {
     0% {
         transform: translateY(-10vh) translateX(0) rotate(0deg);
