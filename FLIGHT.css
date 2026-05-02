@@ -214,13 +214,7 @@ a:hover /* Hover of links on entire page */ {
 
 /* ================== LEAD + FEATURED WOLF CLEAN FIX ================== */
 
-/* Remove old conflicting styles */
-.table .form-row img,
-.featured-wolf img {
-    border: none !important;
-    box-shadow: none !important;
-    margin: 0 !important;
-}
+
 
 /* BOTH wolves (microscopic smaller again) */
 .table .row .card a img,
