@@ -9,3 +9,27 @@ body{
     background: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG9la2szM2g1OGk4b2trMXdvMTRsMzQyZHA2OHE0enY1dXVqbDdwNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Dfne6TERzn0SfOgJrp/giphy.gif") center/cover fixed no-repeat;
     position: relative;
 }
+
+/*Background*/
+body::before{
+    content: "Placeholder";
+    position:fixed;
+    inset: 0;
+    background: linear-gradient(
+        rgba(10, 20, 30, 0.65),
+        rgba(20, 35, 45, 0.55)
+    );
+    pointer-events: none;
+    z-index: 0;
+}
+
+body::before{
+    content: "Placeholder";
+    position:fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image: radial-gradient(
+        rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 120px 120px;
+    opacity: 1
+}
