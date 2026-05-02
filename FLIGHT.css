@@ -10,13 +10,8 @@ body, .table th {
     color: #f79e62;
 }
 
-a {
-    color: #fdd7a8;
-}
-a:hover {
-    color: #f79e62;
-    text-decoration: none;
-}
+a { color: #fdd7a8; }
+a:hover { color: #f79e62; text-decoration: none; }
 
 .alert {
     background: #59706a;
@@ -24,12 +19,10 @@ a:hover {
     font-weight: bold;
     color: #f79e62;
     border-radius: 10px;
-} .alert a {
-    color: #fdd7a8 !important;
 }
+.alert a { color: #fdd7a8 !important; }
 
-
-/* ## ------------------------------------------------------- REPORT, UPDATE/SAVE, BOOKMARK ------------------------------------------------------- ## */
+/* ## ------------------------------------------------------- BUTTONS ------------------------------------------------------- ## */
 
 .btn-danger {
     background: rgb(11, 45, 54, .65);
@@ -52,75 +45,103 @@ a:hover {
     color: #ec9153;
 }
 
-
-/* ## ------------------------------------------------------- BOXES ------------------------------------------------------- ## */
-
-/* (UNCHANGED - your boxes remain identical) */
-
-
-/* ## ------------------------------------------------------- NAVBAR MAIN ------------------------------------------------------- ## */
-
-/* (UNCHANGED) */
-
-
-/* ## ------------------------------------------------------- SIDEBAR ------------------------------------------------------- ## */
-
-/* (UNCHANGED) */
-
-
-/* ## ------------------------------------------------------- MAIN PAGE ------------------------------------------------------- ## */
+/* ## ------------------------------------------------------- MAIN CONTAINER ------------------------------------------------------- ## */
 
 #main {
     background: rgb(11, 45, 54, .65);
-    border-radius: 10px 10px 0px 0px;
-    border: 2px solid #0b2d36
+    border-radius: 10px 10px 0 0;
+    border: 2px solid #0b2d36;
 }
 
-h1 {
-    color: #fdd7a8;
-    font-family: sacramento;
-    text-align: center;
-    font-size: 70px;
+/* ## ------------------------------------------------------- TABLES ------------------------------------------------------- ## */
+
+.table {
+    background: rgba(6, 26, 32, .5);
+    color: #f79e62;
+    border-radius: 15px;
 }
 
-
-/* ## ------------------------------------------------------- LEAD WOLF (FIXED FRAME VERSION) ------------------------------------------------------- ## */
-
-/* Card container becomes the FRAME holder */
-.border-none .card {
-    background-color: transparent !important;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Wolf image styling (kept above frame) */
-.border-none .card-img-top {
+/* LEAD + FEATURED WOLF IMAGES */
+.table .row .card a img,
+.featured-wolf img {
     border-radius: 100px;
-    margin-top: 20px;
-    position: relative;
-    z-index: 2;
+    width: 140px;
+    height: 140px;
+    box-shadow: 0 0 10px #57335B;
+    border: none;
 }
 
-/* FRAME IMAGE (THIS is the correct working method) */
-.border-none .card::before {
-    content: "";
+.featured-wolf img {
+    height: 120px;
+}
+
+/* ## ------------------------------------------------------- LEAD & FEATURED OVERLAYS ------------------------------------------------------- ## */
+
+/* LEAD WOLF FRAME */
+#main .table .card.mb-3 a:before {
+    content: '';
+    background-image: url('https://i.imgur.com/XSFj4XT.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    filter: brightness(75%);
+    width: 200px;
+    height: 700px;
+    top: -32%;
+    left: -5%;
     position: absolute;
-    width: 180px;
-    height: 180px;
-    background: url(INSERT_DIRECT_IMAGE_URL_HERE) center / contain no-repeat;
-    z-index: 1;
     pointer-events: none;
+    z-index: 1 !important;
 }
 
-/* Male icon */
-i.fas.fa-mars.text-danger {
-    color: #f79e62 !important;
-    margin-left: 20px;
+@media (max-width: 768px) {
+    #main .table .card.mb-3 a:before {
+        width: 250px !important;
+        top: 30%;
+        left: -13%;
+    }
 }
 
+/* FEATURED WOLF FRAME */
+#main .featured-wolf a:first-of-type:before {
+    z-index: 1;
+    content: '';
+    background-image: url('https://i.imgur.com/XSFj4XT.png');
+    background-size: 95% auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 700px;
+    top: -9%;
+    left: 5%;
+    position: absolute;
+    pointer-events: none;
+    filter: brightness(75%);
+}
 
-/* ## ------------------------------------------------------- EVERYTHING ELSE BELOW UNCHANGED ------------------------------------------------------- ## */
+@media (max-width: 768px) {
+    #main .featured-wolf a:first-of-type:before {
+        top: -142%;
+        left: 26%;
+    }
+}
 
-/* (All remaining sections stay exactly the same as your original CSS) */
+/* HOVER EFFECT */
+.featured-wolf img:hover {
+    filter: none;
+    transition: 1s ease-in-out;
+}
+
+/* ## ------------------------------------------------------- SIDEBAR (HIDDEN) ------------------------------------------------------- ## */
+
+#sidebar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+}
+
+#main {
+    width: 100% !important;
+    margin: 0 auto !important;
+}
