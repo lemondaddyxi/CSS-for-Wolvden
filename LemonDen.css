@@ -1,99 +1,183 @@
-/* ===== DEN CARD LAYOUT (EVENING STYLE REBUILD) ===== */
+/* ## ------------------------------------------------------- GENERAL ------------------------------------------------------- ## */
 
-.col-md-3 {
-    background: rgba(8, 32, 36, 0.9);
-    border: 1px solid rgba(150, 220, 230, 0.12);
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&family=Caveat:wght@400;600&display=swap');
 
-    width: 170px;
-    max-width: 170px;
-    height: 430px;
-
-    border-radius: 90px 90px 28px 28px;
-
-    padding: 12px 10px;
-    margin: 10px auto;
-
-    text-align: center;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    backdrop-filter: blur(10px);
-    transition: 0.2s ease;
+:root {
+    --bg-dark: #0b1020;
+    --bg-mid: #141a33;
+    --accent-1: #6ef3ff;
+    --accent-2: #b46cff;
+    --accent-3: #ffd6ff;
+    --panel: rgba(20, 26, 51, 0.65);
+    --border: rgba(110, 243, 255, 0.25);
 }
 
-.col-md-3:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 18px rgba(0,0,0,0.6);
+body, .table th {
+    background: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG9la2szM2g1OGk4b2trMXdvMTRsMzQyZHA2OHE0enY1dXVqbDdwNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Dfne6TERzn0SfOgJrp/giphy.gif)
+    center fixed !important;
+    background-size: cover !important;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--accent-3);
 }
 
-/* ===== IMAGE ===== */
-
-.col-md-3 img {
-    width: 110px;
-    height: 110px;
-    object-fit: cover;
-
-    border-radius: 50%;
-    margin-bottom: 6px;
-
-    border: 2px solid rgba(180, 240, 255, 0.15);
+h1, h2, h3, h4 {
+    font-family: 'Caveat', cursive;
+    color: var(--accent-1);
 }
 
-/* ===== NAME ===== */
+a {
+    color: var(--accent-1);
+}
+a:hover {
+    color: var(--accent-2);
+    text-decoration: none;
+}
 
-.col-md-3 strong {
+.alert {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--accent-3);
+    backdrop-filter: blur(6px);
+}
+
+/* ## ------------------------------------------------------- BUTTONS ------------------------------------------------------- ## */
+
+.btn-danger {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--accent-2);
+    border-radius: 10px;
+}
+.btn-danger:hover {
+    color: var(--accent-1);
+}
+
+.btn-primary,
+.btn-success {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--accent-3);
+    border-radius: 10px;
+}
+.btn-primary:hover,
+.btn-success:hover {
+    color: var(--accent-1);
+}
+
+/* ## ------------------------------------------------------- BOXES ------------------------------------------------------- ## */
+
+.box1, .box2, .box3, .box4, .box5, .box6 {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--accent-3);
+    backdrop-filter: blur(8px);
     font-size: 13px;
-    color: #d7f3f7;
+    text-align: center;
+    overflow: auto;
 }
 
-/* ===== TOP LINE ===== */
+.box1 { border-radius: 12px; }
+.box2 { border-radius: 50%; }
+.box3 { border-radius: 12px; }
+.box4 { border-radius: 12px; }
+.box5 { border-radius: 20px 60px; }
+.box6 { border-radius: 60px 20px; }
 
-.col-md-3 .text-muted {
-    font-size: 11px;
-    color: #8fbcc2 !important;
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--accent-2);
+    border-radius: 10px;
 }
 
-/* ===== REMOVE SPACING JUNK ===== */
+/* ## ------------------------------------------------------- NAVBAR ------------------------------------------------------- ## */
 
-.col-md-3 br {
-    display: none;
+#header .navbar-main {
+    background: rgba(11, 16, 32, 0.85);
+    border-bottom: 1px solid var(--border);
 }
 
-/* ===== STACK CONTROL ===== */
-
-.col-md-3 > * {
-    margin-bottom: 4px;
+.navbar-main .nav-link {
+    color: var(--accent-3) !important;
+}
+.navbar-main .nav-link:hover {
+    color: var(--accent-1) !important;
 }
 
-/* ===== PROGRESS BARS ===== */
+.navbar-status {
+    background: rgba(20, 26, 51, 0.8) !important;
+    color: var(--accent-3) !important;
+    border-bottom: 1px solid var(--border);
+}
+
+/* ## ------------------------------------------------------- SIDEBAR ------------------------------------------------------- ## */
+
+#sidebar .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--accent-3);
+    border-radius: 12px;
+}
+
+/* ## ------------------------------------------------------- MAIN ------------------------------------------------------- ## */
+
+#main {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+}
+
+.nav-tabs .nav-link {
+    background: rgba(20, 26, 51, 0.7);
+    border: 1px solid var(--border);
+    color: var(--accent-3);
+}
+.nav-tabs .nav-link.active {
+    background: rgba(11, 16, 32, 0.9);
+    color: var(--accent-1);
+}
+
+/* ## ------------------------------------------------------- TABLES ------------------------------------------------------- ## */
+
+.table {
+    background: rgba(20, 26, 51, 0.5);
+    border-radius: 12px;
+    color: var(--accent-3);
+}
+
+/* ## ------------------------------------------------------- IMAGES / ICON FILTERS ------------------------------------------------------- ## */
+
+img {
+    filter: hue-rotate(20deg) saturate(1.2) contrast(1.1);
+}
+
+/* ## ------------------------------------------------------- PROGRESS BARS ------------------------------------------------------- ## */
 
 .progress {
-    width: 80%;
-    height: 6px;
-    margin: 3px auto;
-
-    background: rgba(0,0,0,0.6);
-    border-radius: 6px;
+    background: rgba(11, 16, 32, 0.8);
+}
+.bg-warning, .bg-success, .bg-info, .bg-danger {
+    background: linear-gradient(90deg, var(--accent-2), var(--accent-1)) !important;
 }
 
-.progress-bar {
-    background: linear-gradient(90deg, #ffb07c, #ff9966);
+/* ## ------------------------------------------------------- TEXT OVERRIDES (PLACEHOLDERS ONLY) ------------------------------------------------------- ## */
+
+.alert::before,
+.breadcrumb::after {
+    content: "Placeholder";
+    color: var(--accent-2);
 }
 
-/* ===== ICONS ===== */
+/* ## ------------------------------------------------------- FOOTER ------------------------------------------------------- ## */
 
-.col-md-3 i {
-    font-size: 11px;
-    opacity: 0.7;
+#footer {
+    background: rgba(11, 16, 32, 0.9);
+    color: var(--accent-3);
+    border-top: 1px solid var(--border);
 }
 
-/* ===== GRID ===== */
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 14px;
+#footer * {
+    color: var(--accent-1);
 }
