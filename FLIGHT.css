@@ -635,14 +635,17 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
 #main .table .card.mb-3 a:before {
     content: '';
     background-image: url('https://i.imgur.com/XSFj4XT.png');
-    background-size: 100% auto;
+    background-size: contain;
     background-repeat: no-repeat;
-    display: inline-block;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     width: 200px;
     height: 700px;
-    position: absolute;
-    top: -32%;
-    left: -5%;
+
     pointer-events: none;
     z-index: 10;
     filter: brightness(75%);
@@ -656,14 +659,17 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
 #main .featured-wolf a:first-of-type:before {
     content: '';
     background-image: url('https://i.imgur.com/XSFj4XT.png');
-    background-size: 95% auto;
+    background-size: contain;
     background-repeat: no-repeat;
-    display: inline-block;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     width: 200px;
     height: 700px;
-    position: absolute;
-    top: -9%;
-    left: 5%;
+
     pointer-events: none;
     z-index: 10;
     filter: brightness(75%);
@@ -672,13 +678,12 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
 /* MOBILE FIXES */
 @media (max-width: 768px) {
     #main .table .card.mb-3 a:before {
-        width: 250px;
-        top: 30%;
-        left: -13%;
+        width: 180px;
+        height: auto;
     }
 
     #main .featured-wolf a:first-of-type:before {
-        top: -142%;
-        left: 26%;
+        width: 180px;
+        height: auto;
     }
 }
