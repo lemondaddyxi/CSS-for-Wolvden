@@ -39,6 +39,7 @@ a:hover {
     border: 2px solid #0b2d36;
 }
 .btn-danger:hover {
+    background: rgb(11, 45, 54, .65);
     color: #f7c492;
 }
 
@@ -61,56 +62,99 @@ a:hover {
 /* ## ------------------------------------------------------- BOXES ------------------------------------------------------- ## */
 
 .box1, .box2, .box3, .box4, .box5, .box6 {
-    font-size: 13px;
-    padding: 15px;
-    margin: 0 2% 30px;
     float: left;
+    margin: 0 2% 30px;
+    font-size: 13px;
+    text-align: center;
+    padding: 15px;
     overflow: auto;
     border: 2px solid #06181e;
 }
 
-/* (kept your original box styles unchanged for brevity) */
+.box1 {
+    background: rgb(11, 45, 54, .8);
+    color: #f7c492;
+    width: 30%;
+    height: 145px;
+    border-radius: 10px;
+}
+
+.box2 {
+    background: rgba(255, 188, 130, .7);
+    color: #0b2d36;
+    width: 28%;
+    height: 145px;
+    border-radius: 100px;
+}
+
+.box3 {
+    background: rgb(11, 45, 54, .8);
+    color: #f7c492;
+    width: 96%;
+    height: 175px;
+    border-radius: 10px;
+}
+
+.box4 {
+    background: rgb(11, 45, 54, .8);
+    color: #f7c492;
+    width: 46%;
+    height: 145px;
+    border-radius: 10px;
+}
+
+.box5 {
+    background: rgb(11, 45, 54, .8);
+    color: #f7c492;
+    width: 46%;
+    height: 145px;
+    border-radius: 10px 50px 10px 50px;
+}
+
+.box6 {
+    background: rgb(11, 45, 54, .8);
+    color: #f7c492;
+    width: 46%;
+    height: 145px;
+    border-radius: 50px 10px 50px 10px;
+}
 
 
-/* ## ------------------------------------------------------- NAVBAR MAIN ------------------------------------------------------- ## */
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+
+/* ## ------------------------------------------------------- NAVBAR ------------------------------------------------------- ## */
 
 #header .navbar-main {
     background-color: #0b2d36;
     border-bottom: 2px dashed #59706a;
 }
 
-
-/* ## ------------------------------------------------------- SIDEBAR (UPDATED) ------------------------------------------------------- ## */
-
-#sidebar {
-    display: none !important;
+.navbar-main .nav-link {
+    color: #fdd7a8 !important;
 }
 
-/* soft shift + slight expansion (NOT full width) */
-#main {
-    width: 78% !important;
-    margin: 0 auto !important;
-    float: none !important;
+.navbar-main .nav-link:hover {
+    color: #f79e62 !important;
 }
 
-/* prevent leftover grid spacing */
-.container, 
-.row {
-    justify-content: center !important;
-}
-
-.col-md-9, .col-lg-9, .col-md-8, .col-lg-8 {
-    width: 78% !important;
-    flex: 0 0 78% !important;
-    max-width: 78% !important;
+.navbar-status {
+    background: #173a42 !important;
+    color: #f79e62 !important;
 }
 
 
-/* ## ------------------------------------------------------- MAIN PAGE ------------------------------------------------------- ## */
+/* ## ------------------------------------------------------- MAIN CONTENT ------------------------------------------------------- ## */
 
 #main {
     background: rgb(11, 45, 54, .65);
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px;
     border: 2px solid #0b2d36;
 }
 
@@ -122,18 +166,55 @@ h1 {
 }
 
 
-/* ## ------------------------------------------------------- TABLES ------------------------------------------------------- ## */
-
+/* Tables */
 .table {
     background: rgba(6, 26, 32, .5);
     color: #f79e62;
     border-radius: 15px;
 }
 
-
-/* ## ------------------------------------------------------- FOOTER ------------------------------------------------------- ## */
-
+/* Footer */
 #footer {
     background: #0b2d36 !important;
-    color: #f7c492;
+}
+
+
+/* ## ------------------------------------------------------- SIDEBAR REMOVAL + CENTERING FIX ------------------------------------------------------- ## */
+
+/* REMOVE SIDEBAR COMPLETELY */
+#sidebar {
+    display: none !important;
+}
+
+/* Expand main container and center it */
+#main {
+    margin: 0 auto !important;
+    float: none !important;
+    width: 85% !important;
+    max-width: 1200px;
+}
+
+/* Prevent leftover grid imbalance */
+.col-md-3,
+.col-lg-3 {
+    display: none !important;
+}
+
+.col-md-9,
+.col-lg-9 {
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+}
+
+/* Center page layout cleanly */
+.container,
+.row,
+main,
+#content {
+    justify-content: center !important;
+}
+
+/* Optional: prevents full-page stretch feel */
+body {
+    display: block !important;
 }
