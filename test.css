@@ -289,21 +289,16 @@ img.mr-2 /* Alert Icons for Hunting, etc. */ {
     background-color: transparent !important;
 }
 
+/* remove separators */
 .breadcrumb-item + .breadcrumb-item:before {
-    color: transparent !important;
+    display: none !important;
 }
 
-.breadcrumb-nav, .breadcrumb-nav * {
-    color: transparent !important;
-    text-shadow: none !important;
-}
-
-.breadcrumb-nav a {
-    color: transparent !important;
-}
-
+/* hide all breadcrumb text */
+.breadcrumb-item,
+.breadcrumb-item a,
 .breadcrumb-item.active {
-    color: transparent !important;
+    display: none !important;
 }
 
 /* ## ------------------------------------------------------- MAIN PAGE ------------------------------------------------------- ## */
