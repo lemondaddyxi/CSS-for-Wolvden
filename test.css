@@ -643,29 +643,31 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
 
 /* ## ------------------------------------------------------- REMOVE SIDEBAR ------------------------------------------------------- ## */
 
-/* REMOVE ONLY SIDEBAR (SAFE VERSION) */
+/* FORCE MAIN LAYOUT TO FILL PAGE WHEN SIDEBAR IS GONE */
+
 #sidebar {
     display: none !important;
 }
 
-/* DO NOT kill Bootstrap columns globally anymore */
-
-/* Expand main content safely */
+/* Make the main column behave like full width */
 #main {
-    width: 100% !important;
+    flex: 0 0 100% !important;
     max-width: 100% !important;
-    margin: 20px auto 0 auto !important;
+    width: 100% !important;
 }
 
-/* Fix leftover row spacing */
+/* Fix Bootstrap row still reserving sidebar space */
 .row {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-/* Optional breathing room under navbar */
-body {
-    padding-top: 10px;
+/* Target ONLY main container column behavior (safe override) */
+#main.col-xl-9,
+#main.col-lg-9,
+#main.col-md-9 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
 }
 
 /* =========================
