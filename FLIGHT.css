@@ -694,11 +694,11 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
     margin: 0 !important;
 }
 
-/* BOTH wolves (microscopic smaller again) */
+/* BOTH wolves (final size: 110px) */
 .table .row .card a img,
 .featured-wolf img {
-    width: 112px !important;
-    height: 112px !important;
+    width: 110px !important;
+    height: 110px !important;
     object-fit: cover !important;
     border-radius: 50% !important;
     display: block;
@@ -719,8 +719,8 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
     background-image: url('https://i.imgur.com/XSFj4XT.png');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 142px;
-    height: 142px;
+    width: 138px;
+    height: 138px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -733,13 +733,13 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
 @media (max-width: 768px) {
     .table .row .card a img,
     .featured-wolf img {
-        width: 98px !important;
-        height: 98px !important;
+        width: 95px !important;
+        height: 95px !important;
     }
 
     #main .table .card.mb-3 a:before,
     #main .featured-wolf a:first-of-type:before {
-        width: 122px;
-        height: 122px;
+        width: 118px;
+        height: 118px;
     }
 }
