@@ -668,7 +668,7 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -9%);
+    transform: translate(-50%, -12.5%);
 
     width: 230px;
     height: 805px;
