@@ -3,13 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 body, .table th /* Background Image, font family, font color */ {
-    background:url(https://i.imgur.com/VI1xtZJ.gif)
+    background:url(https://i.imgur.com/Sc3MGgg.jpeg)
     center fixed !important;
     background-size:cover !important;
     font-family: caveat;
     color: #6d97d6;
 }
-/*https://i.imgur.com/Sc3MGgg.jpeg*/
 
 /*CURSOR */
 * {
