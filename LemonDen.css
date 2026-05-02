@@ -1,232 +1,114 @@
-/* ===== FONTS ===== */
-
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Quicksand:wght@400;600&display=swap');
-
-body {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 15px;
-    line-height: 1.6;
-
-    background: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG9la2szM2g1OGk4b2trMXdvMTRsMzQyZHA2OHE0enY1dXVqbDdwNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Dfne6TERzn0SfOgJrp/giphy.gif") center/cover fixed no-repeat;
-}
-
-/* ===== BACKGROUND OVERLAY ===== */
-
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: linear-gradient(rgba(6,10,18,0.85), rgba(10,16,26,0.75));
-    pointer-events: none;
-}
-
-body::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    background: radial-gradient(rgba(180,210,255,0.06) 1px, transparent 1px);
-    background-size: 160px 160px;
-    opacity: 0.06;
-}
-
-/* ===== REMOVE SIDEBAR ===== */
-
-#sidebar,
-.col-lg-3,
-.col-md-4 {
-    display: none !important;
-}
-
-.col-lg-9,
-.col-md-8 {
-    flex: 0 0 100% !important;
-    max-width: 100% !important;
-}
-
-/* ===== NAVBAR ===== */
-
-.navbar-main,
-.navbar-status,
-.breadcrumb-nav {
-    background: rgba(10,16,26,0.65);
-    backdrop-filter: blur(14px);
-}
-
-.navbar-main {
-    border-bottom: 1px solid rgba(180,210,255,0.08);
-}
-
-.nav-link {
-    color: #b8c7d9 !important;
-}
-
-.nav-link:hover {
-    color: #e6f0ff !important;
-}
-
-/* ===== MAIN ===== */
-
-#main {
-    width: 90% !important;
-    margin: auto !important;
-    padding: 25px;
-
-    background: rgba(12,18,28,0.65);
-    backdrop-filter: blur(18px);
-    border-radius: 20px;
-
-    border: 1px solid rgba(180,210,255,0.06);
-    box-shadow: 0 10px 40px rgba(0,0,0,0.7);
-
-    overflow: hidden;
-}
-
-/* (REMOVED SHIMMER ANIMATION COMPLETELY) */
-
-/* ===== TEXT ===== */
-
-h1, h2, h3 {
-    font-family: 'Caveat', cursive;
-    color: #dce8f7 !important;
-}
-
-h1 { font-size: 26px; }
-
-strong {
-    font-weight: 600;
-}
-
-/* ===== UI ELEMENTS ===== */
-
-.nav-tabs,
-.table,
-.card,
-.box,
-.panel {
-    background: rgba(14,20,30,0.6);
-    backdrop-filter: blur(14px);
-    border-radius: 14px;
-    border: 1px solid rgba(180,210,255,0.05);
-}
-
-.nav-tabs .nav-link {
-    color: #b8c7d9 !important;
-}
-
-.nav-tabs .nav-link.active {
-    background: rgba(180,210,255,0.08) !important;
-    color: #ffffff !important;
-}
-
-/* ===== WOLF CARDS ===== */
+/* ===== DEN CARD LAYOUT (MATCH STYLE) ===== */
 
 .col-md-3 {
-    background: rgba(14,20,30,0.9);
-    border: 1px solid rgba(180,210,255,0.06);
-    border-radius: 10px;
+    background: rgba(6, 35, 40, 0.85);
+    border: 1px solid rgba(120, 200, 210, 0.12);
 
-    width: 180px;
-    max-width: 180px;
+    width: 170px;
+    max-width: 170px;
+    height: 420px;
 
-    padding: 10px 8px;
+    border-radius: 90px 90px 30px 30px; /* pill shape */
+
+    padding: 12px 10px;
+    margin: 10px auto;
+
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 
+    backdrop-filter: blur(10px);
     transition: 0.2s ease;
 }
 
 .col-md-3:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.6);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.6);
 }
 
-/* image */
+/* ===== IMAGE (ROUNDED TOP LOOK) ===== */
+
 .col-md-3 img {
-    border-radius: 6px;
-    margin-bottom: 6px;
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+
+    border-radius: 50%;
+    margin-bottom: 8px;
+
+    border: 2px solid rgba(200, 240, 255, 0.15);
 }
 
-/* name */
+/* ===== NAME ===== */
+
 .col-md-3 strong {
-    display: block;
     font-size: 13px;
-    color: #e6f0ff;
+    color: #d7f0f5;
     margin-bottom: 4px;
 }
 
-/* stat text */
-.col-md-3 small,
+/* ===== TOP STAT LINE ===== */
+
 .col-md-3 .text-muted {
     font-size: 11px;
-    color: #8fa2b8 !important;
+    color: #8fb3ba !important;
+    margin-bottom: 4px;
 }
 
-/* bars (muted blue-gray) */
-.progress {
-    height: 6px;
-    margin: 4px 0;
-    background: rgba(0,0,0,0.7);
-    border-radius: 4px;
-}
+/* ===== REMOVE RANDOM BREAKS ===== */
 
-.progress-bar {
-    background: linear-gradient(90deg, #5c6f82, #8aa4bf) !important;
-}
-
-/* icons */
-.col-md-3 i {
-    font-size: 11px;
-    opacity: 0.65;
-}
-
-/* remove spacing junk */
 .col-md-3 br {
     display: none;
 }
 
-/* ===== LINKS ===== */
+/* ===== STAT BLOCK ===== */
 
-a {
-    color: #9fb4cc !important;
+.col-md-3 small {
+    font-size: 11px;
+    color: #9ec2c8;
+    line-height: 1.3;
 }
 
-a:hover {
-    color: #ffffff !important;
+/* ===== PROGRESS BARS ===== */
+
+.progress {
+    width: 80%;
+    height: 6px;
+
+    margin: 3px auto;
+
+    background: rgba(0,0,0,0.6);
+    border-radius: 6px;
+    overflow: hidden;
 }
 
-/* ===== ALERTS ===== */
-
-.alert {
-    background: rgba(180,210,255,0.06);
-    border: 1px solid rgba(180,210,255,0.1);
+.progress-bar {
+    background: linear-gradient(90deg, #ffb07c, #ff9966);
 }
 
-/* ===== MOBILE ===== */
+/* ===== ICON ROW ===== */
 
-@media (max-width: 768px) {
-
-    #main {
-        width: 95% !important;
-        padding: 15px;
-    }
-
-    .col-md-3 {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    body {
-        font-size: 14px;
-    }
-
-    h1 {
-        font-size: 22px;
-        text-align: center;
-    }
+.col-md-3 i {
+    font-size: 11px;
+    opacity: 0.7;
+    margin: 2px;
 }
 
-/* ===== FOOTER ===== */
+/* ===== FORCE CONTENT STACKING ===== */
 
-#footer {
-    opacity: 0.5;
+/* this helps compress layout closer to screenshot */
+.col-md-3 > * {
+    margin-bottom: 4px;
+}
+
+/* ===== GRID ALIGNMENT ===== */
+
+/* keeps cards evenly spaced like screenshot */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
 }
