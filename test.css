@@ -1,184 +1,298 @@
+```css
 /* ## ------------------------------------------------------- GENERAL ------------------------------------------------------- ## */
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&family=Caveat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
-:root {
-    --bg-dark: #0B1A2B;
-    --bg-mid: #1C2F4A;
-
-    --accent-1: #3FA7FF;
-    --accent-2: #6A5FA3;
-    --accent-3: #EAF6FF;
-    --accent-warm: #F5A623;
-
-    --panel: rgba(15, 36, 56, 0.65);
-    --border: rgba(63, 167, 255, 0.25);
+/* Background Image, font family, font color */
+body, .table th {
+    background:url(https://i.imgur.com/Sc3MGgg.jpeg)
+    center fixed !important;
+    background-size:cover !important;
+    font-family: caveat;
+    color: rgba(255, 235, 215, 1);
 }
 
-/* BASE */
-body {
-    font-family: 'Quicksand', sans-serif;
-    color: var(--accent-3);
-    position: relative;
-    z-index: 0;
-    background: none !important;
+/* CURSOR */
+* {
+    cursor: url('https://i.imgur.com/g8bArUu.png'), progress !important;
 }
 
-/* 🌌 BACKGROUND IMAGE (your imgur link) */
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: 0;
-    background: url("https://i.imgur.com/Sc3MGgg.jpeg") center / cover no-repeat;
-    filter: brightness(0.9) contrast(1.05);
-}
-
-/* ## ------------------------------------------------------- TYPOGRAPHY ------------------------------------------------------- ## */
-
-h1, h2, h3, h4 {
-    font-family: 'Caveat', cursive;
-    color: var(--accent-1);
-    text-shadow: 0 0 8px rgba(63, 167, 255, 0.6);
-}
-
+/* Links on entire page */
 a {
-    color: var(--accent-1);
+    color: rgba(185, 160, 150, 1);
 }
 a:hover {
-    color: #7FDBFF;
+    color: rgba(215, 255, 255, 1);
     text-decoration: none;
-    text-shadow: 0 0 6px rgba(127, 219, 255, 0.8);
 }
 
-/* ## ------------------------------------------------------- UI ELEMENTS ------------------------------------------------------- ## */
-
-.alert,
-#main,
-#sidebar .card,
-.box1, .box2, .box3, .box4, .box5, .box6 {
-    background: var(--panel);
-    border: 1px solid var(--border);
-    color: var(--accent-3);
-    backdrop-filter: blur(8px);
-    box-shadow: 0 0 20px rgba(46, 111, 149, 0.25);
+/* Alerts and notifications that appear at the top of the page */
+.alert {
+    background: rgba(25, 60, 90, 0.8);
+    border: 2px solid rgba(105, 200, 235, 0.6);
+    font-weight: bold;
+    color: rgba(255, 235, 215, 1);
+    border-radius: 10px;
+}
+.alert a {
+    color: rgba(215, 255, 255, 1) !important;
 }
 
-/* keep UI above effects */
-#main, #sidebar, #header, #footer {
-    position: relative;
-    z-index: 3;
+/* SC and GC icons */
+.icon-beetle-gold,
+.icon-gold-cone::before {
+    content: '';
+    background-image: url('https://i.imgur.com/9pEMC9d.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 26px;
+    height: 26px;
 }
 
-/* ## ------------------------------------------------------- NAVBAR ------------------------------------------------------- ## */
+.icon-beetle-silver,
+.icon-silver-cone::before {
+    content: '';
+    background-image: url('https://i.imgur.com/n2lE2Vo.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 26px;
+    height: 26px;
+}
+
+
+/* ## ------------------------------------------------------- REPORT, UPDATE/SAVE, BOOKMARK ------------------------------------------------------- ## */
+
+/* Report button */
+.btn-danger {
+    background: rgba(70, 90, 105, 0.8);
+    color: rgba(255, 240, 215, 1);
+    border-radius: 10px;
+    border: none;
+}
+.btn-danger:hover {
+    background: rgba(60, 80, 95, 0.8);
+    color: rgba(220, 195, 165, 1);
+}
+
+/* Update/Save buttons */
+.btn-primary, .btn-success {
+    background: rgba(70, 90, 105, 0.8);
+    color: rgba(255, 240, 215, 1);
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+.btn-primary:hover, .btn-success:hover {
+    background: rgba(60, 80, 95, 0.8);
+    color: rgba(220, 195, 165, 1);
+}
+
+/* Bookmark Icon */
+#bookmarkPage.fas.fa-bookmark.text-danger {
+    color: rgba(105, 200, 235, 1) !important;
+}
+
+
+/* ## ------------------------------------------------------- BOXES ------------------------------------------------------- ## */
+
+.box1 {
+    background-color: rgba(10, 30, 60, 0.6);
+    color: rgba(255, 235, 215, 1);
+    text-align: center;
+    font-size: 13px;
+    padding: 15px;
+    margin: 0 2% 30px;
+    border-radius: 10px;
+    float: left;
+    width: 30%;
+    height: 145px;
+    overflow: auto;
+    border: none;
+    box-shadow: 2px 2px 3px rgba(150, 230, 255, 0.3);
+}
+
+.box2 {
+    background-color: rgba(150, 230, 255, 0.2);
+    color: rgba(10, 20, 30, 1);
+    text-align: center;
+    font-size: 13px;
+    padding: 15px;
+    margin: 0 2% 30px;
+    border-radius: 100px;
+    float: left;
+    width: 28%;
+    height: 145px;
+    overflow: auto;
+}
+
+.box3, .box4, .box5, .box6 {
+    background-color: rgba(10, 30, 60, 0.6);
+    color: rgba(255, 235, 215, 1);
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 3px rgba(150, 230, 255, 0.3);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(90, 230, 250, 1);
+    border-radius: 8px;
+}
+
+
+/* ## ------------------------------------------------------- NAVBAR MAIN ------------------------------------------------------- ## */
 
 #header .navbar-main {
-    background: rgba(11, 26, 43, 0.85);
-    border-bottom: 1px solid var(--border);
+    background-color: rgba(10, 20, 30, 1);
 }
 
 .navbar-main .nav-link {
-    color: var(--accent-3) !important;
+    color: rgba(105, 200, 235, 1) !important;
 }
 .navbar-main .nav-link:hover {
-    color: var(--accent-1) !important;
+    color: rgba(215, 255, 255, 1) !important;
 }
 
-/* ## ------------------------------------------------------- SCROLLBAR ------------------------------------------------------- ## */
-
-::-webkit-scrollbar {
-    width: 8px;
+#header .navbar-main .nav-link .fa {
+    color: rgba(105, 200, 235, 1);
 }
-::-webkit-scrollbar-thumb {
-    background: var(--accent-2);
+#header .navbar-main .nav-link:hover .fa {
+    color: rgba(215, 255, 255, 1);
+}
+
+/* Status bar */
+.navbar-status {
+    background: rgba(25, 35, 55, 0.8) !important;
+    color: rgba(105, 200, 235, 1) !important;
+}
+
+.navbar-status a {
+    color: rgba(105, 200, 235, 1) !important;
+}
+
+
+/* ## ------------------------------------------------------- MAIN PAGE ------------------------------------------------------- ## */
+
+#main {
+    background: rgba(10, 20, 30, 0.7);
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* Pack Name Title */
+h1 {
+    color: rgba(255, 235, 215, 1);
+    text-align: center;
+    font-size: 70px;
+    text-shadow: 0 0 10px rgba(150, 230, 255, 0.6);
+}
+
+
+/* Tabs */
+.nav-tabs {
+    justify-content: center;
+    border: none;
+}
+.nav-tabs .nav-link {
+    background: rgba(10, 20, 30, 0.4);
+    color: rgba(105, 200, 235, 1);
+}
+.nav-tabs .nav-link:hover {
+    background: rgba(10, 20, 30, 0.6);
+    color: rgba(215, 255, 255, 1);
+}
+.nav-tabs .nav-link.active {
+    background: rgba(10, 20, 30, 0.8);
+    color: rgba(105, 200, 235, 1);
+}
+
+
+/* ## ------------------------------------------------------- TABLES ------------------------------------------------------- ## */
+
+.table {
+    background: rgba(10, 30, 60, 0.6);
+    color: rgba(255, 235, 215, 1);
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(150, 230, 255, 0.3);
 }
 
-/* ## ------------------------------------------------------- EFFECTS LAYER ------------------------------------------------------- ## */
-
-/* 🌸 BLOSSOMS */
-body::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: 1;
-    pointer-events: none;
-
-    background-image:
-        radial-gradient(circle, rgba(255, 214, 255, 0.5) 0 2px, transparent 3px),
-        radial-gradient(circle, rgba(255, 214, 255, 0.3) 0 2px, transparent 3px);
-
-    background-size: 200px 200px, 300px 300px;
-
-    animation: blossomFall 25s linear infinite;
-    opacity: 0.4;
-    filter: blur(1px);
+.table th {
+    background: rgba(25, 60, 90, 1);
+    color: rgba(255, 235, 215, 1);
 }
 
-/* ✨ FIREFLIES (separate layer using box-shadow trick) */
-body::selection { background: transparent; } /* prevents weird overlap */
-
-@keyframes blossomFall {
-    0% {
-        background-position: 0% -20%, 50% -10%;
-    }
-    100% {
-        background-position: 100% 120%, 0% 110%;
-    }
+tr:nth-of-type(odd) {
+    background: rgba(150, 230, 255, 0.1) !important;
 }
 
-/* ✨ FIREFLY LAYER */
-html::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: 2;
-    pointer-events: none;
 
-    background-image:
-        radial-gradient(circle, rgba(127, 219, 255, 0.9) 0 1px, transparent 2px),
-        radial-gradient(circle, rgba(127, 219, 255, 0.6) 0 1px, transparent 2px);
+/* ## ------------------------------------------------------- BUTTONS ------------------------------------------------------- ## */
 
-    background-size: 250px 250px, 300px 300px;
-
-    animation: fireflies 30s linear infinite;
-    opacity: 0.35;
-    filter: blur(1.5px);
+.btn-info {
+    background: rgba(70, 90, 105, 0.8);
+    color: rgba(255, 240, 215, 1) !important;
+}
+.btn-info:hover {
+    background: rgba(60, 80, 95, 0.8);
+    color: rgba(220, 195, 165, 1) !important;
 }
 
-@keyframes fireflies {
-    0% {
-        background-position: 0% 0%, 50% 50%;
-    }
-    100% {
-        background-position: 100% 100%, 0% 50%;
-    }
+
+/* ## ------------------------------------------------------- PROGRESS BARS ------------------------------------------------------- ## */
+
+.progress {
+    background: rgba(10,10,10,0.8) !important;
 }
 
-/* 🌊 WATER REFLECTION */
-html::after {
-    content: "";
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 40%;
-    z-index: 2;
-    pointer-events: none;
-
-    background: linear-gradient(
-        to top,
-        rgba(63, 167, 255, 0.18),
-        rgba(63, 167, 255, 0.05),
-        transparent
-    );
-
-    animation: water 10s ease-in-out infinite alternate;
-    opacity: 0.4;
-    filter: blur(10px);
+.bg-warning, .bg-success {
+    background-color: rgba(100, 220, 235, 1) !important;
 }
 
-@keyframes water {
-    0%   { transform: translateX(-2%) scaleY(1); }
-    100% { transform: translateX(2%) scaleY(1.05); }
+.bg-danger, .bg-primary {
+    background-color: rgba(75, 180, 215, 1) !important;
 }
+
+.bg-info {
+    background-color: rgba(25, 140, 190, 1) !important;
+}
+
+
+/* ## ------------------------------------------------------- FOOTER ------------------------------------------------------- ## */
+
+#footer {
+    background: rgba(10, 20, 30, 1) !important;
+    color: rgba(255, 235, 215, 1);
+}
+
+#footer a {
+    color: rgba(105, 200, 235, 1);
+}
+#footer a:hover {
+    color: rgba(215, 255, 255, 1);
+}
+
+
+/* ## ------------------------------------------------------- REMOVE SIDEBAR ------------------------------------------------------- ## */
+
+#sidebar {
+    display: none !important;
+}
+
+#main {
+    width: 100% !important;
+}
+
+
+/* ## ------------------------------------------------------- FALLING PETALS (kept, recolored) ------------------------------------------------------- ## */
+
+.petal {
+    background: rgba(150, 230, 255, 0.8);
+    filter:
+        drop-shadow(0 0 6px rgba(150, 230, 255, 0.6))
+        drop-shadow(0 0 12px rgba(150, 230, 255, 0.3));
+}
+```
