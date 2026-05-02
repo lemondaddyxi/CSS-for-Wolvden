@@ -684,30 +684,77 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
 
 
 
-/* ============================= */
-/* UNIFIED LEAD + FEATURED WOLF SIZE (300x300 CIRCLE) */
-/* ============================= */
+/* ================== LEAD + FEATURED WOLF CLEAN FIX ================== */
 
-/* Lead Wolf Image */
-.table .row .card a img {
-    width: 300px !important;
-    height: 300px !important;
-    border-radius: 50% !important;
-    object-fit: cover !important;
-}
-
-/* Featured Wolf Image */
+/* Remove old conflicting styles */
+.table .form-row img,
 .featured-wolf img {
-    width: 300px !important;
-    height: 300px !important;
-    border-radius: 50% !important;
-    object-fit: cover !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin-top: 0 !important;
 }
 
-/* Optional: keep container centered nicely */
-.table .row .card a,
-.featured-wolf {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Make BOTH wolves same size + perfect circle */
+.table .row .card a img,
+.featured-wolf img {
+    width: 150px !important;
+    height: 150px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Ensure positioning for frame overlay */
+#main .table .card.mb-3 a,
+#main .featured-wolf a:first-of-type {
+    position: relative;
+}
+
+/* ================== LEAD WOLF FRAME ================== */
+#main .table .card.mb-3 a:before {
+    content: '';
+    background-image: url('https://i.imgur.com/XSFj4XT.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* ================== FEATURED WOLF FRAME ================== */
+#main .featured-wolf a:first-of-type:before {
+    content: '';
+    background-image: url('https://i.imgur.com/XSFj4XT.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* ================== MOBILE ADJUSTMENTS ================== */
+@media (max-width: 768px) {
+    .table .row .card a img,
+    .featured-wolf img {
+        width: 130px !important;
+        height: 130px !important;
+    }
+
+    #main .table .card.mb-3 a:before,
+    #main .featured-wolf a:first-of-type:before {
+        width: 150px;
+        height: 150px;
+        top: -10px;
+    }
 }
