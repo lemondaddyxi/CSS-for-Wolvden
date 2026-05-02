@@ -1,23 +1,23 @@
-/* ===== DEN CARD LAYOUT (MATCH STYLE) ===== */
+/* ===== DEN CARD LAYOUT (EVENING STYLE REBUILD) ===== */
 
 .col-md-3 {
-    background: rgba(6, 35, 40, 0.85);
-    border: 1px solid rgba(120, 200, 210, 0.12);
+    background: rgba(8, 32, 36, 0.9);
+    border: 1px solid rgba(150, 220, 230, 0.12);
 
     width: 170px;
     max-width: 170px;
-    height: 420px;
+    height: 430px;
 
-    border-radius: 90px 90px 30px 30px; /* pill shape */
+    border-radius: 90px 90px 28px 28px;
 
     padding: 12px 10px;
     margin: 10px auto;
 
     text-align: center;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
 
     backdrop-filter: blur(10px);
     transition: 0.2s ease;
@@ -25,10 +25,10 @@
 
 .col-md-3:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.6);
+    box-shadow: 0 10px 18px rgba(0,0,0,0.6);
 }
 
-/* ===== IMAGE (ROUNDED TOP LOOK) ===== */
+/* ===== IMAGE ===== */
 
 .col-md-3 img {
     width: 110px;
@@ -36,39 +36,35 @@
     object-fit: cover;
 
     border-radius: 50%;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 
-    border: 2px solid rgba(200, 240, 255, 0.15);
+    border: 2px solid rgba(180, 240, 255, 0.15);
 }
 
 /* ===== NAME ===== */
 
 .col-md-3 strong {
     font-size: 13px;
-    color: #d7f0f5;
-    margin-bottom: 4px;
+    color: #d7f3f7;
 }
 
-/* ===== TOP STAT LINE ===== */
+/* ===== TOP LINE ===== */
 
 .col-md-3 .text-muted {
     font-size: 11px;
-    color: #8fb3ba !important;
-    margin-bottom: 4px;
+    color: #8fbcc2 !important;
 }
 
-/* ===== REMOVE RANDOM BREAKS ===== */
+/* ===== REMOVE SPACING JUNK ===== */
 
 .col-md-3 br {
     display: none;
 }
 
-/* ===== STAT BLOCK ===== */
+/* ===== STACK CONTROL ===== */
 
-.col-md-3 small {
-    font-size: 11px;
-    color: #9ec2c8;
-    line-height: 1.3;
+.col-md-3 > * {
+    margin-bottom: 4px;
 }
 
 /* ===== PROGRESS BARS ===== */
@@ -76,36 +72,25 @@
 .progress {
     width: 80%;
     height: 6px;
-
     margin: 3px auto;
 
     background: rgba(0,0,0,0.6);
     border-radius: 6px;
-    overflow: hidden;
 }
 
 .progress-bar {
     background: linear-gradient(90deg, #ffb07c, #ff9966);
 }
 
-/* ===== ICON ROW ===== */
+/* ===== ICONS ===== */
 
 .col-md-3 i {
     font-size: 11px;
     opacity: 0.7;
-    margin: 2px;
 }
 
-/* ===== FORCE CONTENT STACKING ===== */
+/* ===== GRID ===== */
 
-/* this helps compress layout closer to screenshot */
-.col-md-3 > * {
-    margin-bottom: 4px;
-}
-
-/* ===== GRID ALIGNMENT ===== */
-
-/* keeps cards evenly spaced like screenshot */
 .row {
     display: flex;
     flex-wrap: wrap;
