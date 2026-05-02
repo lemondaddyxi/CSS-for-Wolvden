@@ -2,10 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
-:root {
-    --main-width: 1400px; /* change value for main content sizing */
-}
-
 body, .table th /* Background Image, font family, font color */ {
     background:url(https://i.imgur.com/Sc3MGgg.jpeg)
     center fixed !important;
@@ -284,18 +280,7 @@ img.mr-2 /* Alert Icons for Hunting, etc. */ {
 
 /* ## ------------------------------------------------------- MAIN PAGE ------------------------------------------------------- ## */
 
-.container, .container-fluid {
-    max-width: 100% !important;
-    width: 100% !important;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-}
-
 #main /* Section containing the site's main content. */ {
-    width: 100% !important;
-    max-width: var(--main-width) !important;
-    margin: 0 auto !important;
-	
     background: rgba(10, 20, 30, 0.7);
     border-radius: 10px 10px 0px 0px;
     border: 2px solid rgba(10, 20, 30, 1)
@@ -658,17 +643,43 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
 
 /* ## ------------------------------------------------------- REMOVE SIDEBAR ------------------------------------------------------- ## */
 
+/* ## ------------------------------------------------------- REMOVE SIDEBAR (FIXED LAYOUT LOGIC) ------------------------------------------------------- ## */
+
+/* Fully remove sidebar */
 #sidebar {
     display: none !important;
-    width: 0 !important;
-    height: 0 !important;
-    overflow: hidden !important;
 }
 
-/* Expand main content to fill space left by sidebar */
+/* Force main content to ignore leftover grid space */
 #main {
     width: 100% !important;
-    margin: 0 auto !important;
+    max-width: 100% !important;
+    margin: 20px auto 0 auto !important; /* small breathing room under navbar */
+}
+
+/* Bootstrap column safety reset (prevents phantom sidebar spacing) */
+.col-xl-3,
+.col-lg-3,
+.col-md-3 {
+    display: none !important;
+}
+
+.col-xl-9,
+.col-lg-9,
+.col-md-9 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+}
+
+/* Fix row wrapping issues caused by removed sidebar */
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Prevent header overlap / “snapped to navbar” look */
+body {
+    padding-top: 10px; /* adjust 0–20px depending on preference */
 }
 
 /* =========================
