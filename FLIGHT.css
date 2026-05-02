@@ -686,7 +686,7 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
 
 /* ================== LEAD + FEATURED WOLF CLEAN FIX ================== */
 
-/* Remove old conflicts */
+/* Remove old conflicting styles */
 .table .form-row img,
 .featured-wolf img {
     border: none !important;
@@ -694,37 +694,33 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
     margin: 0 !important;
 }
 
-/* Wolf images (slightly smaller for safety) */
+/* BOTH wolves (microscopic smaller again) */
 .table .row .card a img,
 .featured-wolf img {
-    width: 110px !important;
-    height: 110px !important;
+    width: 112px !important;
+    height: 112px !important;
     object-fit: cover !important;
     border-radius: 50% !important;
     display: block;
     margin: 0 auto !important;
 }
 
-/* Positioning anchor */
+/* Positioning */
 #main .table .card.mb-3 a,
 #main .featured-wolf a:first-of-type {
     position: relative;
     display: inline-block;
 }
 
-/* ================== RESPONSIVE FRAME (NO OVERFLOW FIX) ================== */
+/* CENTERED FRAME */
 #main .table .card.mb-3 a:before,
 #main .featured-wolf a:first-of-type:before {
     content: '';
     background-image: url('https://i.imgur.com/XSFj4XT.png');
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-
-    /* KEY FIX: slightly smaller than image so it never spills out */
-    width: 125px;
-    height: 125px;
-
+    width: 142px;
+    height: 142px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -733,17 +729,17 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
     z-index: 2;
 }
 
-/* ================== MOBILE (same proportional scaling) ================== */
+/* MOBILE */
 @media (max-width: 768px) {
     .table .row .card a img,
     .featured-wolf img {
-        width: 95px !important;
-        height: 95px !important;
+        width: 98px !important;
+        height: 98px !important;
     }
 
     #main .table .card.mb-3 a:before,
     #main .featured-wolf a:first-of-type:before {
-        width: 105px;
-        height: 105px;
+        width: 122px;
+        height: 122px;
     }
 }
