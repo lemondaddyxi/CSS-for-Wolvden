@@ -340,6 +340,7 @@ h1 /* Pack Name Title */ {
     padding-bottom: 0rem !Important;
     color: rgba(255, 235, 215, 1);
     border-radius: 15px 15px 0px 0px;
+	margin-top: 20px;
 } .table th a /* Pack Leader Name in that table */ {
     color: rgba(255, 235, 215, 1) !Important;
 }
@@ -683,8 +684,8 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
     left: 50%;
     transform: translate(-50%, -13%);
 
-    width: 262px;
-    height: 917px;
+    width: 260px;
+    height: 910px;
 
     pointer-events: none;
     z-index: 10;
@@ -707,8 +708,8 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
     left: 50%;
     transform: translate(-50%, -13%);
 
-    width: 262px;
-    height: 917px;
+    width: 260px;
+    height: 910px;
 
     pointer-events: none;
     z-index: 10;
