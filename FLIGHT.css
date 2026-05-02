@@ -708,35 +708,27 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
     overflow: hidden;
 }
 
-/* Neon petal base */
-.petal-container {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    overflow: hidden;
-}
-
-/* Neon blue petal */
+/* petal */
 .petal {
     position: absolute;
     top: -10px;
     width: 10px;
     height: 10px;
 
-    /* pure neon blue */
-    background: #4fd8ff;
+    background: #87b8ec;
     border-radius: 50% 50% 50% 0;
     transform: rotate(45deg);
 
-    /* strong blue glow */
-    filter: drop-shadow(0 0 6px #4fd8ff)
-            drop-shadow(0 0 12px #4fd8ff)
-            drop-shadow(0 0 18px #4fd8ff);
+    /* glow */
+    filter:
+        drop-shadow(0 0 6px #87b8ec)
+        drop-shadow(0 0 12px #87b8ec)
+        drop-shadow(0 0 18px #87b8ec);
 
     animation: fall linear infinite;
 }
 
-/*motion timing*/
+/* random pathing */
 .petal:nth-child(1)  { left: 2%;  animation-duration: 8s;  animation-delay: -1s; }
 .petal:nth-child(2)  { left: 6%;  animation-duration: 10s; animation-delay: -6s; }
 .petal:nth-child(3)  { left: 10%; animation-duration: 7s;  animation-delay: -3s; }
@@ -772,7 +764,7 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
 .petal:nth-child(29) { left: 60%; animation-duration: 10s; animation-delay: -3s; }
 .petal:nth-child(30) { left: 76%; animation-duration: 13s; animation-delay: -7s; }
 
-/*swirl motion*/
+/* swirl motion  */
 @keyframes fall {
     0% {
         transform: translateY(-10vh) translateX(0) rotate(0deg);
