@@ -377,7 +377,7 @@ i.fas.fa-mars.text-danger /* Breeding Male, Heat, etc. Symbol of Lead Wolf */ {
     border-radius: 160px;
     margin-top: 20px;
 
-    width: 230px !important;   /* increased size */
+    width: 200px !important;   /* increased size */
     height: auto !important;
 }
 
@@ -634,13 +634,6 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
 }
 
 
-
-
-
-
-
-
-
 /* ## ------------------------------------------------------- REMOVE SIDEBAR ------------------------------------------------------- ## */
 
 /* FORCE MAIN LAYOUT TO FILL PAGE WHEN SIDEBAR IS GONE */
@@ -690,8 +683,8 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
     left: 50%;
     transform: translate(-50%, -13%);
 
-    width: 230px;
-    height: 805px;
+    width: 300px;
+    height: 1050px;
 
     pointer-events: none;
     z-index: 10;
