@@ -340,6 +340,7 @@ h1 /* Pack Name Title */ {
     padding-bottom: 0rem !Important;
     color: rgba(255, 235, 215, 1);
     border-radius: 15px 15px 0px 0px;
+	    display: none !important;
 
 } .table th a /* Pack Leader Name in that table */ {
     color: rgba(255, 235, 215, 1) !Important;
