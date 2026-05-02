@@ -658,3 +658,35 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
 }  #footer nav .nav-item .nav-link:hover /* Hover of the above */ {
     color: #f7c492;
 }
+
+
+/* ## ---- REMOVE SIDEBAR + CENTER MAIN CONTENT ---- ## */
+
+#sidebar {
+    display: none !important;
+}
+
+/* Make main content full width and centered */
+#main {
+    width: 100% !important;
+    max-width: 1200px; /* keeps it from stretching too wide on large screens */
+    margin: 0 auto !important;
+    float: none !important;
+}
+
+/* Fix layout shift from sidebar removal */
+.container, 
+.row, 
+.col-md-9, 
+.col-lg-9, 
+.col-md-8, 
+.col-lg-8 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+}
+
+/* Optional: center page background alignment */
+body {
+    background-position: center top !important;
+}
