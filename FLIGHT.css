@@ -1,243 +1,186 @@
 /* ## ------------------------------------------------------- GENERAL ------------------------------------------------------- ## */
 
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Yomogi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&family=Caveat:wght@400;600&display=swap');
 
 body, .table th {
-    background:url(https://i.imgur.com/PJePFFJ.jpg)
+    background: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG9la2szM2g1OGk4b2trMXdvMTRsMzQyZHA2OHE0enY1dXVqbDdwNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Dfne6TERzn0SfOgJrp/giphy.gif)
     center fixed !important;
-    background-size:cover !important;
-    font-family: yomogi;
+    background-size: cover !important;
+
+    font-family: 'Quicksand', sans-serif;
     color: #ffd6ff;
 }
 
+h1, h2, h3, h4 {
+    font-family: 'Caveat', cursive;
+    color: #6ef3ff;
+}
+
 a {
-    color: #b46cff;
+    color: #6ef3ff;
 }
 a:hover {
-    color: #6ef3ff;
+    color: #b46cff;
     text-decoration: none;
 }
 
 .alert {
-    background: #141a33;
-    border: 2px dashed rgba(110, 243, 255, 0.25);
-    font-weight: bold;
+    background: rgba(20, 26, 51, 0.65);
+    border: 1px solid rgba(110, 243, 255, 0.25);
+    border-radius: 12px;
     color: #ffd6ff;
-    border-radius: 10px;
-}
-.alert a {
-    color: #6ef3ff !important;
+    backdrop-filter: blur(6px);
 }
 
-/* ## ------------------------------------------------------- REPORT, UPDATE/SAVE, BOOKMARK ------------------------------------------------------- ## */
+
+/* ## ------------------------------------------------------- BUTTONS ------------------------------------------------------- ## */
 
 .btn-danger {
     background: rgba(20, 26, 51, 0.65);
+    border: 1px solid rgba(110, 243, 255, 0.25);
     color: #b46cff;
     border-radius: 10px;
-    border: 2px solid rgba(110, 243, 255, 0.25);
 }
+
 .btn-danger:hover {
     color: #6ef3ff;
-    border: 2px solid rgba(110, 243, 255, 0.25);
 }
 
-.btn-primary, .btn-success {
+.btn-primary,
+.btn-success {
     background: rgba(20, 26, 51, 0.65);
-    color: #6ef3ff;
-    font-weight: bold;
+    border: 1px solid rgba(110, 243, 255, 0.25);
+    color: #ffd6ff;
     border-radius: 10px;
-    border: 2px solid rgba(110, 243, 255, 0.25);
 }
 
-.btn-primary:hover, .btn-success:hover {
-    color: #b46cff;
+.btn-primary:hover,
+.btn-success:hover {
+    color: #6ef3ff;
 }
 
-/* Bookmark */
-#bookmarkPage.fas.fa-bookmark.text-danger {
-    color: #0b1020 !important;
-}
 
 /* ## ------------------------------------------------------- BOXES ------------------------------------------------------- ## */
 
-.box1 {
-    background-color: rgba(20, 26, 51, 0.8);
-    color: #6ef3ff;
-    border: 2px solid #0b1020;
+.box1, .box2, .box3, .box4, .box5, .box6 {
+    background: rgba(20, 26, 51, 0.65);
+    border: 1px solid rgba(110, 243, 255, 0.25);
+    color: #ffd6ff;
+    backdrop-filter: blur(8px);
+    font-size: 13px;
+    text-align: center;
+    overflow: auto;
 }
 
-.box2 {
-    background-color: rgba(110, 243, 255, 0.7);
-    color: #0b1020;
-    border: 2px solid #6ef3ff;
+.box1 { border-radius: 12px; }
+.box2 { border-radius: 50%; }
+.box3 { border-radius: 12px; }
+.box4 { border-radius: 12px; }
+.box5 { border-radius: 20px 60px; }
+.box6 { border-radius: 60px 20px; }
+
+
+::-webkit-scrollbar {
+    width: 8px;
 }
 
-.box3, .box4, .box5, .box6 {
-    background-color: rgba(20, 26, 51, 0.8);
-    color: #6ef3ff;
-    border: 2px solid #0b1020;
-}
-
-/* Scrollbar */
 ::-webkit-scrollbar-thumb {
     background: #b46cff;
+    border-radius: 10px;
 }
+
 
 /* ## ------------------------------------------------------- NAVBAR MAIN ------------------------------------------------------- ## */
 
 #header .navbar-main {
-    background-color: #0b1020;
-    border-bottom: 2px dashed rgba(110, 243, 255, 0.25);
-    border-right: 2px solid #141a33;
-    border-left: 2px solid #141a33;
+    background: rgba(11, 16, 32, 0.85);
+    border-bottom: 1px solid rgba(110, 243, 255, 0.25);
 }
 
 .navbar-main .nav-link {
     color: #ffd6ff !important;
 }
+
 .navbar-main .nav-link:hover {
     color: #6ef3ff !important;
 }
 
-#header .navbar-main .nav-link .fa {
-    color: #b46cff;
-}
-#header .navbar-main .nav-link:hover .fa {
-    color: #6ef3ff;
-}
-
 .navbar-status {
-    background: #141a33 !important;
+    background: rgba(20, 26, 51, 0.8) !important;
     color: #ffd6ff !important;
-    border-left: 2px solid #0b1020;
-    border-right: 2px solid #0b1020;
-    border-bottom: 2px solid #0b1020;
+    border-bottom: 1px solid rgba(110, 243, 255, 0.25);
 }
 
-.btn-group-vertical>.btn, .btn-group>.btn {
-    color: #b46cff !important;
-}
-
-/* Dropdown */
-.dropdown-menu.show {
-    background-color: #0b1020;
-}
-
-.dropdown-item:hover {
-    background-color: #141a33;
-}
-
-.dropdown-divider {
-    border-top: 1px solid #141a33;
-}
-
-/* Links */
-.navbar-status a {
-    color: #b46cff !important;
-}
-.navbar-status a:hover {
-    color: #6ef3ff !important;
-}
-
-/* Icons */
-.icon-beetle-silver, .icon-silver-cone,
-.icon-beetle-gold, .icon-gold-cone {
-    filter: grayscale(0%) contrast(100%) brightness(100%);
-}
-
-/* Alerts icons */
-img.mr-2 {
-    filter: grayscale(100%) contrast(30%) brightness(30%);
-}
 
 /* ## ------------------------------------------------------- SIDEBAR ------------------------------------------------------- ## */
 
 #sidebar .card {
     background: rgba(20, 26, 51, 0.65);
+    border: 1px solid rgba(110, 243, 255, 0.25);
     color: #ffd6ff;
-    border: 2px solid rgba(110, 243, 255, 0.25);
+    border-radius: 12px;
 }
 
-#sidebar h3, #sidebar h4 {
-    border-bottom: 2px dashed #b46cff;
-}
-
-.w-50 > a img,
-.w-50 div a img {
-    border: 2px solid #141a33;
-}
 
 /* ## ------------------------------------------------------- MAIN PAGE ------------------------------------------------------- ## */
 
 #main {
     background: rgba(20, 26, 51, 0.65);
-    border: 2px solid #0b1020;
+    border: 1px solid rgba(110, 243, 255, 0.25);
+    border-radius: 14px;
 }
 
-h1 {
-    color: #b46cff;
-    text-shadow: 0px 0px 10px rgba(110, 243, 255, 0.5);
-}
-
-/* Tabs */
 .nav-tabs .nav-link {
-    background: #141a33;
-    border: 2px solid #141a33;
+    background: rgba(20, 26, 51, 0.7);
+    border: 1px solid rgba(110, 243, 255, 0.25);
+    color: #ffd6ff;
 }
 
 .nav-tabs .nav-link.active {
-    background-color: #0b1020;
+    background: rgba(11, 16, 32, 0.9);
     color: #6ef3ff;
-    border: 2px solid #0b1020;
 }
 
-/* Tables */
+
+/* ## ------------------------------------------------------- TABLES ------------------------------------------------------- ## */
+
 .table {
     background: rgba(20, 26, 51, 0.5);
     color: #ffd6ff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
 }
 
-.table th {
-    color: #b46cff;
+
+/* ## ------------------------------------------------------- IMAGES ------------------------------------------------------- ## */
+
+img {
+    filter: hue-rotate(20deg) saturate(1.2) contrast(1.1);
 }
 
-/* Stripes */
-tr:nth-of-type(odd) {
-    background: #141a33 !important;
+
+/* ## ------------------------------------------------------- PROGRESS BARS ------------------------------------------------------- ## */
+
+.progress {
+    background: rgba(11, 16, 32, 0.8);
 }
 
-/* Lead wolf */
-i.fas.fa-mars.text-danger {
-    color: #b46cff !important;
+.bg-warning,
+.bg-success,
+.bg-info,
+.bg-danger {
+    background: linear-gradient(90deg, #b46cff, #6ef3ff) !important;
 }
 
-/* Featured wolf */
-.featured-wolf img {
-    border: 3px solid #0b1020;
-}
 
-/* Cards */
-.col-6 .card.text-center {
-    background: #141a33 !important;
-    color: #ffd6ff;
-}
+/* ## ------------------------------------------------------- FOOTER ------------------------------------------------------- ## */
 
-/* Subheaders */
-.subheader {
-    background: #0b1020 !important;
-    color: #6ef3ff;
-}
-
-/* Footer */
 #footer {
-    background: #0b1020 !important;
+    background: rgba(11, 16, 32, 0.9);
     color: #ffd6ff;
+    border-top: 1px solid rgba(110, 243, 255, 0.25);
 }
 
-#footer a {
-    color: #b46cff;
-}
-#footer a:hover {
+#footer * {
     color: #6ef3ff;
 }
