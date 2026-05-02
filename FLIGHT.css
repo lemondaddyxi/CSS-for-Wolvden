@@ -1,1060 +1,204 @@
-/* THIS CODE IS MADE BY ASTRYNOX#164092 FOR MAE#180957 - DO NOT COPY OR REDISTRIBUTE */
+/* ## ------------------------------------------------------- GENERAL ------------------------------------------------------- ## */
 
-/* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap'); /*Headers*/
-@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');/*Body*/
-@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap'); /*DEN NAME*/
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Yomogi&display=swap');
 
-/* BACKGROUND IMAGE */
-body {
-	background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExazdsZ3VtcDIxdGoyNHNwcGRqeW9sbWRxeHZqOW5hcDF1bjJyZW10eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/iZYBZRx7VP3DxGQ3fL/giphy.gif'),url('https://file.garden/aL4o-YAHXRIipaJF/YrSqIty.jpg'); 
-	background-size: 30%, cover;
-	background-repeat: repeat, no-repeat;
-	background-position: center, center;
-	font-family: 'Viaoda Libre';
+body, .table th {
+    background:url(https://i.imgur.com/Sc3MGgg.jpeg)
+    center fixed !important;
+    background-size:cover !important;
+    font-family: yomogi;
+    color: #f79e62;
 }
 
-/* CURSOR */
-* {
-	cursor: url('https://file.garden/aL4o-YAHXRIipaJF/MaeCursor.png'), progress !important;
-}
-h1 {
-  font-family: 'Fleur De Leah';
-	font-size: 55px;
-	text-align: center;
-	color: #B51AC1;
-	text-shadow: 0px 0px 2px #000;
-	transition: .5s ease-in;
-	text-transform: capitalize;
-	 letter-spacing:3px;
-}
-	#main h1:hover{
-  letter-spacing:4px;
-  text-shadow: 0px 0 10px #CE7BDC;
-  transition-duration: 1.5s;
-  color: #CE7BDC;
-}
-/*Mailbox Badge*/
-.badge-danger {
-    color: #121406;
-    background-color: #41337A;
-    font-family: 'Times New Roman';
-    border-radius: 100px;
-}
-
-.breadcrumb::after /*Author Credit*/ 
-{
-    content:'CSS by #164092';
-    position:absolute;
-    right:35px;
-    font-weight: bold;
-    color: #65655E;
-    font-family: 'Times New Roman';
-}
-
-/* Main */
-#main{
- background-image: url('');
-  background-color: rgba(51, 30, 54, 0.7) !important;
-  color: #E9E3D9 !important;
-  border-radius: 10px;
-  border: none;
-  transition: .5s ease;
-  font-family: 'Viaoda Libre';
-  letter-spacing: 1px;
-  font-size: 20px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
-
-#sidebar {
-  	background-color: transparent;
-}
-
-/* Links */ 
-
-a:link, a:visited {
-  color: #7E4884;
-  text-shadow: 2px 0px 2px #171E26;
-  letter-spacing: 1px;
-  font-weight: bold;
-  font-size: 18px;
-  font-family: "Viaoda Libre";
+a {
+    color: #fdd7a8;
 }
 a:hover {
-  color: #EDF2F4;
-  text-shadow: 0px 0 6px #FFFFFE;
+    color: #f79e62;
+    text-decoration: none;
 }
-/* Top Behind Den,Crossroad,etc. */
+
+.alert {
+    background: #59706a;
+    border: 2px dashed #0b2d36;
+    font-weight: bold;
+    color: #f79e62;
+    border-radius: 10px;
+}
+.alert a {
+    color: #fdd7a8 !important;
+}
+
+
+/* ## ------------------------------------------------------- BUTTONS ------------------------------------------------------- ## */
+
+.btn-danger {
+    background: rgb(11, 45, 54, .65);
+    color: #ec9153;
+    border-radius: 10px;
+    border: 2px solid #0b2d36;
+}
+.btn-danger:hover {
+    color: #f7c492;
+}
+
+.btn-primary, .btn-success {
+    background: rgb(11, 45, 54, .65);
+    color: #f7c492;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid #0b2d36;
+}
+.btn-primary:hover, .btn-success:hover {
+    color: #ec9153;
+}
+
+
+/* ## ------------------------------------------------------- BOXES ------------------------------------------------------- ## */
+
+.box1, .box2, .box3, .box4, .box5, .box6 {
+    font-size: 13px;
+    padding: 15px;
+    margin: 0 2% 30px;
+    float: left;
+    overflow: auto;
+    border: 2px solid #06181e;
+    color: #f7c492;
+}
+
+.box1 { width: 30%; height: 145px; background: rgb(11,45,54,.8); border-radius: 10px; text-align:center; }
+.box2 { width: 28%; height: 145px; background: rgba(255,188,130,.7); border-radius: 100px; color:#0b2d36; }
+.box3 { width: 96%; height: 175px; background: rgb(11,45,54,.8); border-radius: 10px; }
+.box4 { width: 46%; height: 145px; background: rgb(11,45,54,.8); border-radius: 10px; }
+.box5 { width: 46%; height: 145px; background: rgb(11,45,54,.8); border-radius: 10px 50px; }
+.box6 { width: 46%; height: 145px; background: rgb(11,45,54,.8); border-radius: 50px 10px; }
+
+
+/* ## ------------------------------------------------------- NAVBAR ------------------------------------------------------- ## */
+
 #header .navbar-main {
-	background-color: rgba(51, 30, 54, 0.5);
-	border-radius: 0 ;
-}
-/*SC and GC icons*/
-
-.icon-beetle-gold,
-	.icon-gold-cone::before {
-		content: '';
-		background-image: url('https://file.garden/aL4o-YAHXRIipaJF/icons8-fortune-teller-47.png') !important;
-		background-repeat: no-repeat;
-		background-size: cover;
-		width: 26px;
-		height: 26px;
-	}
-
-	.icon-beetle-silver,
-	.icon-silver-cone::before {
-		content: '';
-		background-image: url('https://file.garden/aL4o-YAHXRIipaJF/icons8-witch-64.png') !important;
-		background-repeat: no-repeat;
-		background-size: cover;
-		width: 26px;
-		height: 26px;
-	}
-/*DEN, CROSSROAD, ETC */
-#header .navbar-main .nav-link, #header .navbar-main .nav-link .fa {
-	color: #EDF2F4;
-	text-shadow: 2px 0 2px #000;
-	font-size: 40px;
-	font-family: 'Bonheur Royale';
-	letter-spacing: 2.5px;
-	text-transform: Capitalize;
-}
-#header .navbar-main .nav-link .fa {
-  display: none;
-}
-#header .navbar-main .nav-link:hover, #header .navbar-main .nav-link:hover .fa{
-	color: #41337A;
-	text-shadow: 2px 0px 2px #0D0D0C;
-	text-decoration: none !important;
-	transition-duration: .5s ease-in;
-	letter-spacing: 2.5px;
-}
-#footer .copyright{
-  color: white;
-}
-/* Welcome back */
-.navbar-status 
-{
-   background-color: rgba(51, 30, 54,0.9) !important;
-  color: #ADB2D3 !important;
-  border-radius: 0 0 20px 20px;
-  border: none;
-  border-top: none;
-  transition: .5s ease;
-  font-family: 'Bonheur Royale';
-  letter-spacing: 1px;
-  font-size: 20px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-} .navbar-status a {
-    color: #ADB2D3 !important;
-    text-shadow: none;
-} .navbar-status a:hover {
-    color: #EDF2F4 !important;
-    text-shadow: none;
-} .btn-group-vertical>.btn, .btn-group>.btn /* Username in that bar */ {
-    color: #41337A !important;
-    font-size: 20px;
-    font-family: 'Bonheur Royale';
-    background: transparent;
-}
-/* home, username, pack */
-#header .breadcrumb-nav {
-  background-color: transparent;
-  border-radius: 5px;
-}
-.breadcrumb-item.active {
-	color: #EDF2F4;
-	font-size: 20px;
-	text-shadow: 1px 0 1px black;
+    background-color: #0b2d36;
+    border-bottom: 2px dashed #59706a;
 }
 
-#bookmarkPage.fas.fa-bookmark.text-danger /* Bookmark Icon */ {
-  color: #65655E!important;
+.navbar-main .nav-link {
+    color: #fdd7a8 !important;
 }
 
-/* ALERTS AND BUTTONS */
-.alert-success {
-  	background-color: #a1a1a1;
-		background-image: radial-gradient(circle,#251627,#190F1A, #0C070D );
-		border-radius: 0px;
-		border: none;
-		padding-bottom: 10px;
-		text-align: center;
-		opacity: 0.8;
-		backdrop-filter: blur(25px);
-		box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-		color: #EDF2F4;
-  font-family: "Viaoda Libre";
-  font-size: 15px;
+.navbar-main .nav-link:hover {
+    color: #f79e62 !important;
 }
 
-.alert-danger {
- 	background-color: #a1a1a1;
-		background-image: radial-gradient(circle,#251627,#190F1A, #0C070D);
-		border-radius: 0px;
-		border: none;
-		padding-bottom: 10px;
-		text-align: center;
-		opacity: 0.8;
-		backdrop-filter: blur(25px);
-		box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-		color: #EDF2F4;
-		  font-family: "Viaoda Libre";
-		  font-size: 15px;
+
+/* ## ------------------------------------------------------- MAIN AREA ------------------------------------------------------- ## */
+
+#main {
+    background: rgb(11,45,54,.65);
+    border-radius: 10px;
+    border: 2px solid #0b2d36;
 }
 
-.alert-info {
-	background-color: #a1a1a1;
-		background-image: radial-gradient(circle,#251627,#190F1A, #0C070D);
-		border-radius: 0px;
-		border: none;
-		padding-bottom: 10px;
-		text-align: center;
-		opacity: 0.8;
-		backdrop-filter: blur(25px);
-		box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-		color: #EDF2F4;
-		  font-family: "Viaoda Libre";
-		  font-size: 15px;
-}
-.alert-warning {
- 	background-color: #a1a1a1;
-		background-image: radial-gradient(circle,#251627,#190F1A, #0C070D);
-		border-radius: 0px;
-		border: none;
-		padding-bottom: 10px;
-		text-align: center;
-		opacity: 0.8;
-		backdrop-filter: blur(25px);
-		box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-		color: #EDF2F4;
-		  font-family: "Viaoda Libre";
-		  font-size: 15px;
-}
-.alert-danger .alert-link, .alert-info .alert-link, .alert-success .alert-link, .alert-warning .alert-link {
-  color: #ADB2D3;
-  text-shadow: none;
-}
-/* DEN/PROFILE NAV TABS - IF USING IMAGES THEY MUST BE SWAPPED IN A 2ND CSS FILE */
-.nav-tabs /* Section containing the Den and Profile buttons */ {
-    justify-content: center;
-    border-bottom: none;
-    background: transparent;
-    border-radius:5px;
-}
-.nav-tabs .nav-link /* Individual Den and Profile buttons */ {
-  content: url('https://file.garden/aL4o-YAHXRIipaJF/MaeProfile.png');
-    color: #37454E;
-    border-radius: 20px 20px 0px 0px;
-  	text-shadow:0 0 1px rgba(35, 40, 35, 1);
-	  transition-duration: .5s;
-    border: none;
-    opacity: 1;
-}
-.nav-tabs .nav-link:hover /* Hover of inactive button */ {
-  content: url('https://file.garden/aL4o-YAHXRIipaJF/MaeProfile1.png');
-   background-color: transparent;
-    color: #7E7E63;
-  	text-shadow:0 0 1px rgba(35, 40, 35, 1);
-	  transition-duration: .5s;
-    border: none;
-}
-.nav-tabs .nav-link.active /* Link of the page being viewed */ {
-  content: url('https://file.garden/aL4o-YAHXRIipaJF/MaeDen.png');
-   background: transparent;
-    color: #37454E;
-     border-radius: 20px 20px 0px 0px;
-  	text-shadow:0 0 1px rgba(35, 40, 35, 1);
-	  transition-duration: .5s;
-    border: none;
-}
-    .nav-tabs .nav-link.active:hover /* Link of the page being viewed */ {
-  content: url('https://file.garden/aL4o-YAHXRIipaJF/MaeDen2.png');
-   background: transparent;
-    color: #37454E;
-     border-radius: 20px 20px 0px 0px;
-  	text-shadow:0 0 1px rgba(35, 40, 35, 1);
-	  transition-duration: .5s;
-    border: none;
-    
-}.ml-2, .mx-2 /*Murdered Melvin*/{
-  opacity: 0%;
-}
-/*Replace Melvin's Body*/
-@media (min-width: 768px) {
-#sidebar .multi-column::before{
-  content: "";
-  display: block;
-  position: absolute;
-  top: -60px;
-  left: 29px;
-  width: 410px;
-  height: 200px;
-  background-size:16% !important;
-  background: url('https://file.garden/aL4o-YAHXRIipaJF/MaeMelv.png') no-repeat center center;
-  z-index: 1;
 
-  pointer-events: none;
-}}
-@media (max-width: 767px) {
-#sidebar .multi-column::before{
-  display: none;
-}}
+/* ## ------------------------------------------------------- TABLES ------------------------------------------------------- ## */
 
-
-/* Sidebars */
-
-
-/* Removes Sidebar*/
-
-img.timeOfDayIcon, img.weatherIcon, img.seasonIcon {
-  filter: grayscale(100%);
-}
-/*Completed Mission Color*/
-.text-success {
-    color: #65655E !important;
-    font-weight: bolder;
-    font-size:12px;
-}
-#sidebar .card {
-  background-color: rgba(51, 30, 54, 0.6) !important;
-  color: #EDF2F4 !important;
-  border-radius: 10px;
-  border: none;
-  transition: .5s ease;
-  font-family: 'Viaoda Libre';
-  letter-spacing: 1px;
-  font-size: 12px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
- 
-}
-/* Table 1 */
-th.top, th.pt-1.pb-1 {
-  background: #261627;
-background: linear-gradient(0deg, rgba(38, 22, 39, 1) 0%, rgba(63, 36, 66, 1) 47%, rgba(87, 51, 92, 1) 79%);
-}
 .table {
-  background-color: rgba(25, 15, 26,0.5);
-  border:none;
-  border-radius:5px;
-  box-shadow:0 0 6px #000;
+    background: rgba(6,26,32,.5);
+    color: #f79e62;
+    border-radius: 15px;
 }
 
-/* Leader,Cave*/
 .table th {
-background: #261627;
-background: linear-gradient(0deg, rgba(38, 22, 39, 1) 0%, rgba(63, 36, 66, 1) 47%, rgba(87, 51, 92, 1) 79%);
-	background-size: cover;
-  color: #B34EC4;
-  font-size: 20px !important;
-  font-family: 'Viaoda Libre';
-  border-bottom: none;
-  border-radius:5px 5px 0px 0px;
+    font-family: sacramento;
+    font-size: 30px !important;
+    color: #fdd7a8;
 }
 
-#lblPackLeaderTitle {
-  color: #ADB2D3 !important;
-  font-family: 'Viaoda Libre';
+
+/* ## ------------------------------------------------------- LEAD & FEATURED WOLF (FINAL MERGED FIX) ------------------------------------------------------- ## */
+
+/* Lead Border */
+#main .table .card.mb-3 a:before {
+    content: '';
+    background-image: url('https://i.imgur.com/XSFj4XT.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    filter: brightness(75%);
+    width: 200px;
+    height: 700px;
+    top: -32%;
+    left: -5%;
+    position: absolute;
+    pointer-events: none;
+    z-index: 1 !important;
 }
 
-/* Caves */
-.table th a {
-	color:#EDF2F4;
-	font-family: 'Viaoda Libre';
-	font-size: 35px;
+@media (max-width: 768px) {
+    #main .table .card.mb-3 a:before {
+        width: 250px !important;
+        top: 30%;
+        left: -13%;
+    }
 }
 
-.table th a:hover {
-	color: #251627;
-	text-shadow:0 0 1px rgba(35, 40, 35, 1);
+/* Featured Border */
+#main .featured-wolf a:first-of-type:before {
+    z-index: 1;
+    content: '';
+    background-image: url('https://i.imgur.com/XSFj4XT.png');
+    background-size: 95% auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 700px;
+    top: -9%;
+    left: 5%;
+    position: absolute;
+    pointer-events: none;
+    filter: brightness(75%);
 }
-.border-none .card 
-{
-    background-color:transparent !important;
+
+@media (max-width: 768px) {
+    #main .featured-wolf a:first-of-type:before {
+        top: -142%;
+        left: 26%;
+    }
 }
-/* LEAD AND FEATURED WOLF */
-/*Lead Border Option*/
-	#main .table .card.mb-3 a:before {
-		content: '';
-		background-image: url('https://i.imgur.com/XSFj4XT.png');
-		background-size: 100% auto;
-		background-repeat: no-repeat;
-		display: inline-block;
-		filter: brightness(75%);
-		width: 200px;
-		height: 700px;
-		top: -32%;
-		left: -5%;
-		position: absolute;
-		pointer-events: none;
-		z-index: 1 !important;
-		
-	}
 
-	@media (max-width: 768px) {
-		#main .table .card.mb-3 a:before {
-			width: 250px !important;
-			top: 30%;
-			left: -13%;
-			position: absolute;
-		}
-	}
-
-	.col-sm-7 div.card.mb-3 {
-		background: none !important;
-		margin-top: 20px !important;
-	}
-
-
-
-	@media (max-width: 768px) {
-		.order-xl-9 {
-			max-width: 420px;
-			margin: 30px;
-		}
-	}
-
-	.order-xl-9 td.b {
-		width: 190px;
-		text-align: right;
-	}
-
-	i.fas.fa-question-circle {
-		display: none;
-	}
-
-	#img .featured-wolf {
-		width: 179.75px !important;
-		border: solid 3px #C98FF2;
-		border-radius: 15px;
-		transition: filter 1s ease-in-out;
-	}
-
-	.featured-wolf img:hover {
-		filter: none;
-		transition: filter 1s ease-in-out;
-	}
-/*Featured Wolf Border Option*/
-	#main .featured-wolf a:first-of-type:before {
-		z-index: 1;
-		content: '';
-		background-image: url('https://i.imgur.com/XSFj4XT.png');
-		background-size: 95% auto;
-		background-repeat: no-repeat;
-		display: inline-block;
-		width: 200px;
-		height: 700px;
-		top: -9%;
-		left: 5%;
-		position: absolute;
-		pointer-events: none;
-		filter: brightness(75%);
-	}
-
-	@media (max-width: 768px) {
-		#main .featured-wolf a:first-of-type:before {
-			top: -142%;
-			left: 26%;
-			position: absolute;
-		}
-	}
-/* Lead Wolf in Table*/ 
+/* Lead Wolf Image */
 .table .row .card a img {
-  border-radius: 100px;
-  border: none;
-  width: 140px;
-  height: 140px;
-box-shadow: 0 0 10px #57335B;
-
+    border-radius: 100px;
+    width: 140px;
+    height: 140px;
+    box-shadow: 0 0 10px #57335B;
 }
-/* Featured Wolf in Table */ 
+
+/* Featured Wolf Image */
 .featured-wolf img {
-  border-radius: 100px;
-  border: none;
-  width: 140px;
-  height: 120px;
-box-shadow: 0 0 10px #57335B;
-
-}
-.card-body .w-50:first-child div /* Border featured wolf in Sidebar */ {
-    border: none !important;
-}
-.w-50 > a img /* Wolf Icon Sidebar */ {
-      border-radius: 5px 50px 5px 50px;
-box-shadow: 0 0 10px #57335B;
-}
-.w-50 div a img /* Featured Wolf Icon Sidebar */ {
-      border-radius: 100px;
-box-shadow: 0 0 10px #57335B;
-}
-/* Den Subheaders */
-.table .subheader {
-	background-color: rgba(197, 176, 160, 0.2);
-	background: transparent;
+    border-radius: 100px;
+    border: 3px solid #06181e;
+    width: 140px;
+    height: 120px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px #57335B;
+    transition: filter 1s ease-in-out;
 }
 
-/* PROFILE */
-.table .left {
-	background-color: rgba(12, 14, 13, 0.5);
-	border-bottom: 1px solid #313710;
-}
-
-/* Odd Den Stripe */
-.table-striped tbody tr:nth-of-type(odd) {
-	background-color: rgba(62, 37, 65, 0.2);
-}
-/* Den Bottom */
-.table td.bottom {
-	background-color: rgba(25, 15, 26, 0.7);
-	border-radius:0px 0px 5px 5px;
-}
-/* CAVE PUP/WOLF PROFILES */
-.border,
-.border-bottom,
-.border-left,
-.border-right,
-.border-top {
-	border: solid 3px #B34EC4 !important;
-	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-	border-radius: 100px;
-	margin: 5px;
-}
-.border:hover,
-.border-bottom:hover,
-.border-left:hover,
-.border-right:hover,
-.border-top:hover {
- border: solid 3px #633C68 !important;
-	border-radius: 100px;
-	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-	margin: 5px;
-	filter: none;
-	transition: ease-in 0.1s;
+.featured-wolf img:hover {
+    filter: none;
 }
 
 
-.custom-control-label {
-  color:#7B4A82;
-  text-shadow: 2px 0 10px #0E0F0B;
-  font-family: 'Viaoda Libre';
-  
-}
-/* CARD LISTING */
-		.bg-light {
-			border: solid 2px #1c304d;
-			border-radius: 10px;
-			background: #261627;
-background: linear-gradient(0deg, rgba(38, 22, 39, 1) 0%, rgba(63, 36, 66, 1) 47%, rgba(87, 51, 92, 1) 79%) !important;
-		}
-		.badge-info {
-		  background-color: #87528E;
-		  color: #EDF2F4;
-		  font-family: 'Viaoda Libre';
-		}
+/* ## ------------------------------------------------------- SIDEBAR ------------------------------------------------------- ## */
 
-		.text-truncate {
-			background: none !important;
-			color: #EDF2F4 !important;
-		}
-
-		.text-truncate small.b {
-			font-size: 20px;
-			font-weight: lighter;
-		}
-
-		.rounded-bottom,
-		.rounded-left {
-			border-radius: 100px !important;
-			margin-top: 5px;
-			width: 150px;
-			transition: filter 1s ease-in-out;
-		}
-
-		.rounded-bottom:hover,
-		.rounded-left:hover {
-			filter: grayscale(0%) !important;
-			transition: filter 1s ease-in-out !important;
-			box-shadow: 0 0 10px #A76FAE;
-		}
-
-		img.rounded-bottom.pl-3.pr-3.pt-2.pb-1 {
-			padding: 0 !important;
-			width: 150px;
-			height: auto;
-		}
-
-		.pr-4,
-		.px-4 {
-			margin-bottom: 5px;
-		}
-
-.card-header{
-  background:rgba(99, 60, 104,0.6);
-  border: 3px solid #633C68;
-  color: #c0c0c0;
-}
-div.card-body.pt-1.pb-1 {
-  Display: none;
-}
-tr {
-	background: none;
-	border: none;
-	border-radius: 0;
-}
-#main .card{
-  background: transparent !important;
-  color: red !important;
-  text-shadow: 0;
-  border-radius:15px;
-  border-collapse: separate;
-  transition: .5s ease;
-}
-#main .card-body {
-background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGxkZnhmODlnb3huc203amQwM25vd2VlNmJsM2g0MTl3c3ppdGEzNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/r8cPSALOBMPiMZSpfm/giphy.gif'); 
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  color: #EDF2F4 !important;
-  text-shadow: 1px 0 0px #16031A;
-  border-radius:5px;
-  border: none;
-  border-collapse: separate;
-  transition: .5s;
-	padding-left: 35px;
-}
-/* DEN CARDS */
-#denCards .card {
-	background: none;
-	border-radius: 5px;
-	box-shadow: none;
-	
+#sidebar {
+    display: none !important;
 }
 
-#denCards .card-header {
-	display:none;
-}
 
-img[src$="packdynasty.png"] {
-	content: url('https://file.garden/aL4o-YAHXRIipaJF/MaeDynasty.png')!important;
-	border-radius: 5px;
-	opacity: 0.7;
-}
-img[src$="packdynasty.png"]:hover {
-  box-shadow: none;
-  filter: none;
-  	content: url('https://file.garden/aL4o-YAHXRIipaJF/MaeDynasty1.png')!important;
-}
-
-img[src$="packoverview.png"] {
-	content: url('https://file.garden/aL4o-YAHXRIipaJF/MaeOverview.png')!important;
-	border-radius: 5px;
-	opacity: 0.6;
-	
-}
-img[src$="packoverview.png"]:hover {
-box-shadow: none;
-  filter: none;
-  content: url('https://file.garden/aL4o-YAHXRIipaJF/MaeOverview1.png')!important;
-}
-
-img[src$="breeding.png"] {
-	content:url('https://file.garden/aL4o-YAHXRIipaJF/MaeBreeding.png')!important;
-	border-radius: 5px;
-	opacity: 0.7;
-}
-img[src$="breeding.png"]:hover {
-box-shadow: none;
-  filter: none;
-  content: url('https://file.garden/aL4o-YAHXRIipaJF/MaeBreeding1.png')!important;
-}  
-
-img[src$="pupsitting.png"] {
-	content: url('https://file.garden/aL4o-YAHXRIipaJF/MaePupsitting.png')!important;
-	border-radius: 5px;
-	opacity: 0.7;
-}
-img[src$="pupsitting.png"]:hover {
-  box-shadow: none;
-  filter: none;
-  content: url('https://file.garden/aL4o-YAHXRIipaJF/MaePupsitting1.png')!important;
-}  
-
-
-img[src$="nesting.png"] {
-		content: url('https://file.garden/aL4o-YAHXRIipaJF/MaeNesting.png')!important;
-	border-radius: 5px;
-	opacity: 0.7;
-}
-img[src$="nesting.png"]:hover {
-   box-shadow: none;
-  filter: none;
-  content: url('https://file.garden/aL4o-YAHXRIipaJF/MaeNesting1.png')!important;
-}  
-
-img[src$="socializing.png"] {
-		content: url('https://file.garden/aL4o-YAHXRIipaJF/MaeSocializing.png')!important;
-	border-radius: 5px;
-	opacity: 0.7;
-}
-img[src$="socializing.png"]:hover {
- box-shadow: none;
-  filter: none;
-  content: url('https://file.garden/aL4o-YAHXRIipaJF/MaeSocializing1.png')!important;
-}  
-
-img[alt="Pack Dynasty"] + .card-header b {
-	font-size: 0;
-}
-
-img[alt="Pack Dynasty"] + .card-header b::before {
-	content: "PACK DYNASTY" !important;
-	white-space: pre-wrap;
-	font-size: 15px;
-	text-align: center;
-	display: inline-block;
-	width: 100%;
-	letter-spacing: 2px;
-	font-family: 'Sekuya';
-		color: #CE7BDC;
-}
-
-img[alt="Pack Overview"] + .card-header b {
-	font-size: 0;
-}
-
-img[alt="Pack Overview"] + .card-header b::before {
-	content: "PACK OVERVIEW" !important;
-	white-space: pre-wrap;
-	font-size: 15px;
-	text-align: center;
-	display: inline-block;
-	width: 100%;
-	letter-spacing: 2px;
-font-family: 'Sekuya';
-		color: #CE7BDC;
-}
-
-img[alt="Breeding"] + .card-header b {
-	font-size: 0;
-}
-
-img[alt="Breeding"] + .card-header b::before {
-	content: "BREEDING" !important;
-	white-space: pre-wrap;
-		font-size: 15px;
-	text-align: center;
-	display: inline-block;
-	width: 100%;
-	letter-spacing: 2px;
-font-family: 'Sekuya';
-			color: #CE7BDC;
-}
-
-img[alt="Pupsitting"] + .card-header b {
-	font-size: 0;
-}
-
-img[alt="Pupsitting"] + .card-header b::before {
-	content: "PUPSITTING" !important;
-	white-space: pre-wrap;
-		font-size: 15px;
-	text-align: center;
-	display: inline-block;
-	width: 100%;
-	letter-spacing: 2px;
-font-family: 'Sekuya';
-			color: #CE7BDC;
-}
-
-img[alt="Nesting"] + .card-header b {
-	font-size: 0;
-}
-
-img[alt="Nesting"] + .card-header b::before {
-	content: "NESTING" !important;
-	white-space: pre-wrap;
-		font-size: 15px;
-	text-align: center;
-	display: inline-block;
-	width: 100%;
-	letter-spacing: 2px;
-		font-family: 'Sekuya';
-			color: #CE7BDC;
-}
-
-img[alt="Socializing"] + .card-header b {
-	font-size: 0;
-}
-
-img[alt="Socializing"] + .card-header b::before {
-	content: "SOCIALIZING" !important;
-	white-space: pre-wrap;
-	font-size: 15px;
-	text-align: center;
-	display: inline-block;
-	width: 100%;
-	letter-spacing: 2px;
-		font-family: 'Sekuya';
-			color: #CE7BDC;
-}
-
-/* Progress Behind Stat Bars */
-.progress {
-	background: rgba(9, 10, 2, 0.2) !important;
-	border-radius:0px 5px 5px 0px;
-}
-
-/* userlog*/
-.dropdown-menu.show,.dropdown-item {
-    background-color: #231917;
-}.dropdown-item:hover {
-    background-color: #191210;
-}
-.dropdown-divider {
-    border: none;
-}
-
-/* Stat Bars */
-.bg-warning, #main .bg-success  {
-background: #8E8E8E;
-background: linear-gradient(0deg, rgba(142, 142, 142, 1) 0%, rgba(116, 116, 116, 1) 25%, rgba(210, 210, 210, 1) 46%, rgba(255, 255, 255, 1) 73%, rgba(143, 143, 143, 1) 91%)!important;
-	border-radius:0px 5px 5px 0px;
-}
-#sidebar .bg-danger, .bg-primary {
-	background: #8E8E8E;
-background: linear-gradient(0deg, rgba(142, 142, 142, 1) 0%, rgba(116, 116, 116, 1) 25%, rgba(210, 210, 210, 1) 46%, rgba(255, 255, 255, 1) 73%, rgba(143, 143, 143, 1) 91%)!important;
-	border-radius:0px 5px 5px 0px;
-}
-#sidebar .bg-info, #main .bg-danger {
-	background: #8E8E8E;
-background: linear-gradient(0deg, rgba(142, 142, 142, 1) 0%, rgba(116, 116, 116, 1) 25%, rgba(210, 210, 210, 1) 46%, rgba(255, 255, 255, 1) 73%, rgba(143, 143, 143, 1) 91%)!important;
-	border-radius:0px 5px 5px 0px;
-}
-#sidebar .bg-success, #main .bg-info {
-	background: #8E8E8E;
-background: linear-gradient(0deg, rgba(142, 142, 142, 1) 0%, rgba(116, 116, 116, 1) 25%, rgba(210, 210, 210, 1) 46%, rgba(255, 255, 255, 1) 73%, rgba(143, 143, 143, 1) 91%)!important;
-	border-radius:0px 5px 5px 0px;
-}
-
-.s-chat-sidebar .fa-lg,.fa-minus:before{
-  color: #B51AC1!important;
-}
-
-#chatMessagePinned.s-chat-message__pinned {
-	background-color: #321D35;
-	color: #8A5091;
-	border: none;
-	padding: 5px;
-	font-family: 'Viaoda Libre';
-	font-size: 18px;
-}
-.s-chat-message:nth-child(odd) {
-	background: rgba(37, 22, 39, 0.4);
-	color: #EDF2F4!important;
-font-family: 'Viaoda Libre';
-	font-size: 15px;
-	letter-spacing: 1px;
-}
-.s-chat-message:nth-child(even) {
-	background: rgba(25, 15, 26, 0.5);
-	color: #EDF2F4!important;
-	font-family: 'Viaoda Libre';
-	font-size: 15px;
-		letter-spacing: 1px;
-}
-.s-chat-sidebar #label_currentChannel,#fra_chatContainer #txtChatInput,.s-chat-sidebar #fraChatChannelMenu{
-  background-color: rgba(25, 15, 26, 1);
-  color: #C0C0AF!important;
-	border-radius: 20px;
-	padding: 5px;
-}
-/*0/150*/ 
-#txtChatContainer #lblCharacterCounter { color: #c0c0c0;
-font-size: 15px;
-/* Code of Conduct*/
-} #txtChatContainer a { color: #7D4A82;
-text-shadow: 1px 0 2px #161E27;
-font-size:15px;}
-
-
-textarea.form-control, textarea.form-control:focus{
-  border-radius:5px;
-  background-color: rgba(30, 36, 34, 0.4);
-  color: #C4B597!important;
-	border: none;
-	box-shadow: 0 0 5px #000;
-	font-family: 'Times New Roman';
-	font-size: 15px;
-}
-select.form-control, select.form-control:focus {
-   border-radius:5px;
-  background-color: rgba(99, 60, 104, 0.4);
-  color: #FFFFFF!important;
-	border: 2px ridge #251627;
-  
-}
-input.form-control, input.form-control:focus{
-  border-radius:5px;
-  background-color: rgba(99, 60, 104, 0.5);
-  color: #FFFFFF!important;
-	border: none;
-	border: 2px ridge #251627;
-}
-.bg-bar-input{
-  background-color: rgba(25, 15, 26, 1);
-  color: rgba(55, 85, 70, 1)!important;
-	border: none;
-	border-radius:5px;
-}
-	
-.btn,.btn.btn-htmlinput{
-	background: #261627;
-background: linear-gradient(0deg, rgba(38, 22, 39, 1) 8%, rgba(63, 36, 66, 1) 35%, rgba(93, 54, 98, 1) 66%, rgba(100, 58, 105, 1) 100%);
-  color: #FFFFFF!important;
-	border: 3px outset #331E36;  
-	border-radius:5px;
-	font-size: 15px;
-	font-family: 'Viaoda Libre';
-	
-}
-.btn:hover,.btn.btn-htmlinput:hover{
-background: #474747;
-background: linear-gradient(0deg, rgba(71, 71, 71, 1) 19%, rgba(143, 143, 143, 1) 59%, rgba(255, 255, 255, 1) 100%);
-  color: #000!important;
-	border: 3px inset #8F8F8F; 
-	transition-duration: .5s;
-
-}
-hr.flowers {
-	background: none;
-	content: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnNqanhsaTNsc3d3cDhuZ2xqOW5lbGdkanIwMDRscXd0YjJ6ZGlsZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/vp2RZHA3KqE9ntHZfK/giphy.gif');
-	height: 300px;
-	width:300px;
-	margin-top: 5px !important;
-	opacity: 1;
-	filter: grayscale(100%);
-}
-/* Keep Scrollin', Scrollin', Scrollin' */
-::-webkit-scrollbar {
-  background:#141414;
-	width: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background: #331E36;
-  border-radius:5px;
-}
-/* Boxes */
+/* ## ------------------------------------------------------- FOOTER ------------------------------------------------------- ## */
 
 #footer {
-  background: transparent;
-}
-/* F2U Wolvden CSS Code by #3609 FOR SPRINGTIDE MEDALS */
-/* You are welcome to use this code for your own work. If you could keep the credit, I would greatly appreciate it. */
-
-h3.text-center, .d-flex.justify-content-center.text-center.my-3 { display: none !important; }
-
-/* =========================
-   PAGE DOLL
-   ========================= */
-
-@media (min-width: 769px) {
-  .pagedoll {
-    position: fixed;
-    left: 0 !important;
-    bottom: 32px;
-    z-index: 5000;
-    animation: doll-float 4s ease-in-out infinite;
-    margin: 0;
-    padding: 0;
-  }
-
-  .pagedoll img {
-    width: 230px;
-    max-width: min(30vw, 260px);
-    height: auto;
-    display: block;
-    filter:
-      drop-shadow(0 6px 12px rgba(0, 0, 0, 0.6))
-      drop-shadow(0 0 14px rgba(104, 96, 86, 0.36))
-      drop-shadow(0 0 28px rgba(104, 96, 86, 0.18));
-    transition: transform 0.25s ease, filter 0.25s ease;
-    margin: 0;
-    padding: 0;
-  }
-
-  .pagedoll:hover img {
-    transform: translateY(-2px) scale(1.02);
-    filter:
-      drop-shadow(0 6px 12px rgba(0, 0, 0, 0.6))
-      drop-shadow(0 0 18px rgba(104, 96, 86, 0.9))
-      drop-shadow(0 0 32px rgba(104, 96, 86, 0.30));
-  }
-
-  @keyframes doll-float {
-    0%,
-    100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
-
-  .pagedoll .bubble {
-    position: absolute;
-    left: 55px;
-    bottom: calc(100% + 4px);
-    padding: 9px 13px;
-    border-radius: 13px;
-    background: rgba(187, 173, 255, 0.6);
-    color: #EEEBFF;
-    font-size: 10px;
-    font-weight: 500;
-    line-height: 1.4;
-    max-width: 230px;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(39, 41, 40, 0.4);
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(5px);
-    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
-    pointer-events: none;
-  }
-
-  .pagedoll .bubble::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 52px;
-    border-width: 7px;
-    border-style: solid;
-    border-color: rgba(25, 55, 98, 0.92) transparent transparent transparent;
-  }
-
-  .pagedoll:hover .bubble {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-
-  .pagedoll .bubble-stars {
-    display: block;
-    margin-bottom: 8px;
-  }
-
-  .pagedoll .bubble-text {
-    display: block;
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .pagedoll {
-      animation: none;
-    }
-
-    .pagedoll img {
-      transition: none;
-    }
-  }
+    background: #0b2d36 !important;
+    color: #f7c492;
 }
