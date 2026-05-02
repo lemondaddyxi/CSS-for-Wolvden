@@ -340,12 +340,20 @@ h1 /* Pack Name Title */ {
     padding-bottom: 0rem !Important;
     color: rgba(255, 235, 215, 1);
     border-radius: 15px 15px 0px 0px;
-	    display: none !important;
+    background: transparent !important;
+    border: none !important;
+}
 
-} .table th a /* Pack Leader Name in that table */ {
+} 
+
+.table th a /* Pack Leader Name in that table */ {
     color: rgba(255, 235, 215, 1) !Important;
     display: block;
     text-align: left !important;
+}
+
+.table th *:not(a) {
+    display: none !important;
 }
 
 tr:nth-of-type(odd) /* Individual 'Stripes' of Pack Information + Caves */ {
