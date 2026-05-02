@@ -361,20 +361,10 @@ i.fas.fa-mars.text-danger /* Breeding Male, Heat, etc. Symbol of Lead Wolf */ {
    REMOVE FEATURED WOLF TEXT + REMOVE BUTTON (SAFE)
    ========================= */
 
-/* Hide ONLY the controls under the image */
-.featured-wolf .btn,
-.featured-wolf .btn-group,
-.featured-wolf .btn-group-sm,
-.featured-wolf .btn-link {
+/* Keep image, remove everything else inside featured wolf */
+.featured-wolf > *:not(a) {
     display: none !important;
 }
-
-/* Hide the small descriptive text */
-.featured-wolf small,
-.featured-wolf .text-muted {
-    display: none !important;
-}
-
 
 /* ########## Dynasty, etc. Buttons ########## */
 
