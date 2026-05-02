@@ -16,10 +16,10 @@ body, .table th /* Background Image, font family, font color */ {
 }
 
 a /* Links on entire page */ {
-    color: #fdd7a8;
+    color: #151e2a;
 }
 a:hover /* Hover of links on entire page */ {
-    color: #f79e62;
+    color: #6D97D6;
     text-decoration: none;
 }
 
