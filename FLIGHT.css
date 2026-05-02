@@ -1,186 +1,212 @@
 /* ## ------------------------------------------------------- GENERAL ------------------------------------------------------- ## */
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&family=Caveat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Yomogi&display=swap');
 
 body, .table th {
-    background: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG9la2szM2g1OGk4b2trMXdvMTRsMzQyZHA2OHE0enY1dXVqbDdwNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Dfne6TERzn0SfOgJrp/giphy.gif)
+    background:url(https://i.imgur.com/PJePFFJ.jpg)
     center fixed !important;
-    background-size: cover !important;
-
-    font-family: 'Quicksand', sans-serif;
-    color: #ffd6ff;
-}
-
-h1, h2, h3, h4 {
-    font-family: 'Caveat', cursive;
+    background-size:cover !important;
+    font-family: yomogi;
     color: #6ef3ff;
 }
 
 a {
-    color: #6ef3ff;
+    color: #b46cff;
 }
 a:hover {
-    color: #b46cff;
+    color: #6ef3ff;
     text-decoration: none;
 }
 
 .alert {
-    background: rgba(20, 26, 51, 0.65);
-    border: 1px solid rgba(110, 243, 255, 0.25);
-    border-radius: 12px;
-    color: #ffd6ff;
-    backdrop-filter: blur(6px);
+    background: #141a33;
+    border: 2px dashed #0b1020;
+    font-weight: bold;
+    color: #6ef3ff;
+    border-radius: 10px;
+}
+.alert a {
+    color: #b46cff !important;
 }
 
-
-/* ## ------------------------------------------------------- BUTTONS ------------------------------------------------------- ## */
+/* ## ------------------------------------------------------- REPORT, UPDATE/SAVE, BOOKMARK ------------------------------------------------------- ## */
 
 .btn-danger {
-    background: rgba(20, 26, 51, 0.65);
-    border: 1px solid rgba(110, 243, 255, 0.25);
+    background: rgb(11, 16, 32, .65);
     color: #b46cff;
     border-radius: 10px;
+    border: 2px solid #0b1020;
 }
-
 .btn-danger:hover {
+    background: rgb(11, 16, 32, .65);
     color: #6ef3ff;
-}
-
-.btn-primary,
-.btn-success {
-    background: rgba(20, 26, 51, 0.65);
-    border: 1px solid rgba(110, 243, 255, 0.25);
-    color: #ffd6ff;
     border-radius: 10px;
+    border: 2px solid #0b1020;
 }
 
-.btn-primary:hover,
-.btn-success:hover {
+.btn-primary, .btn-success {
+    background: rgb(11, 16, 32, .65);
     color: #6ef3ff;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid #0b1020;
 }
-
+.btn-primary, .btn-success:hover {
+    background: rgb(11, 16, 32, .65);
+    color: #b46cff;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid #0b1020;
+}
 
 /* ## ------------------------------------------------------- BOXES ------------------------------------------------------- ## */
 
-.box1, .box2, .box3, .box4, .box5, .box6 {
-    background: rgba(20, 26, 51, 0.65);
-    border: 1px solid rgba(110, 243, 255, 0.25);
-    color: #ffd6ff;
-    backdrop-filter: blur(8px);
-    font-size: 13px;
-    text-align: center;
-    overflow: auto;
+.box1, .box3, .box4, .box5, .box6 {
+    background-color: rgb(11, 16, 32, .8);
+    color: #6ef3ff;
+    border: 2px solid #0b1020;
 }
 
-.box1 { border-radius: 12px; }
-.box2 { border-radius: 50%; }
-.box3 { border-radius: 12px; }
-.box4 { border-radius: 12px; }
-.box5 { border-radius: 20px 60px; }
-.box6 { border-radius: 60px 20px; }
-
-
-::-webkit-scrollbar {
-    width: 8px;
+.box2 {
+    background-color: rgba(180, 108, 255, .7);
+    color: #0b1020;
+    border: 2px solid #b46cff;
 }
 
-::-webkit-scrollbar-thumb {
-    background: #b46cff;
-    border-radius: 10px;
-}
-
-
-/* ## ------------------------------------------------------- NAVBAR MAIN ------------------------------------------------------- ## */
+/* ## ------------------------------------------------------- ALERT / NAVBAR / UI ------------------------------------------------------- ## */
 
 #header .navbar-main {
-    background: rgba(11, 16, 32, 0.85);
-    border-bottom: 1px solid rgba(110, 243, 255, 0.25);
+    background-color: #0b1020;
+    border-bottom: 2px dashed #141a33;
+    border-right: 2px solid #141a33;
+    border-left: 2px solid #141a33;
 }
 
 .navbar-main .nav-link {
-    color: #ffd6ff !important;
+    color: #b46cff !important;
 }
-
 .navbar-main .nav-link:hover {
     color: #6ef3ff !important;
 }
 
-.navbar-status {
-    background: rgba(20, 26, 51, 0.8) !important;
-    color: #ffd6ff !important;
-    border-bottom: 1px solid rgba(110, 243, 255, 0.25);
+#header .navbar-main .nav-link .fa {
+    color: #6ef3ff;
+}
+#header .navbar-main .nav-link:hover .fa {
+    color: #b46cff;
 }
 
+.navbar-status {
+    background: #141a33 !important;
+    color: #6ef3ff !important;
+    border-left: 2px solid #0b1020;
+    border-right: 2px solid #0b1020;
+    border-bottom: 2px solid #0b1020;
+}
+
+.navbar-status a {
+    color: #b46cff !important;
+}
+#header .navbar-status a:hover {
+    color: #6ef3ff !important;
+}
+
+/* Dropdown */
+.dropdown-menu.show {
+    background-color: #0b1020;
+}
+.dropdown-item:hover {
+    background-color: #141a33;
+}
+.dropdown-divider {
+    border-top: 1px solid #141a33;
+}
 
 /* ## ------------------------------------------------------- SIDEBAR ------------------------------------------------------- ## */
 
 #sidebar .card {
-    background: rgba(20, 26, 51, 0.65);
-    border: 1px solid rgba(110, 243, 255, 0.25);
-    color: #ffd6ff;
-    border-radius: 12px;
+    background: rgb(11, 16, 32, .65);
+    color: #6ef3ff;
+    border-radius: 10px;
+    border: 2px solid #0b1020;
 }
 
+#sidebar h3, #sidebar h4 {
+    border-bottom: 2px dashed #141a33;
+}
 
-/* ## ------------------------------------------------------- MAIN PAGE ------------------------------------------------------- ## */
+/* images */
+.w-50 > a img,
+.w-50 div a img {
+    border: 2px solid #0b1020;
+}
+
+/* ## ------------------------------------------------------- MAIN ------------------------------------------------------- ## */
 
 #main {
-    background: rgba(20, 26, 51, 0.65);
-    border: 1px solid rgba(110, 243, 255, 0.25);
-    border-radius: 14px;
+    background: rgb(11, 16, 32, .65);
+    border: 2px solid #0b1020;
+}
+
+h1 {
+    color: #b46cff;
+    text-shadow: 0px 0px 10px rgba(180, 108, 255, .5);
+}
+
+/* Tabs */
+.nav-tabs {
+    border-bottom: 2px dashed #141a33;
 }
 
 .nav-tabs .nav-link {
-    background: rgba(20, 26, 51, 0.7);
-    border: 1px solid rgba(110, 243, 255, 0.25);
-    color: #ffd6ff;
+    background: #141a33;
+    border: 2px solid #141a33;
 }
-
 .nav-tabs .nav-link.active {
-    background: rgba(11, 16, 32, 0.9);
+    background-color: #0b1020;
     color: #6ef3ff;
+    border: 2px solid #0b1020;
 }
-
 
 /* ## ------------------------------------------------------- TABLES ------------------------------------------------------- ## */
 
 .table {
-    background: rgba(20, 26, 51, 0.5);
-    color: #ffd6ff;
-    border-radius: 12px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    background: rgba(11, 16, 32, .5);
+    color: #6ef3ff;
 }
 
-
-/* ## ------------------------------------------------------- IMAGES ------------------------------------------------------- ## */
-
-img {
-    filter: hue-rotate(20deg) saturate(1.2) contrast(1.1);
+.table th {
+    color: #b46cff;
 }
 
-
-/* ## ------------------------------------------------------- PROGRESS BARS ------------------------------------------------------- ## */
-
-.progress {
-    background: rgba(11, 16, 32, 0.8);
+tr:nth-of-type(odd) {
+    background: #141a33 !important;
 }
 
-.bg-warning,
-.bg-success,
-.bg-info,
-.bg-danger {
-    background: linear-gradient(90deg, #b46cff, #6ef3ff) !important;
+.table tr.pup, .table tr.pup:nth-of-type(odd) {
+    background: rgb(11, 16, 32, .75) !important;
 }
 
+/* ## ------------------------------------------------------- SIDEBAR + BUTTONS ------------------------------------------------------- ## */
 
-/* ## ------------------------------------------------------- FOOTER ------------------------------------------------------- ## */
+.btn-info {
+    background: rgb(11, 16, 32, .65);
+    color: #6ef3ff !important;
+    border: 2px solid #0b1020;
+}
+.btn-info:hover {
+    color: #b46cff !important;
+}
 
+/* footer */
 #footer {
-    background: rgba(11, 16, 32, 0.9);
-    color: #ffd6ff;
-    border-top: 1px solid rgba(110, 243, 255, 0.25);
+    background: #0b1020 !important;
+    color: #6ef3ff;
 }
 
-#footer * {
+#footer a {
+    color: #b46cff;
+}
+#footer a:hover {
     color: #6ef3ff;
 }
