@@ -733,24 +733,25 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
 }
 
 /* animation */
-.petal:nth-child(3n)  { left: 5%;  animation-duration: 8s; }
-.petal:nth-child(4n)  { left: 15%; animation-duration: 10s; }
-.petal:nth-child(5n)  { left: 25%; animation-duration: 7s; }
-.petal:nth-child(6n)  { left: 35%; animation-duration: 11s; }
-.petal:nth-child(7n)  { left: 45%; animation-duration: 9s; }
-.petal:nth-child(8n)  { left: 55%; animation-duration: 12s; }
-.petal:nth-child(9n)  { left: 65%; animation-duration: 8.5s; }
-.petal:nth-child(10n) { left: 75%; animation-duration: 13s; }
-.petal:nth-child(11n) { left: 85%; animation-duration: 9.5s; }
-.petal:nth-child(12n) { left: 95%; animation-duration: 7.5s; }
-
-/* animation start offset */
 .petal:nth-child(odd) {
+    left: calc(100% * var(--x, 0.1));
+    animation-duration: 9s;
     animation-delay: -2s;
 }
 
 .petal:nth-child(even) {
+    left: calc(100% * var(--x, 0.6));
+    animation-duration: 12s;
     animation-delay: -6s;
+}
+
+/* add extra variation layers */
+.petal:nth-child(3n) {
+    animation-duration: 7.5s;
+}
+
+.petal:nth-child(5n) {
+    animation-duration: 10.5s;
 }
 
 /* swirl motion  */
