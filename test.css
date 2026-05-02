@@ -343,8 +343,8 @@ h1 /* Pack Name Title */ {
 
 } .table th a /* Pack Leader Name in that table */ {
     color: rgba(255, 235, 215, 1) !Important;
-	text-align: left !important;
-    display: inline-block;
+    display: block;
+    text-align: left !important;
 }
 
 tr:nth-of-type(odd) /* Individual 'Stripes' of Pack Information + Caves */ {
