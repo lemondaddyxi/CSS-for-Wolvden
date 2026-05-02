@@ -211,3 +211,63 @@ a:hover /* Hover of links on entire page */ {
     width: 100% !important;
     margin: 0 auto !important;
 }
+
+/* ================== LEAD + FEATURED WOLF CLEAN FIX ================== */
+
+/* Remove old conflicting styles */
+.table .form-row img,
+.featured-wolf img {
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+}
+
+/* BOTH wolves (microscopic smaller again) */
+.table .row .card a img,
+.featured-wolf img {
+    width: 112px !important;
+    height: 112px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    display: block;
+    margin: 0 auto !important;
+}
+
+/* Positioning */
+#main .table .card.mb-3 a,
+#main .featured-wolf a:first-of-type {
+    position: relative;
+    display: inline-block;
+}
+
+/* CENTERED FRAME */
+#main .table .card.mb-3 a:before,
+#main .featured-wolf a:first-of-type:before {
+    content: '';
+    background-image: url('https://i.imgur.com/XSFj4XT.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 142px;
+    height: 142px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .table .row .card a img,
+    .featured-wolf img {
+        width: 98px !important;
+        height: 98px !important;
+    }
+
+    #main .table .card.mb-3 a:before,
+    #main .featured-wolf a:first-of-type:before {
+        width: 122px;
+        height: 122px;
+    }
+}
