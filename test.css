@@ -643,43 +643,29 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
 
 /* ## ------------------------------------------------------- REMOVE SIDEBAR ------------------------------------------------------- ## */
 
-/* ## ------------------------------------------------------- REMOVE SIDEBAR (FIXED LAYOUT LOGIC) ------------------------------------------------------- ## */
-
-/* Fully remove sidebar */
+/* REMOVE ONLY SIDEBAR (SAFE VERSION) */
 #sidebar {
     display: none !important;
 }
 
-/* Force main content to ignore leftover grid space */
+/* DO NOT kill Bootstrap columns globally anymore */
+
+/* Expand main content safely */
 #main {
     width: 100% !important;
     max-width: 100% !important;
-    margin: 20px auto 0 auto !important; /* small breathing room under navbar */
+    margin: 20px auto 0 auto !important;
 }
 
-/* Bootstrap column safety reset (prevents phantom sidebar spacing) */
-.col-xl-3,
-.col-lg-3,
-.col-md-3 {
-    display: none !important;
-}
-
-.col-xl-9,
-.col-lg-9,
-.col-md-9 {
-    flex: 0 0 100% !important;
-    max-width: 100% !important;
-}
-
-/* Fix row wrapping issues caused by removed sidebar */
+/* Fix leftover row spacing */
 .row {
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
 
-/* Prevent header overlap / “snapped to navbar” look */
+/* Optional breathing room under navbar */
 body {
-    padding-top: 10px; /* adjust 0–20px depending on preference */
+    padding-top: 10px;
 }
 
 /* =========================
