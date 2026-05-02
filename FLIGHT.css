@@ -357,8 +357,22 @@ i.fas.fa-mars.text-danger /* Breeding Male, Heat, etc. Symbol of Lead Wolf */ {
     height: auto !important;
 }
 
-.btn-group-sm>.btn, .btn-sm /* 'Remove' Symbol + Text below Featured Wolf */ {
-	color: #f79e62 !important;
+/* =========================
+   REMOVE FEATURED WOLF TEXT + REMOVE BUTTON
+   ========================= */
+
+/* Removes the "Remove" button */
+.featured-wolf .btn,
+.featured-wolf .btn-group,
+.featured-wolf .btn-group-sm {
+    display: none !important;
+}
+
+/* Removes the text under the featured wolf */
+.featured-wolf small,
+.featured-wolf .text-muted,
+.featured-wolf br + * {
+    display: none !important;
 }
 
 
