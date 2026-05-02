@@ -7,7 +7,7 @@ body, .table th /* Background Image, font family, font color */ {
     center fixed !important;
     background-size:cover !important;
     font-family: caveat;
-    color: rgba(255, 235, 215, 1);
+    color: rgba(105, 200, 235, 1);
 }
 
 /*CURSOR */
@@ -19,228 +19,623 @@ a /* Links on entire page */ {
     color: rgba(185, 160, 150, 1);
 }
 a:hover /* Hover of links on entire page */ {
-    color: rgba(255, 235, 215, 1);
+    color: rgba(105, 200, 235, 1);
     text-decoration: none;
 }
 
 .alert /* Alerts and notifications that appear at the top of the page. */ {
-    background: rgba(25, 60, 90, 0.8);
+    background: rgba(70, 90, 105, 0.8);
     border: 2px dashed rgba(10, 20, 30, 1);
     font-weight: bold;
-    color: rgba(255, 240, 215, 1);
+    color: rgba(220, 195, 165, 1);
     border-radius: 10px;
 } .alert a /* Separate alert links if desired */ {
-    color: rgba(215, 255, 255, 1) !important;
+    color: rgba(255, 235, 215, 1) !important;
 }
+
+/*SC and GC icons*/
+
+.icon-beetle-gold,
+	.icon-gold-cone::before {
+		content: '';
+		background-image: url('https://i.imgur.com/9pEMC9d.png') !important;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 26px;
+		height: 26px;
+	}
+
+	.icon-beetle-silver,
+	.icon-silver-cone::before {
+		content: '';
+		background-image: url('https://i.imgur.com/n2lE2Vo.png') !important;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 26px;
+		height: 26px;
+	}
 
 /* ## ------------------------------------------------------- REPORT, UPDATE/SAVE, BOOKMARK ------------------------------------------------------- ## */
 
 .btn-danger /* Report button */ {
-    background: rgba(70, 90, 105, 0.8);
-    color: rgba(255, 240, 215, 1);
-    border-radius: 10px;
-    border: none;
-}.btn-danger:hover {
-    background: rgba(60, 80, 95, 0.8);
+    background: rgba(10, 20, 30, 0.65);
     color: rgba(220, 195, 165, 1);
     border-radius: 10px;
-    border: none;
+    border: 2px solid rgba(10, 20, 30, 1);
+}.btn-danger:hover {
+    background: rgba(10, 20, 30, 0.65);
+    color: rgba(255, 240, 215, 1);
+    border-radius: 10px;
+    border: 2px solid rgba(10, 20, 30, 1);
 }
 
 
 .btn-primary, .btn-success /* Update/Save buttons on entire page */ {
-    background: rgba(70, 90, 105, 0.8);
+    background: rgba(10, 20, 30, 0.65);
     color: rgba(255, 240, 215, 1);
     font-weight: bold;
     border-radius: 10px;
-    border: none;
+    border: 2px solid rgba(10, 20, 30, 1);
 }
 .btn-primary, .btn-success:hover /* Hover of the above */ {
-    background: rgba(60, 80, 95, 0.8);
+    background: rgba(10, 20, 30, 0.65);
     color: rgba(220, 195, 165, 1);
     font-weight: bold;
     border-radius: 10px;
-    border: none;
+    border: 2px solid rgba(10, 20, 30, 1);
 }
 
 #bookmarkPage.fas.fa-bookmark.text-danger /* Bookmark Icon */ {
-    color: rgba(105, 200, 235, 1) !important;
+    color: rgba(10, 20, 30, 1) !important;
 }
 
 
 /* ## ------------------------------------------------------- BOXES ------------------------------------------------------- ## */
 
-.box1 {
-	background-color: rgba(10, 30, 60, 0.6);
-    color: rgba(255, 235, 215, 1);
-	border: none;
+.box1 /* Small box in combination with Box2 */ {
+	background-color: rgba(10, 20, 30, 0.8);
+    color: rgba(255, 240, 215, 1);
+	text-align: center;
+    font-size: 13px;
+	padding: 15px;
+	margin: 0 2% 30px;
+	border-radius: 10px;
+	float: left;
+	width: 30%;
+	height: 145px;
+	overflow: auto;
+    border: 2px solid rgba(15, 20, 30, 0.8);
 }
 
-.box2 {
-	background-color: rgba(150, 230, 255, 0.3);
+.box2 /* Round Box in combination with Box2 */ {
+	background-color: rgba(255, 240, 215, 0.7);
     color: rgba(10, 20, 30, 1);
-	border: none;
+	text-align: center;
+    font-size: 13px;
+	padding: 15px;
+	margin: 0 2% 30px;
+	border-radius: 100px;
+	float: left;
+	width: 28%;
+	height: 145px;
+	overflow: auto;
+    border: 2px solid rgba(255, 235, 215, 1);
 }
 
-.box3 {
-	background-color: rgba(10, 30, 60, 0.6);
-    color: rgba(255, 235, 215, 1);
-	border: none;
+.box3 /* Biggest Box available */ {
+	background-color: rgba(10, 20, 30, 0.8);
+    color: rgba(255, 240, 215, 1);
+    text-align: center;
+    font-size: 13px;
+	padding: 15px;
+	margin: 0 2% 30px;
+	border-radius: 10px;
+	float: left;
+	width: 96%;
+	height: 175px;
+	overflow: auto;
+    border: 2px solid rgba(15, 20, 30, 0.8);
 }
 
-.box4 {
-	background-color: rgba(10, 30, 60, 0.6);
-    color: rgba(255, 235, 215, 1);
-	border: none;
+.box4 /* Medium Box for two of the same beside the other */ {
+	background-color: rgba(10, 20, 30, 0.8);
+    color: rgba(255, 240, 215, 1);
+    text-align: center;
+    font-size: 13px;
+	padding: 15px;
+	margin: 0 2% 30px;
+	border-radius: 10px;
+	float: left;
+	width: 46%;
+	height: 145px;
+	overflow: auto;
+    border: 2px solid rgba(15, 20, 30, 0.8);
 }
 
-.box5 {
-	background-color: rgba(10, 30, 60, 0.6);
-    color: rgba(255, 235, 215, 1);
-	border: none;
+.box5 /* Medium Box in combination with Box6 */ {
+	background-color: rgba(10, 20, 30, 0.8);
+    color: rgba(255, 240, 215, 1);
+    text-align: center;
+    font-size: 13px;
+	padding: 15px;
+	margin: 0 2% 30px;
+	border-radius: 10px 50px 10px 50px;
+	float: left;
+	width: 46%;
+	height: 145px;
+	overflow: auto;
+    border: 2px solid rgba(15, 20, 30, 0.8);
 }
 
-.box6 {
-	background-color: rgba(10, 30, 60, 0.6);
-    color: rgba(255, 235, 215, 1);
-	border: none;
+.box6 /* Medium Box in combination with Box5 */ {
+	background-color: rgba(10, 20, 30, 0.8);
+    color: rgba(255, 240, 215, 1);
+    text-align: center;
+    font-size: 13px;
+	padding: 15px;
+	margin: 0 2% 30px;
+	border-radius: 50px 10px 50px 10px;
+	float: left;
+	width: 46%;
+	height: 145px;
+	overflow: auto;
+    border: 2px solid rgba(15, 20, 30, 0.8);
+}
+
+::-webkit-scrollbar /* Scrollbar of boxes and page */ {
+	width: 10px;
+	height: 0px;
+	border-radius: 10px;
+	overflow: hidden !important;
+}
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background: transparent;
 }
 
 
 /* ## ------------------------------------------------------- NAVBAR MAIN ------------------------------------------------------- ## */
 
-#header .navbar-main {
+#header .navbar-main /* Section containing the site navigation. */ {
     background-color: rgba(10, 20, 30, 1);
-    border-bottom: none;
+    border-bottom: 2px dashed rgba(70, 90, 105, 0.8);
+    border-right: 2px solid rgba(15, 20, 30, 0.8);
+    border-left: 2px solid rgba(15, 20, 30, 0.8);
+} .navbar-main .nav-link /* Individual navigation links: 'Den, Crossroads, etc.' */ {
+    color: rgba(255, 235, 215, 1) !important;
+    transition:.5s ease;
+}
+.navbar-main .nav-link:hover /* Hover of the links above */ {
+    color: rgba(220, 195, 165, 1) !important;
 }
 
-.navbar-main .nav-link {
-    color: rgba(215, 255, 255, 1) !important;
+#header .navbar-main .nav-link .fa /* Paw Icon, etc. of Den, etc. */ {
+    color: rgba(220, 195, 165, 1);
+    transition:.5s ease;
 }
-.navbar-main .nav-link:hover {
-    color: rgba(245, 255, 255, 1) !important;
-}
-
-#header .navbar-main .nav-link .fa {
-    color: rgba(105, 200, 235, 1);
-}
-#header .navbar-main .nav-link:hover .fa {
-    color: rgba(215, 255, 255, 1);
+#header .navbar-main .nav-link:hover .fa /* However of the Icons above */ {
+    color: rgba(255, 235, 215, 1);
 }
 
-.navbar-status {
+.navbar-status /* Status bar containing the currencies, "Welcome back", etc. */ {
     background: rgba(25, 35, 55, 0.7) !important;
-    color: rgba(105, 200, 235, 1) !important;
+    color: rgba(220, 195, 165, 1) !important;
     border-radius: 0px 0px 10px 10px;
+    border-left: 2px solid rgba(10, 20, 30, 1);
+    border-right: 2px solid rgba(10, 20, 30, 1);
+    border-bottom: 2px solid rgba(10, 20, 30, 1);
 }
-.btn-group-vertical>.btn, .btn-group>.btn {
-    color: rgba(105, 200, 235, 1) !important;
+.btn-group-vertical>.btn, .btn-group>.btn /* Username in that bar */ {
+    color: rgba(255, 235, 215, 1) !important;
 }
 
-.navbar-status a {
-    color: rgba(105, 200, 235, 1) !important;
+.dropdown-menu.show /* Dropdown menu for 'Profile, User Log, Log Out, etc.' */ {
+    background-color: rgba(10, 20, 30, 0.6);
+}.dropdown-item:hover {
+    background-color: rgba(10, 20, 30, 0.8);
 }
-#header .navbar-status a:hover {
-    color: rgba(215, 255, 255, 1) !important;
+.dropdown-divider {
+    border-top: 1px solid rgba(10, 20, 30, 0.8);
 }
+
+.btn-group-vertical>.btn, .btn-group>.btn {
+    background-color: transparent !Important;
+}
+
+
+
+.navbar-status a /* Currency, Messages, etc. links */ {
+    color: rgba(255, 235, 215, 1) !important;
+}
+#header .navbar-status a:hover /* Hover of Currency, Messages, etc. links */ {
+    color: rgba(220, 195, 165, 1) !important;
+}
+
+/* SC Icon */ .icon-beetle-silver, .icon-silver-cone {
+    filter: grayscale(0%) contrast(100%) brightness(100%)
+}
+/* GC icon */ .icon-beetle-gold, .icon-gold-cone {
+    filter: grayscale(0%) contrast(100%) brightness(100%)
+}
+img.mr-2 /* Alert Icons for Hunting, etc. */ {
+    filter: grayscale(100%) contrast(30%) brightness(30%);
+}
+
 
 /* ########## BREADCRUMB BAR ########## */
 
-.breadcrumb-item+.breadcrumb-item:before {
-    color: rgba(185, 160, 150, 1);
+.breadcrumb-nav /* Breadcrumb bar displaying "Home / Username / etc." */ {
+    background-color: transparent !important;
 }
 
-.breadcrumb-item.active {
-    color: rgba(215, 255, 255, 1);
+.breadcrumb-item+.breadcrumb-item:before /* The slash between breadcrumb bar links */ {
+    color: rgba(255, 235, 215, 1);
+}
+
+.breadcrumb-item.active /* Pack Name in breadcrumb bar */ {
+    color: rgba(220, 195, 165, 1);
 }
 
 /* ## ------------------------------------------------------- MAIN PAGE ------------------------------------------------------- ## */
 
-#main {
+#main /* Section containing the site's main content. */ {
     background: rgba(10, 20, 30, 0.7);
     border-radius: 10px 10px 0px 0px;
-    border: none;
+    border: 2px solid rgba(10, 20, 30, 1)
 }
 
-h1 {
+h1 /* Pack Name Title */ {
     color: rgba(250, 230, 210, 1);
-    text-shadow:0 0 5px #fff;
+    font-family: Caveat;
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 40px !important;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, .5);
 }
 
-.nav-tabs {
-    border-bottom: none;
+.nav-tabs /* Section containing the Den and Profile buttons */ {
+    justify-content: center;
+    border-bottom: 2px dashed rgba(10, 20, 30, 1);
+    margin-top: -20px;
 }
-.nav-tabs .nav-link {
-    background: rgba(10, 20, 30, 0.3);
-    color: rgba(105, 200, 235, 1);
-    border: none;
-}
-.nav-tabs .nav-link:hover {
-    background: rgba(10, 20, 30, 0.5);
-    color: rgba(215, 255, 255, 1);
-}
-.nav-tabs .nav-link.active {
-    background-color: rgba(10, 20, 30, 0.8);
-    color: rgba(105, 200, 235, 1);
-}
-
-/* ## ------------------------------------------------------- TABLES ------------------------------------------------------- ## */
-
-.table {
+.nav-tabs .nav-link /* Individual Den and Profile buttons */ {
     background: rgba(10, 30, 60, 0.6);
+    transition:.5s ease;
+    border: 2px solid rgba(10, 30, 60, 0.6);
+    border-radius: 0px 10px 0px 0px;
+    font-weight: bold;
+}
+.nav-tabs .nav-link:hover /* Hover of inactive button */ {
+    background: rgba(10, 30, 60, 0.6);
+    transition:.5s ease;
+    border: 2px solid rgba(10, 30, 60, 0.6);
+    border-radius: 0px 10px 0px 0px;
+    font-weight: bold;
+}
+.nav-tabs .nav-link.active /* Link of the page being viewed */ {
+    background-color: rgba(10, 20, 30, 1);
+    color: rgba(220, 195, 165, 1);
+    border: 2px solid rgba(10, 20, 30, 1);
+    font-weight: bold;
+    border-radius: 10px 0px 0px 0px;
+}
+
+/* ## ------------------------------------------------------- WOLF & PACK INFORMATION TABLES ------------------------------------------------------- ## */
+
+.table /* Tables containing Pack and User information */ {
+    background: rgba(10, 30, 60, 0.6);
+    color: rgba(220, 195, 165, 1);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(240 ,180 ,155 ,0.4);
+}
+
+.table th /* Individual table headers - Title of the lead, Cave Names, etc. */ {
+    text-align: center;
+    font-family: Caveat;
+    font-size: 30px !important;
+    font-weight: normal;
+    padding-bottom: 0rem !Important;
+    color: rgba(255, 235, 215, 1);
+    border-radius: 15px 15px 0px 0px;
+} .table th a /* Pack Leader Name in that table */ {
+    color: rgba(255, 235, 215, 1) !Important;
+}
+
+tr:nth-of-type(odd) /* Individual 'Stripes' of Pack Information + Caves */ {
+    background: rgba(10, 30, 60, 0.6) !important;
+}
+
+.table tr.pup, .table tr.pup:nth-of-type(odd)/* Nursing puppy table rows individually */ {
+    background: rgba(15, 20, 30, 0.75) !important;
+}
+
+
+/* ########## Lead Wolf ########## */
+
+.border-none .card /* Lead Wolf icon background */ {
+    background-color:transparent !important;
+}
+
+.border-none .card-img-top, .table .form-row img /* Lead wolf icon */ {
+    border-radius: 100px;
+    margin-top: 60px;
+}
+
+
+i.fas.fa-mars.text-danger /* Breeding Male, Heat, etc. Symbol of Lead Wolf */ {
+    color: rgba(220, 195, 165, 1) !important;
+    margin-left: 20px;
+}
+
+
+/* ########## Featured Wolf ########## */
+
+.featured-wolf img {
+    border-radius: 100px;
+    margin-top: 60px;
+
+    width: 230px !important;   /* increased size */
+    height: auto !important;
+}
+
+/* =========================
+   FEATURED WOLF – CLEAN ONLY IMAGE
+   ========================= */
+
+/* Remove EVERYTHING inside featured wolf */
+.featured-wolf > * {
+    display: none !important;
+}
+
+/* Re-enable ONLY the first link (the image) */
+.featured-wolf a:first-of-type {
+    display: inline-block !important;
+}
+
+/* ########## Dynasty, etc. Buttons ########## */
+
+.card-header /* Shadow Line */ {
+    border: none;
+} div.card.text-center>img /* Dystasy, etc. Images */ {
+    transition:.5s ease;
+    border: none;
+    border-radius: 10px 10px 0px 0px;
+} .col-6 .card.text-center /* 'Dynasty, etc.' Buttons */ {
+    background: rgba(10, 20, 30, 1) !important;
     color: rgba(255, 235, 215, 1);
     border-radius: 10px;
-    border: none;
+    border: none !important;
+    box-shadow: 0px 0px 10px rgba(240 ,180 ,155 ,0.4);
 }
 
-.table th {
-    color: rgba(255, 235, 215, 1);
+
+
+/* ########## Standard View with & without Headshots ########## */
+
+.subheader /* WITH & WITHOUT Headhots // Subheader row of Cave tables, 'Name, Stats, Info, etc.' */ {
+    background: rgba(15, 20, 30, 0.8) !important;
+    color: rgba(220, 195, 165, 1);
 }
 
-tr:nth-of-type(odd) {
-    background: rgba(150, 230, 255, 0.2) !important;
+.small, small /* WITHOUT Headshots // Wolf subheaders w/ emojis + FAPA Rollovers Remaining */ {
+    filter: sepia(50%) contrast(100%) brightness(90%)
 }
 
-.subheader {
-    background: rgba(45, 80, 115, 0.8) !important;
-    color: rgba(255, 235, 215, 1);
+table[data-cave-key] tr:nth-of-type(n+3) td:nth-of-type(4) img /* WITHOUT Headshots // Icons for jobs, etc. */ {
+    filter: sepia(50%) contrast(100%) brightness(90%)
 }
 
-/* ## ------------------------------------------------------- PROGRESS BARS ------------------------------------------------------- ## */
-
-.progress {
-    background: rgba(10,10,10,0.8) !important;
+img.border-bottom /* WITH Headshots // Affects headshots */ {
+    border: none !important;
+    filter: sepia(30%) contrast(100%) brightness(100%);
+    border-radius: 10px;
+    margin-top: 4px;
+}
+img.border-bottom.p-2 /* WITH Headshots // Nursing Puppy icon */ {
+    border: none !important;
+    filter: sepia(30%) contrast(100%) brightness(100%);
+    border-radius: 10px;
 }
 
-.bg-warning, .bg-success {
-    background-color: rgba(100, 220, 235, 1) !important;
+
+/* ########## CARD View Den Display ########## */
+
+div.card-body.bg-light.p-0.text-center /* Card background */ {
+    background-color: rgba(15, 20, 30, 0.5) !important;
+    border-radius: 0px 0px 50px 50px;
+    padding-bottom: 1rem !Important;
 }
 
-#sidebar .bg-danger, .bg-primary {
-    background-color: rgba(75, 180, 215, 1) !important;
+.text-light /* Headers above wolf icons */ {
+    background-color: rgba(10, 30, 60, 0.6) !important;
+    color: rgba(220, 195, 165, 1) !important;
+    border-bottom: 2px dashed rgba(70, 90, 105, 0.8);
+    margin-bottom: -10px;
 }
 
-#sidebar .bg-info, .bg-danger {
-    background-color: rgba(25, 140, 190, 1) !important;
+img.rounded-bottom /* Headshot icons in card den display */ {
+    border-radius: 100px 100px 0px 0px !important;
 }
 
-#sidebar .bg-success, .bg-info {
+img.rounded-bottom.pl-3.pr-3.pt-2.pb-1 /* Nursing Puppy icon */ {
+    border: 10px !important;
+}
+span.badge.badge-info /* NURSING Icon below puppy icon */ {
+    background-color: rgba(10, 30, 60, 0.6);
+    color: rgba(220, 195, 165, 1);
+}
+
+
+/* ########## CAVE Bottom Information ########## */
+
+.bottom /* Background of that table */ {
+    background: rgba(15, 20, 30, 0.8) !important;
+}
+
+
+/* ## ------------------------------------------------------- PROGRESS BARS FOR HUNGER, ETC. ------------------------------------------------------- ## */
+
+.progress /* Progress bars when empty */ {
     background-color: rgba(15, 70, 120, 1) !important;
+    border-radius: 5px;
+    margin-bottom: 2px;
 }
+.bg-warning, .bg-success /* ENERGY bars */ {
+    background:url(https://i.imgur.com/dUveVIE.png);
+}
+#sidebar .bg-danger, .bg-primary  /* HUNGER bars */ {
+    background:url(https://i.imgur.com/yj7eXYl.png);
+}
+#sidebar .bg-info, .bg-danger /* HP bars */ {
+    background:url(https://i.imgur.com/pYLV2z6.png);
+}
+#sidebar .bg-success, .bg-info /* EXP bars */ {
+    background:url(https://i.imgur.com/vj3gNry.png);
+}
+
+
+/* ## ------------------------------------------------------- FEED ALL & PLAY ALL BUTTONS ------------------------------------------------------- ## */
+
+.accordion .card:first-of-type /* FEED ALL Part */ {
+    background-color: rgba(15, 20, 30, 0.8) !important;
+    color: rgba(220, 195, 165, 1);
+}.accordion .card:first-of-type a /* Rollovers remaining */ {
+    color: rgba(220, 195, 165, 1) !important;
+    font-weight: bold;
+}
+
+
+.accordion .card:last-of-type /* PLAY ALL Part */ {
+    background-color: rgba(15, 20, 30, 0.8) !important;
+    color: rgba(220, 195, 165, 1);
+}.accordion .card:last-of-type a {
+    color: rgba(220, 195, 165, 1) !important;
+    font-weight: bold;
+}
+
+.btn-link /* FAPA Header Text + 'Remove Icon' from Featured Wolf */ {
+    color: rgba(255, 235, 215, 1);
+}.btn-link:hover {
+    color: rgba(220, 195, 165, 1);
+}
+
+.btn-info /* Feed/Play Buttons */ {
+    background: rgba(10, 20, 30, 0.65);
+    color: rgba(255, 240, 215, 1) !important;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid rgba(10, 20, 30, 1);
+}.btn-info:hover {
+    background: rgba(10, 20, 30, 0.65);
+    color: rgba(220, 195, 165, 1) !important;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid rgba(10, 20, 30, 1);
+}
+
+
+/* ## ------------------------------------------------------- CAVE BUILD SECTION ------------------------------------------------------- ## */
+
+div.card.mb-3 /* Create New Cave background + Breeding Male background */ {
+    background-color: transparent !important;
+    color: rgba(255, 235, 215, 1);
+}
+button#submitBtn.btn.btn-primary /* Create New Cave button */ {
+    background: rgba(10, 20, 30, 1);
+    color: rgba(255, 240, 215, 1) !important;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid rgba(15, 20, 30, 0.8);
+}button#submitBtn.btn.btn-primary:hover {
+    background: rgba(10, 20, 30, 1);
+    color: rgba(220, 195, 165, 1) !important;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid rgba(15, 20, 30, 0.8);
+}
+
+
+/* ## ------------------------------------------------------- BOTTOM EDITOR ------------------------------------------------------- ## */
+
+.h2, h2 /* 'Text for Den Options' */ {
+    /* Code */
+}
+#summernote-form /* Background of Editor, NEEDS same color border */ {
+    background-color: rgba(10, 20, 30, 1);
+    border: 10px solid rgba(10, 20, 30, 1);
+}
+
+select.form-control /* Pack Leader + Wolf Title selectrion */ {
+    background-color: rgba(70, 90, 105, 0.8) !important;
+    border: none;
+    color: rgba(255, 240, 215, 1);
+}
+
+/* Bold, Italics, etc. BUTTONS */ button.note-btn.btn.btn-light.btn-sm {
+    background-color: rgba(70, 90, 105, 0.8) !important;
+    color: rgba(255, 240, 215, 1) !important;
+    border: none;
+}a.dropdown-item {
+    color: rgba(255, 240, 215, 1) !important;
+}
+
+/* Text Background and Text of Editor */ .note-editor.note-airframe .note-editing-area .note-editable, .note-editor.note-frame .note-editing-area .note-editable {
+    background-color: rgba(15, 20, 30, 0.8) !important;
+}
+/* Drag Bar below Text Field in Editor */ .note-editor.note-airframe .note-statusbar .note-resizebar, .note-editor.note-frame .note-statusbar .note-resizebar {
+    background: rgba(70, 90, 105, 0.8) !important;
+    border: none !Important;
+}
+/* Drag icon in that small bar */ .note-editor.note-airframe .note-statusbar .note-resizebar .note-icon-bar, .note-editor.note-frame .note-statusbar .note-resizebar .note-icon-bar {
+    border: none !important;
+    border-top: 1px solid rgba(15, 20, 30, 0.8) !Important;
+}
+
+
+/* ## ------------------------------------------------------- EXPAND TERRITORY + ADD IMMORTAL SLOT ------------------------------------------------------- ## */
+
+div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Border affect Dynasty, etc. */ {
+    background-color: rgba(10, 20, 30, 1) !important;
+    color: rgba(255, 240, 215, 1);
+    border: none;
+    border: 2px solid rgba(15, 20, 30, 0.8) !Important;
+    border-radius: 10px;
+} .btn-warning /* Buttons for those Tables */ {
+    background: rgba(15, 20, 30, 0.8);
+    border: none;
+    color: rgba(255, 240, 215, 1);
+}.btn-warning:hover {
+    background-color: rgba(15, 20, 30, 0.8);
+    color: rgba(220, 195, 165, 1);
+}
+
 
 /* ## ------------------------------------------------------- FOOTER ------------------------------------------------------- ## */
 
-#footer {
+#footer /* Copyright content at the page bottom // Don't mess with it too much */ {
     background: rgba(10, 20, 30, 1) !important;
-    color: rgba(255, 235, 215, 1);
+    color: rgba(255, 240, 215, 1);
+    border-radius: 15px 0px 0px 0px;
 }
 
-#footer a {
-    color: rgba(105, 200, 235, 1);
+#footer a /* Links in that Footer */ {
+    color: rgba(220, 195, 165, 1);
+}#footer a:hover /* Hover of the above */ {
+    color: rgba(255, 240, 215, 1);
 }
-#footer a:hover {
-    color: rgba(215, 255, 255, 1);
+
+#footer nav .nav-item .nav-link /* Terms of Service, etc. links */ {
+    color: rgba(220, 195, 165, 1);
+}  #footer nav .nav-item .nav-link:hover /* Hover of the above */ {
+    color: rgba(255, 240, 215, 1);
 }
+
+
+
+
 
 
 
