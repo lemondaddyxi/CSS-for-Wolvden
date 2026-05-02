@@ -10,20 +10,9 @@ body, .table th /* Background Image, font family, font color */ {
     color: #6d97d6;
 }
 
-/* DEFAULT CURSOR */
+/*CURSOR */
 * {
-    cursor: url('https://i.imgur.com/7Q8faQv.png'), progress !important;
-}
-
-/* LINKS + HOVERABLE ELEMENTS */
-a,
-a:hover,
-button,
-button:hover,
-[role="button"],
-input[type="submit"],
-input[type="button"] {
-    cursor: url('https://i.imgur.com/g8bArUu.png'), pointer !important;
+    cursor: url('https://i.imgur.com/g8bArUu.png'), progress !important;
 }
 
 a /* Links on entire page */ {
