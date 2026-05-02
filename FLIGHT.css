@@ -349,23 +349,18 @@ i.fas.fa-mars.text-danger /* Breeding Male, Heat, etc. Symbol of Lead Wolf */ {
 
 /* ########## Featureed Wolf ########## */
 
-/* REMOVE TITLE */
-.featured-wolf .text-light {
+.featured-wolf img /* Featured wolf icon */ {
+    border-radius: 100px;
+    margin-top: 60px;
+}
+
+/* REMOVE TEXT UNDER FEATURED WOLF */
+.featured-wolf .card-body {
     display: none !important;
 }
 
-/* BIGGER ICON */
-.featured-wolf img {
-    border-radius: 100px;
-    margin-top: 55px;
-
-    width: 200px !important;   /* increased size */
-    height: auto !important;
-}
-
-/* KEEP BUTTON TEXT COLOR */
-.btn-group-sm>.btn, .btn-sm {
-    color: #f79e62 !important;
+.btn-group-sm>.btn, .btn-sm /* 'Remove' Symbol + Text below Featured Wolf */ {
+	color: #f79e62 !important;
 }
 
 
@@ -668,30 +663,23 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
 
 #main .featured-wolf a:first-of-type:before {
     content: '';
-    background-image: url('https://i.imgur.com/XSFj4XT.png');
+    background-image: url('https://i.imgur.com/TW6vfwB.png');
     background-size: contain;
     background-repeat: no-repeat;
 
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -8.5%);
+    transform: translate(-50%, -10.5%);
 
-    width: 200px;   /* MATCHES NEW ICON SIZE */
-    height: 700px;
+    width: 230px;
+    height: 805px;
 
     pointer-events: none;
     z-index: 10;
     filter: brightness(75%);
 }
 
-/* MOBILE FIX */
-@media (max-width: 768px) {
-    #main .featured-wolf a:first-of-type:before {
-        width: 180px;
-        height: auto;
-    }
-}
 /* MOBILE FIXES */
 @media (max-width: 768px) {
     #main .table .card.mb-3 a:before {
