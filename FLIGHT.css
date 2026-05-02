@@ -455,7 +455,7 @@ span.badge.badge-info /* NURSING Icon below puppy icon */ {
 /* ## ------------------------------------------------------- PROGRESS BARS FOR HUNGER, ETC. ------------------------------------------------------- ## */
 
 .progress /* Progress bars when empty */ {
-    background-color: #06181e !important;
+    background-color: #dfaaaa !important;
     border-radius: 5px;
     margin-bottom: 2px;
 }
