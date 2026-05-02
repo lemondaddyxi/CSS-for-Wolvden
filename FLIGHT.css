@@ -1,12 +1,12 @@
 /* ## ------------------------------------------------------- GENERAL ------------------------------------------------------- ## */
 
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Yomogi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Caveat&display=swap');
 
 body, .table th /* Background Image, font family, font color */ {
     background:url(https://i.imgur.com/Sc3MGgg.jpeg)
     center fixed !important;
     background-size:cover !important;
-    font-family: yomogi;
+    font-family: Caveat;
     color: #f79e62;
 }
 
@@ -324,7 +324,7 @@ border: none !important;
 
 h1 /* Pack Name Title */ {
     color: #fdd7a8;
-    font-family: sacramento;
+    font-family: quicksand;
     text-align: center;
     font-size: 70px;
     margin-bottom: 40px !important;
@@ -370,7 +370,7 @@ h1 /* Pack Name Title */ {
 
 .table th /* Individual table headers - Title of the lead, Cave Names, etc. */ {
     text-align: center;
-    font-family: sacramento;
+    font-family: quicksand;
     font-size: 30px !important;
     font-weight: normal;
     padding-bottom: 0rem !Important;
