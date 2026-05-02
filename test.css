@@ -224,13 +224,12 @@ a:hover {
 } 
 
 .navbar-main .nav-link /* Individual navigation links: 'Den, Crossroads, etc.' */ {
-    color: rgba(255, 235, 215, 1) !important;
+    color: transparent !important;
     transition:.5s ease;
 }
 
-
 .navbar-main .nav-link:hover /* Hover of the links above */ {
-    color: rgba(220, 195, 165, 1) !important;
+    color: transparent !important;
 }
 
 #header .navbar-main .nav-link .fa /* Paw Icon, etc. of Den, etc. */ {
