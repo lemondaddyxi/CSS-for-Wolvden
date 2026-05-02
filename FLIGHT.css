@@ -351,18 +351,31 @@ i.fas.fa-mars.text-danger /* Breeding Male, Heat, etc. Symbol of Lead Wolf */ {
 
 .featured-wolf img {
     border-radius: 100px;
-    margin-top: 40px;
+    margin-top: 60px;
 
     width: 230px !important;   /* increased size */
     height: auto !important;
 }
 
 /* =========================
-   REMOVE FEATURED WOLF TEXT + REMOVE BUTTON (SAFE)
+   FEATURED WOLF – KEEP IMAGE ONLY
    ========================= */
 
-/* Keep image, remove everything else inside featured wolf */
-.featured-wolf > *:not(a) {
+/* Hide ALL links except the first one (the image) */
+.featured-wolf a:not(:first-of-type) {
+    display: none !important;
+}
+
+/* Hide buttons just in case */
+.featured-wolf .btn,
+.featured-wolf .btn-group,
+.featured-wolf .btn-sm {
+    display: none !important;
+}
+
+/* Hide any leftover small text */
+.featured-wolf small,
+.featured-wolf .text-muted {
     display: none !important;
 }
 
@@ -672,7 +685,7 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -11.5%);
+    transform: translate(-50%, -10.5%);
 
     width: 230px;
     height: 805px;
