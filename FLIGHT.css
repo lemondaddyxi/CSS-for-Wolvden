@@ -712,20 +712,22 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
 .petal {
     position: absolute;
     top: -10px;
-    width: 9px;
-    height: 14px;
+
+    width: 8px;
+    height: 13px;
 
     background: #87b8ec;
 
     border-radius: 60% 60% 60% 0;
     transform: rotate(35deg);
 
-    opacity: 0.62;
+    opacity: 0.65;
 
     /* glow*/
     filter:
-        drop-shadow(0 0 5px rgba(135, 184, 236, 0.55))
-        drop-shadow(0 0 10px rgba(135, 184, 236, 0.30));
+        drop-shadow(0 0 6px rgba(135, 184, 236, 0.65))
+        drop-shadow(0 0 12px rgba(135, 184, 236, 0.35))
+        drop-shadow(0 0 18px rgba(135, 184, 236, 0.20));
 
     animation: fall linear infinite;
 }
