@@ -1,6 +1,4 @@
-/* =========================
-   ✍️ FONT SYSTEM
-   ========================= */
+/* ===== FONTS ===== */
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Quicksand:wght@400;600&display=swap');
 
@@ -8,26 +6,18 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-size: 15.5px;
     line-height: 1.6;
-    letter-spacing: 0.2px;
 
     background: url("PASTE_GIF_URL_HERE") center/cover fixed no-repeat;
-    position: relative;
 }
 
-/* =========================
-   🌫 BACKGROUND EFFECTS
-   ========================= */
+/* ===== BACKGROUND OVERLAY ===== */
 
 body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background: linear-gradient(
-        rgba(10, 20, 30, 0.55),
-        rgba(20, 35, 45, 0.45)
-    );
+    background: linear-gradient(rgba(8,12,16,0.75), rgba(12,18,24,0.65));
     pointer-events: none;
-    z-index: 0;
 }
 
 body::after {
@@ -35,64 +25,64 @@ body::after {
     position: fixed;
     inset: 0;
     pointer-events: none;
-    background-image: radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px);
-    background-size: 120px 120px;
-    opacity: 0.1;
+    background: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 140px 140px;
+    opacity: 0.08;
 }
 
-/* =========================
-   🌐 NAVBAR (GLASS)
-   ========================= */
+/* ===== REMOVE SIDEBAR ===== */
+
+#sidebar,
+.col-lg-3,
+.col-md-4 {
+    display: none !important;
+}
+
+.col-lg-9,
+.col-md-8 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar-main,
+.navbar-status,
+.breadcrumb-nav {
+    background: rgba(12,18,24,0.55);
+    backdrop-filter: blur(12px);
+}
 
 .navbar-main {
-    background: rgba(15, 25, 30, 0.35);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(244, 173, 127, 0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 
-.navbar-main .nav-link {
-    color: #f2ad80 !important;
+.nav-link {
+    color: #c9d1d6 !important;
 }
 
-.navbar-main .nav-link:hover {
-    color: #ffd3b5 !important;
-    text-shadow: 0 0 6px rgba(242, 173, 128, 0.4);
+.nav-link:hover {
+    color: #ffffff !important;
+    text-shadow: 0 0 4px rgba(255,255,255,0.15);
 }
 
-.navbar-status {
-    background: rgba(18, 28, 34, 0.3);
-    backdrop-filter: blur(10px);
-}
-
-.breadcrumb-nav {
-    background: rgba(18, 28, 34, 0.25);
-    backdrop-filter: blur(10px);
-}
-
-/* =========================
-   🧊 MAIN CONTAINER
-   ========================= */
+/* ===== MAIN ===== */
 
 #main {
-    position: relative;
-    z-index: 1;
-
-    width: 85% !important;
+    width: 90% !important;
     margin: auto !important;
-
-    background: rgba(18, 28, 34, 0.38);
-    backdrop-filter: blur(14px);
-    border-radius: 24px;
     padding: 25px;
 
-    box-shadow:
-        0 0 40px rgba(0,0,0,0.5),
-        inset 0 0 12px rgba(255,255,255,0.03);
+    background: rgba(15,22,28,0.55);
+    backdrop-filter: blur(16px);
+    border-radius: 22px;
+
+    border: 1px solid rgba(255,255,255,0.05);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
 
     overflow: hidden;
 }
 
-/* shimmer */
 #main::after {
     content: "";
     position: absolute;
@@ -101,170 +91,100 @@ body::after {
 
     background: linear-gradient(
         110deg,
-        transparent 0%,
-        rgba(255,255,255,0.05) 45%,
-        rgba(255,255,255,0.10) 50%,
-        rgba(255,255,255,0.05) 55%,
-        transparent 100%
+        transparent,
+        rgba(255,255,255,0.04),
+        transparent
     );
 
-    animation: shimmerMove 8s linear infinite;
+    animation: shimmer 12s linear infinite;
 }
 
-#main > * {
-    position: relative;
-    z-index: 1;
+@keyframes shimmer {
+    from { transform: translateX(-100%); }
+    to   { transform: translateX(100%); }
 }
 
-@keyframes shimmerMove {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
-}
-
-/* =========================
-   🏷 TYPOGRAPHY
-   ========================= */
+/* ===== TEXT ===== */
 
 h1, h2, h3 {
     font-family: 'Caveat', cursive;
-    color: #f4ad7f !important;
-    text-shadow: 0 0 6px rgba(244, 173, 127, 0.35);
+    color: #e6edf2 !important;
 }
 
-h1 {
-    font-size: 28px;
-}
+h1 { font-size: 26px; }
 
-strong, b {
-    font-weight: 600;
-}
+strong { font-weight: 600; }
 
-/* =========================
-   📑 NAV TABS (GLASS)
-   ========================= */
+/* ===== UI ELEMENTS ===== */
 
-.nav-tabs {
-    background: rgba(18, 28, 34, 0.25);
-    backdrop-filter: blur(10px);
-    border-radius: 14px;
+.nav-tabs,
+.table,
+.card,
+.box,
+.panel {
+    background: rgba(18,26,32,0.5);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.04);
 }
 
 .nav-tabs .nav-link {
-    color: #f2ad80 !important;
-    background: transparent !important;
+    color: #c9d1d6 !important;
 }
 
 .nav-tabs .nav-link.active {
-    background: rgba(244, 173, 127, 0.18) !important;
-    color: #ffd3b5 !important;
+    background: rgba(255,255,255,0.06) !important;
+    color: #ffffff !important;
 }
 
-/* =========================
-   📊 TABLES
-   ========================= */
-
-.table {
-    background: rgba(25, 40, 48, 0.25);
-    backdrop-filter: blur(8px);
-}
-
-.table th {
-    color: #f4ad7f !important;
-}
-
-.subheader {
-    background: rgba(18, 28, 34, 0.4);
-}
-
-/* =========================
-   🐺 WOLF CARDS
-   ========================= */
+/* ===== CARDS ===== */
 
 .col-md-3 {
-    background: rgba(20, 30, 36, 0.42);
-    backdrop-filter: blur(10px);
-
-    border: 1px solid rgba(244, 173, 127, 0.15);
-    border-radius: 22px;
-
-    overflow: hidden;
-    transition: 0.25s ease;
+    background: rgba(18,26,32,0.55);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 18px;
+    transition: 0.2s ease;
 }
 
 .col-md-3:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 0 18px rgba(242, 173, 128, 0.25);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.5);
 }
 
-/* =========================
-   📦 PANELS / CARDS
-   ========================= */
-
-.card, .box, .panel {
-    background: rgba(25, 40, 48, 0.32);
-    backdrop-filter: blur(12px);
-
-    border-radius: 20px;
-    border: 1px solid rgba(244, 173, 127, 0.15);
-
-    box-shadow:
-        0 0 20px rgba(0,0,0,0.4),
-        inset 0 0 10px rgba(255,255,255,0.02);
-
-    transition: 0.25s ease;
-}
-
-.card:hover {
-    box-shadow: 0 0 18px rgba(242, 173, 128, 0.25);
-    transform: translateY(-2px);
-}
-
-/* =========================
-   🔥 PROGRESS BARS
-   ========================= */
+/* ===== PROGRESS ===== */
 
 .progress {
-    background: rgba(18, 28, 34, 0.6);
+    background: rgba(10,15,20,0.7);
 }
 
 .progress-bar {
-    background: linear-gradient(90deg, #f2ad80, #f4ad7f) !important;
-    box-shadow: 0 0 10px rgba(242, 173, 128, 0.35);
+    background: linear-gradient(90deg, #9fb3c8, #c7d4df) !important;
 }
 
-/* =========================
-   🔗 LINKS
-   ========================= */
+/* ===== LINKS ===== */
 
 a {
-    color: #f2ad80 !important;
+    color: #aab6c2 !important;
 }
 
 a:hover {
-    color: #ffd3b5 !important;
-    text-shadow: 0 0 6px rgba(242, 173, 128, 0.5);
+    color: #ffffff !important;
 }
 
-/* =========================
-   ⚠ ALERTS
-   ========================= */
+/* ===== ALERTS ===== */
 
 .alert {
-    background: rgba(244, 173, 127, 0.15);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(244, 173, 127, 0.25);
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
 }
 
-/* =========================
-   📱 MOBILE
-   ========================= */
+/* ===== MOBILE ===== */
 
 @media (max-width: 768px) {
 
     #main {
         width: 95% !important;
         padding: 15px;
-        border-radius: 18px;
     }
 
     .col-md-3 {
@@ -279,20 +199,10 @@ a:hover {
         font-size: 22px;
         text-align: center;
     }
-
-    .navbar-main, .navbar-status {
-        text-align: center;
-    }
-
-    #main::after {
-        animation-duration: 12s;
-    }
 }
 
-/* =========================
-   🧾 FOOTER
-   ========================= */
+/* ===== FOOTER ===== */
 
 #footer {
-    opacity: 0.6;
+    opacity: 0.5;
 }
