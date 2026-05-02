@@ -353,6 +353,8 @@ i.fas.fa-mars.text-danger /* Breeding Male, Heat, etc. Symbol of Lead Wolf */ {
     border-radius: 100px;
     border: 3px solid #06181e;
     margin-top: 10px;
+    width: 140px;
+    height: 140px;
 }
 
 .btn-group-sm>.btn, .btn-sm /* 'Remove' Symbol + Text below Featured Wolf */ {
