@@ -699,41 +699,63 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
         height: auto;
     }
 }
+
+/*Cherry Blossom falling effect*/
 .petal-container {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     pointer-events: none;
+    overflow: hidden;
 }
 
-/* Petal style */
+/* Base petal */
 .petal {
     position: absolute;
-    top: -10px;
-    width: 10px;
-    height: 10px;
-    background: #ffc0cb;
-    border-radius: 50% 50% 50% 0;
-    transform: rotate(45deg);
-    opacity: 0.8;
+    top: -20px;
 
-    animation: fall linear infinite;
+    width: 12px;
+    height: 12px;
+
+    background: radial-gradient(circle at 30% 30%, #ffd1dc, #ff9eb5);
+    border-radius: 60% 40% 60% 40%;
+
+    opacity: 0.75;
+    filter: blur(0.3px);
+
+    animation: fall linear infinite, sway ease-in-out infinite;
 }
 
-/* Different positions + speeds */
-.petal:nth-child(1) { left: 10%; animation-duration: 6s; }
-.petal:nth-child(2) { left: 30%; animation-duration: 8s; }
-.petal:nth-child(3) { left: 50%; animation-duration: 7s; }
-.petal:nth-child(4) { left: 70%; animation-duration: 9s; }
-.petal:nth-child(5) { left: 90%; animation-duration: 6.5s; }
+/* More variation using many petals */
+.petal:nth-child(odd) { width: 8px; height: 8px; opacity: 0.6; }
+.petal:nth-child(even) { width: 14px; height: 14px; opacity: 0.85; }
 
+/* Random-ish positioning + speed */
+.petal:nth-child(1)  { left: 5%;  animation-duration: 10s, 3s; }
+.petal:nth-child(2)  { left: 12%; animation-duration: 14s, 4s; }
+.petal:nth-child(3)  { left: 18%; animation-duration: 9s, 2.5s; }
+.petal:nth-child(4)  { left: 25%; animation-duration: 13s, 3.8s; }
+.petal:nth-child(5)  { left: 33%; animation-duration: 11s, 3.2s; }
+.petal:nth-child(6)  { left: 40%; animation-duration: 15s, 4.5s; }
+.petal:nth-child(7)  { left: 48%; animation-duration: 10s, 3.1s; }
+.petal:nth-child(8)  { left: 55%; animation-duration: 12s, 3.6s; }
+.petal:nth-child(9)  { left: 63%; animation-duration: 9.5s, 2.8s; }
+.petal:nth-child(10) { left: 72%; animation-duration: 14s, 4.2s; }
+.petal:nth-child(11) { left: 81%; animation-duration: 11.5s, 3.4s; }
+.petal:nth-child(12) { left: 90%; animation-duration: 13s, 3.9s; }
+
+/* Falling motion */
 @keyframes fall {
     0% {
-        transform: translateY(0) translateX(0) rotate(45deg);
+        transform: translateY(-10vh) rotate(0deg);
     }
     100% {
-        transform: translateY(100vh) translateX(50px) rotate(360deg);
+        transform: translateY(110vh) rotate(360deg);
     }
+}
+
+/* Side-to-side sway */
+@keyframes sway {
+    0% { transform: translateX(0px); }
+    50% { transform: translateX(30px); }
+    100% { transform: translateX(-20px); }
 }
