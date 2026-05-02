@@ -713,8 +713,8 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
     position: absolute;
     top: -10px;
 
-    width: 4px;
-    height: 9px;
+    width: 6px;
+    height: 11px;
 
     background: #87b8ec;
 
@@ -733,40 +733,25 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
 }
 
 /* animation */
-.petal:nth-child(1)  { left: 2%;  animation-duration: 8s;  animation-delay: -1s; }
-.petal:nth-child(2)  { left: 6%;  animation-duration: 10s; animation-delay: -6s; }
-.petal:nth-child(3)  { left: 10%; animation-duration: 7s;  animation-delay: -3s; }
-.petal:nth-child(4)  { left: 14%; animation-duration: 11s; animation-delay: -8s; }
-.petal:nth-child(5)  { left: 18%; animation-duration: 9s;  animation-delay: -5s; }
-.petal:nth-child(6)  { left: 22%; animation-duration: 12s; animation-delay: -7s; }
-.petal:nth-child(7)  { left: 26%; animation-duration: 8.5s; animation-delay: -2s; }
-.petal:nth-child(8)  { left: 30%; animation-duration: 13s; animation-delay: -9s; }
-.petal:nth-child(9)  { left: 34%; animation-duration: 9.5s; animation-delay: -4s; }
-.petal:nth-child(10) { left: 38%; animation-duration: 7.5s; animation-delay: -6s; }
+.petal:nth-child(3n)  { left: 5%;  animation-duration: 8s; }
+.petal:nth-child(4n)  { left: 15%; animation-duration: 10s; }
+.petal:nth-child(5n)  { left: 25%; animation-duration: 7s; }
+.petal:nth-child(6n)  { left: 35%; animation-duration: 11s; }
+.petal:nth-child(7n)  { left: 45%; animation-duration: 9s; }
+.petal:nth-child(8n)  { left: 55%; animation-duration: 12s; }
+.petal:nth-child(9n)  { left: 65%; animation-duration: 8.5s; }
+.petal:nth-child(10n) { left: 75%; animation-duration: 13s; }
+.petal:nth-child(11n) { left: 85%; animation-duration: 9.5s; }
+.petal:nth-child(12n) { left: 95%; animation-duration: 7.5s; }
 
-.petal:nth-child(11) { left: 42%; animation-duration: 11s; animation-delay: -3s; }
-.petal:nth-child(12) { left: 46%; animation-duration: 8s; animation-delay: -7s; }
-.petal:nth-child(13) { left: 50%; animation-duration: 12s; animation-delay: -2s; }
-.petal:nth-child(14) { left: 54%; animation-duration: 9s; animation-delay: -8s; }
-.petal:nth-child(15) { left: 58%; animation-duration: 10s; animation-delay: -5s; }
+/* animation start offset */
+.petal:nth-child(odd) {
+    animation-delay: -2s;
+}
 
-.petal:nth-child(16) { left: 62%; animation-duration: 7s; animation-delay: -1s; }
-.petal:nth-child(17) { left: 66%; animation-duration: 13s; animation-delay: -9s; }
-.petal:nth-child(18) { left: 70%; animation-duration: 8s; animation-delay: -4s; }
-.petal:nth-child(19) { left: 74%; animation-duration: 11s; animation-delay: -6s; }
-.petal:nth-child(20) { left: 78%; animation-duration: 9s; animation-delay: -2s; }
-
-.petal:nth-child(21) { left: 82%; animation-duration: 12s; animation-delay: -7s; }
-.petal:nth-child(22) { left: 86%; animation-duration: 8.5s; animation-delay: -3s; }
-.petal:nth-child(23) { left: 90%; animation-duration: 10s; animation-delay: -5s; }
-.petal:nth-child(24) { left: 94%; animation-duration: 7.5s; animation-delay: -8s; }
-.petal:nth-child(25) { left: 98%; animation-duration: 11s; animation-delay: -4s; }
-
-.petal:nth-child(26) { left: 12%; animation-duration: 9s; animation-delay: -6s; }
-.petal:nth-child(27) { left: 28%; animation-duration: 12s; animation-delay: -2s; }
-.petal:nth-child(28) { left: 44%; animation-duration: 8s; animation-delay: -9s; }
-.petal:nth-child(29) { left: 60%; animation-duration: 10s; animation-delay: -3s; }
-.petal:nth-child(30) { left: 76%; animation-duration: 13s; animation-delay: -7s; }
+.petal:nth-child(even) {
+    animation-delay: -6s;
+}
 
 /* swirl motion  */
 @keyframes fall {
