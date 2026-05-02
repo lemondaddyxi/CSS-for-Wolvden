@@ -283,19 +283,26 @@ img.mr-2 /* Alert Icons for Hunting, etc. */ {
     filter: grayscale(100%) contrast(30%) brightness(30%);
 }
 
-/* ########## BREADCRUMB BAR ########## */
+/* ### BREADCRUMB BAR ### */
 
-.breadcrumb-nav /* Breadcrumb bar displaying "Home / Username / etc." */ {
+.breadcrumb-nav {
     background-color: transparent !important;
-    color: transparent !important;
-
 }
 
-.breadcrumb-item+.breadcrumb-item:before /* The slash between breadcrumb bar links */ {
+.breadcrumb-item + .breadcrumb-item:before {
     color: transparent !important;
 }
 
-.breadcrumb-item.active /* Pack Name in breadcrumb bar */ {
+.breadcrumb-nav, .breadcrumb-nav * {
+    color: transparent !important;
+    text-shadow: none !important;
+}
+
+.breadcrumb-nav a {
+    color: transparent !important;
+}
+
+.breadcrumb-item.active {
     color: transparent !important;
 }
 
