@@ -358,25 +358,17 @@ i.fas.fa-mars.text-danger /* Breeding Male, Heat, etc. Symbol of Lead Wolf */ {
 }
 
 /* =========================
-   FEATURED WOLF – KEEP IMAGE ONLY
+   FEATURED WOLF – CLEAN ONLY IMAGE
    ========================= */
 
-/* Hide ALL links except the first one (the image) */
-.featured-wolf a:not(:first-of-type) {
+/* Remove EVERYTHING inside featured wolf */
+.featured-wolf > * {
     display: none !important;
 }
 
-/* Hide buttons just in case */
-.featured-wolf .btn,
-.featured-wolf .btn-group,
-.featured-wolf .btn-sm {
-    display: none !important;
-}
-
-/* Hide any leftover small text */
-.featured-wolf small,
-.featured-wolf .text-muted {
-    display: none !important;
+/* Re-enable ONLY the first link (the image) */
+.featured-wolf a:first-of-type {
+    display: inline-block !important;
 }
 
 /* ########## Dynasty, etc. Buttons ########## */
