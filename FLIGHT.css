@@ -1,65 +1,13 @@
 /* ## ------------------------------------------------------- GENERAL ------------------------------------------------------- ## */
 
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Yomogi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Quicksand&display=swap');
 
-body, .table th /* Background Image, font family, font color */ {
+body, .table th {
     background:url(https://i.imgur.com/Sc3MGgg.jpeg)
     center fixed !important;
     background-size:cover !important;
-    font-family: yomogi;
+    font-family: caveat;
     color: #e89ab0;
-}
-
-a /* Links on entire page */ {
-    color: #f7d3dc;
-}
-a:hover /* Hover of links on entire page */ {
-    color: #e89ab0;
-    text-decoration: none;
-}
-
-.alert /* Alerts and notifications that appear at the top of the page. */ {
-    background: #5b4f73;
-    border: 2px dashed #0a1f2e;
-    font-weight: bold;
-    color: #e89ab0;
-    border-radius: 10px;
-} .alert a {
-    color: #f7d3dc !important;
-}
-
-
-/* ## ------------------------------------------------------- REPORT, UPDATE/SAVE, BOOKMARK ------------------------------------------------------- ## */
-
-.btn-danger {
-    background: rgb(10, 31, 46, .65);
-    color: #d97898;
-    border-radius: 10px;
-    border: 2px solid #0a1f2e;
-}.btn-danger:hover {
-    background: rgb(10, 31, 46, .65);
-    color: #f2b8c8;
-    border-radius: 10px;
-    border: 2px solid #0a1f2e;
-}
-
-.btn-primary, .btn-success {
-    background: rgb(10, 31, 46, .65);
-    color: #f2b8c8;
-    font-weight: bold;
-    border-radius: 10px;
-    border: 2px solid #0a1f2e;
-}
-.btn-primary, .btn-success:hover {
-    background: rgb(10, 31, 46, .65);
-    color: #d97898;
-    font-weight: bold;
-    border-radius: 10px;
-    border: 2px solid #0a1f2e;
-}
-
-#bookmarkPage.fas.fa-bookmark.text-danger {
-    color: #0a1f2e !important;
 }
 
 
@@ -69,210 +17,56 @@ a:hover /* Hover of links on entire page */ {
 	background-color: rgb(10, 31, 46, .8);
     color: #f2b8c8;
 	border: 2px solid #06131c;
+    border-radius: 15px;
 }
 
 .box2 {
 	background-color: rgba(244, 182, 199, .7);
     color: #0a1f2e;
 	border: 2px solid #f4b6c7;
+    border-radius: 15px;
 }
 
-.box3, .box4, .box5, .box6 {
+.box3 {
 	background-color: rgb(10, 31, 46, .8);
     color: #f2b8c8;
     border: 2px solid #06131c;
+    border-radius: 15px;
+}
+
+.box4 {
+	background-color: rgb(10, 31, 46, .8);
+    color: #f2b8c8;
+    border: 2px solid #06131c;
+    border-radius: 15px;
+}
+
+.box5 {
+	background-color: rgb(10, 31, 46, .8);
+    color: #f2b8c8;
+    border: 2px solid #06131c;
+    border-radius: 15px;
+}
+
+.box6 {
+	background-color: rgb(10, 31, 46, .8);
+    color: #f2b8c8;
+    border: 2px solid #06131c;
+    border-radius: 15px;
 }
 
 
-/* ## ------------------------------------------------------- NAVBAR MAIN ------------------------------------------------------- ## */
-
-#header .navbar-main {
-    background-color: #0a1f2e;
-    border-bottom: 2px dashed #5b4f73;
-    border-right: 2px solid #06131c;
-    border-left: 2px solid #06131c;
-}
-
-.navbar-main .nav-link {
-    color: #f7d3dc !important;
-}
-.navbar-main .nav-link:hover {
-    color: #e89ab0 !important;
-}
-
-#header .navbar-main .nav-link .fa {
-    color: #e89ab0;
-}
-#header .navbar-main .nav-link:hover .fa {
-    color: #f7d3dc;
-}
-
-.navbar-status {
-    background: #1b3f4d !important;
-    color: #e89ab0 !important;
-    border-left: 2px solid #0a1f2e;
-    border-right: 2px solid #0a1f2e;
-    border-bottom: 2px solid #0a1f2e;
-}
-
-.btn-group-vertical>.btn, .btn-group>.btn {
-    color: #f7d3dc !important;
-}
-
-.dropdown-menu.show {
-    background-color: #0a1f2e;
-}.dropdown-item:hover {
-    background-color: #2b2a44;
-}
-.dropdown-divider {
-    border-top: 1px solid #2b2a44;
-}
-
-.navbar-status a {
-    color: #f7d3dc !important;
-}
-#header .navbar-status a:hover {
-    color: #e89ab0 !important;
-}
-
-
-/* ## ------------------------------------------------------- BREADCRUMB ------------------------------------------------------- ## */
-
-.breadcrumb-item+.breadcrumb-item:before {
-    color: #f7d3dc;
-}
-
-.breadcrumb-item.active {
-    color: #e89ab0;
-}
-
-.breadcrumb::after {
-    color: #746a96;
-}
-
-
-/* ## ------------------------------------------------------- SIDEBAR ------------------------------------------------------- ## */
-
-#sidebar .card {
-    background: rgb(10, 31, 46, .65);
-    border: 2px solid #0a1f2e;
-}
-
-#sidebar h3, #sidebar h4 {
-    border-bottom: 2px dashed #746a96;
-}
-
-.w-50 > a img, .w-50 div a img {
-    border: 2px solid #0a1f2e;
-}
-
-
-/* ## ------------------------------------------------------- MAIN PAGE ------------------------------------------------------- ## */
-
-#main {
-    background: rgb(10, 31, 46, .65);
-    border: 2px solid #0a1f2e;
-}
+/* ## ------------------------------------------------------- MAIN TEXT FONTS ------------------------------------------------------- ## */
 
 h1 {
     color: #f7d3dc;
+    font-family: quicksand;
 }
 
 
-/* ## ------------------------------------------------------- TABLES ------------------------------------------------------- ## */
-
-.table {
-    background: rgba(6, 19, 28, .5);
-    color: #e89ab0;
-}
+/* ## ------------------------------------------------------- TABLE HEADERS ------------------------------------------------------- ## */
 
 .table th {
     color: #f7d3dc;
-}
-
-tr:nth-of-type(odd) {
-    background: #081923 !important;
-}
-
-
-/* ## ------------------------------------------------------- FEATURE / ICONS ------------------------------------------------------- ## */
-
-i.fas.fa-mars.text-danger {
-    color: #e89ab0 !important;
-}
-
-
-/* ## ------------------------------------------------------- UI ELEMENTS ------------------------------------------------------- ## */
-
-.text-light {
-    color: #e89ab0 !important;
-    background-color: #081923 !important;
-}
-
-.subheader {
-    background: #06131c !important;
-    color: #e89ab0;
-}
-
-.bottom {
-    background: #06131c !important;
-}
-
-
-/* ## ------------------------------------------------------- BARS ------------------------------------------------------- ## */
-
-.progress {
-    background-color: #06131c !important;
-}
-
-.bg-warning, .bg-success {
-    background:url(https://i.imgur.com/40iBhdA.png);
-}
-#sidebar .bg-danger, .bg-primary {
-    background:url(https://i.imgur.com/3h4598x.png);
-}
-#sidebar .bg-info, .bg-danger {
-    background:url(https://i.imgur.com/abAvTRf.png);
-}
-#sidebar .bg-success, .bg-info {
-    background:url(https://i.imgur.com/aoipO6J.png);
-}
-
-
-/* ## ------------------------------------------------------- BUTTONS ------------------------------------------------------- ## */
-
-.btn-info {
-    background: rgb(10, 31, 46, .65);
-    color: #f2b8c8 !important;
-    border: 2px solid #0a1f2e;
-}
-.btn-info:hover {
-    color: #e89ab0 !important;
-}
-
-
-/* ## ------------------------------------------------------- FOOTER ------------------------------------------------------- ## */
-
-#footer {
-    background: #0a1f2e !important;
-    color: #f2b8c8;
-}
-
-#footer a {
-    color: #e89ab0;
-}
-#footer a:hover {
-    color: #f2b8c8;
-}
-
-
-/* ## ------------------------------------------------------- REMOVE SIDEBAR ------------------------------------------------------- ## */
-
-#sidebar {
-    display: none !important;
-}
-
-#main {
-    width: 100% !important;
-    margin: 0 auto !important;
+    font-family: quicksand;
 }
