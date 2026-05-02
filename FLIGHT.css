@@ -686,7 +686,7 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
 
 /* ================== LEAD + FEATURED WOLF CLEAN FIX ================== */
 
-/* Remove old conflicting styles */
+/* Remove old conflicts */
 .table .form-row img,
 .featured-wolf img {
     border: none !important;
@@ -694,7 +694,7 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
     margin: 0 !important;
 }
 
-/* BOTH wolves (final size: 110px) */
+/* Wolf images (slightly smaller for safety) */
 .table .row .card a img,
 .featured-wolf img {
     width: 110px !important;
@@ -705,22 +705,26 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
     margin: 0 auto !important;
 }
 
-/* Positioning */
+/* Positioning anchor */
 #main .table .card.mb-3 a,
 #main .featured-wolf a:first-of-type {
     position: relative;
     display: inline-block;
 }
 
-/* CENTERED FRAME */
+/* ================== RESPONSIVE FRAME (NO OVERFLOW FIX) ================== */
 #main .table .card.mb-3 a:before,
 #main .featured-wolf a:first-of-type:before {
     content: '';
     background-image: url('https://i.imgur.com/XSFj4XT.png');
-    background-size: contain;
     background-repeat: no-repeat;
-    width: 138px;
-    height: 138px;
+    background-position: center;
+    background-size: 100% 100%;
+
+    /* KEY FIX: slightly smaller than image so it never spills out */
+    width: 125px;
+    height: 125px;
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -729,7 +733,7 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
     z-index: 2;
 }
 
-/* MOBILE */
+/* ================== MOBILE (same proportional scaling) ================== */
 @media (max-width: 768px) {
     .table .row .card a img,
     .featured-wolf img {
@@ -739,7 +743,7 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
 
     #main .table .card.mb-3 a:before,
     #main .featured-wolf a:first-of-type:before {
-        width: 118px;
-        height: 118px;
+        width: 105px;
+        height: 105px;
     }
 }
