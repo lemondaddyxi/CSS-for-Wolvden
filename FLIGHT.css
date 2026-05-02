@@ -10,6 +10,11 @@ body, .table th /* Background Image, font family, font color */ {
     color: #6d97d6;
 }
 
+/* CURSOR */
+* {
+	cursor: url('https://i.imgur.com/oBbbmJa.png'), progress !important;
+}
+
 a /* Links on entire page */ {
     color: #fdd7a8;
 }
