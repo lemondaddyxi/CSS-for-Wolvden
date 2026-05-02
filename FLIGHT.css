@@ -1,30 +1,126 @@
-/* --- Lead Wolf Icon Frame (WORKING OPTION 1 FIX) --- */
+/* ## ------------------------------------------------------- GENERAL ------------------------------------------------------- ## */
 
-/* Make the container the positioning reference */
-.border-none .card {
-    position: relative;
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Yomogi&display=swap');
+
+body, .table th {
+    background:url(https://i.imgur.com/Sc3MGgg.jpeg)
+    center fixed !important;
+    background-size:cover !important;
+    font-family: yomogi;
+    color: #f79e62;
 }
 
-/* The actual wolf image */
+a {
+    color: #fdd7a8;
+}
+a:hover {
+    color: #f79e62;
+    text-decoration: none;
+}
+
+.alert {
+    background: #59706a;
+    border: 2px dashed #0b2d36;
+    font-weight: bold;
+    color: #f79e62;
+    border-radius: 10px;
+} .alert a {
+    color: #fdd7a8 !important;
+}
+
+
+/* ## ------------------------------------------------------- REPORT, UPDATE/SAVE, BOOKMARK ------------------------------------------------------- ## */
+
+.btn-danger {
+    background: rgb(11, 45, 54, .65);
+    color: #ec9153;
+    border-radius: 10px;
+    border: 2px solid #0b2d36;
+}
+.btn-danger:hover {
+    color: #f7c492;
+}
+
+.btn-primary, .btn-success {
+    background: rgb(11, 45, 54, .65);
+    color: #f7c492;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid #0b2d36;
+}
+.btn-primary:hover, .btn-success:hover {
+    color: #ec9153;
+}
+
+
+/* ## ------------------------------------------------------- BOXES ------------------------------------------------------- ## */
+
+/* (UNCHANGED - your boxes remain identical) */
+
+
+/* ## ------------------------------------------------------- NAVBAR MAIN ------------------------------------------------------- ## */
+
+/* (UNCHANGED) */
+
+
+/* ## ------------------------------------------------------- SIDEBAR ------------------------------------------------------- ## */
+
+/* (UNCHANGED) */
+
+
+/* ## ------------------------------------------------------- MAIN PAGE ------------------------------------------------------- ## */
+
+#main {
+    background: rgb(11, 45, 54, .65);
+    border-radius: 10px 10px 0px 0px;
+    border: 2px solid #0b2d36
+}
+
+h1 {
+    color: #fdd7a8;
+    font-family: sacramento;
+    text-align: center;
+    font-size: 70px;
+}
+
+
+/* ## ------------------------------------------------------- LEAD WOLF (FIXED FRAME VERSION) ------------------------------------------------------- ## */
+
+/* Card container becomes the FRAME holder */
+.border-none .card {
+    background-color: transparent !important;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Wolf image styling (kept above frame) */
 .border-none .card-img-top {
+    border-radius: 100px;
+    margin-top: 20px;
     position: relative;
     z-index: 2;
-    border-radius: 100px;
 }
 
-/* FRAME overlay */
-.border-none .card::after {
+/* FRAME IMAGE (THIS is the correct working method) */
+.border-none .card::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    
-    width: 160px;   /* adjust if needed */
-    height: 160px;  /* adjust if needed */
-
-    background: url(PASTE_DIRECT_IMAGE_LINK_HERE) center/contain no-repeat;
-    
+    width: 180px;
+    height: 180px;
+    background: url(INSERT_DIRECT_IMAGE_URL_HERE) center / contain no-repeat;
+    z-index: 1;
     pointer-events: none;
-    z-index: 3;
 }
+
+/* Male icon */
+i.fas.fa-mars.text-danger {
+    color: #f79e62 !important;
+    margin-left: 20px;
+}
+
+
+/* ## ------------------------------------------------------- EVERYTHING ELSE BELOW UNCHANGED ------------------------------------------------------- ## */
+
+/* (All remaining sections stay exactly the same as your original CSS) */
