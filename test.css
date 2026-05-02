@@ -287,17 +287,15 @@ img.mr-2 /* Alert Icons for Hunting, etc. */ {
 
 .breadcrumb-nav /* Breadcrumb bar displaying "Home / Username / etc." */ {
     background-color: transparent !important;
+    color: transparent !important;
+
 }
 
 .breadcrumb-item+.breadcrumb-item:before /* The slash between breadcrumb bar links */ {
-    color: rgba(255, 235, 215, 1);
+    color: transparent !important;
 }
 
 .breadcrumb-item.active /* Pack Name in breadcrumb bar */ {
-    color: rgba(220, 195, 165, 1);
-}
-
-.breadcrumb-item {
     color: transparent !important;
 }
 
