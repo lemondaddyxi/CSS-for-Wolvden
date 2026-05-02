@@ -652,7 +652,7 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
 
 /* Expand main content to fill space left by sidebar */
 #main {
-    width: 100% !important;
+    width: 150% !important;
     margin: 0 auto !important;
 }
 
