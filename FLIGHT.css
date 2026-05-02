@@ -1,9 +1,137 @@
+/* ## ------------------------------------------------------- GENERAL ------------------------------------------------------- ## */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+body, .table th {
+    background:url(https://i.imgur.com/Sc3MGgg.jpeg) center fixed !important;
+    background-size:cover !important;
+    font-family: caveat;
+    color: #f79e62;
+}
+
+a { color: #fdd7a8; }
+a:hover { color: #f79e62; text-decoration: none; }
+
+.alert {
+    background: #59706a;
+    border: 2px dashed #0b2d36;
+    font-weight: bold;
+    color: #f79e62;
+    border-radius: 10px;
+}
+
+.alert a { color: #fdd7a8 !important; }
+
+/* ## ------------------------------------------------------- BUTTONS ------------------------------------------------------- ## */
+
+.btn-danger {
+    background: rgb(11, 45, 54, .65);
+    color: #ec9153;
+    border-radius: 10px;
+    border: 2px solid #0b2d36;
+}
+.btn-danger:hover {
+    color: #f7c492;
+}
+
+.btn-primary, .btn-success {
+    background: rgb(11, 45, 54, .65);
+    color: #f7c492;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid #0b2d36;
+}
+.btn-primary:hover, .btn-success:hover {
+    color: #ec9153;
+}
+
+/* ## ------------------------------------------------------- BOXES ------------------------------------------------------- ## */
+
+.box1, .box3, .box4, .box5, .box6 {
+    background-color: rgb(11, 45, 54, .8);
+    color: #f7c492;
+    text-align: center;
+    font-size: 13px;
+    padding: 15px;
+    margin: 0 2% 30px;
+    border-radius: 10px;
+    float: left;
+    overflow: auto;
+    border: 2px solid #06181e;
+}
+
+.box1 { width: 30%; height: 145px; }
+.box2 {
+    background-color: rgba(255, 188, 130, .7);
+    color: #0b2d36;
+    text-align: center;
+    font-size: 13px;
+    padding: 15px;
+    margin: 0 2% 30px;
+    border-radius: 100px;
+    float: left;
+    width: 28%;
+    height: 145px;
+}
+.box3 { width: 96%; height: 175px; }
+.box4, .box5, .box6 { width: 46%; height: 145px; }
+
+/* scrollbars */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-thumb { background: transparent; }
+
+/* ## ------------------------------------------------------- NAVBAR ------------------------------------------------------- ## */
+
+#header .navbar-main {
+    background-color: #0b2d36;
+    border-bottom: 2px dashed #59706a;
+}
+
+.navbar-main .nav-link {
+    color: #fdd7a8 !important;
+}
+.navbar-main .nav-link:hover {
+    color: #f79e62 !important;
+}
+
+.navbar-status {
+    background: #173a42 !important;
+    color: #f79e62 !important;
+}
+
+/* ## ------------------------------------------------------- MAIN ------------------------------------------------------- ## */
+
+#main {
+    background: rgb(11, 45, 54, .65);
+    border-radius: 10px 10px 0 0;
+    border: 2px solid #0b2d36;
+}
+
+h1 {
+    color: #fdd7a8;
+    font-family: Caveat;
+    text-align: center;
+    font-size: 70px;
+}
+
+/* tables */
+.table {
+    background: rgba(6, 26, 32, .5);
+    color: #f79e62;
+    border-radius: 15px;
+}
+
+/* ## ------------------------------------------------------- LEAD WOLF ------------------------------------------------------- ## */
+
+.border-none .card-img-top {
+    border-radius: 100px;
+    margin-top: 20px;
+}
 
 /* =========================
-   LEAD & FEATURED OVERLAY SYSTEM
+   LEAD + FEATURED OVERLAY
    ========================= */
 
-/* LEAD WOLF OVERLAY */
 #main .table .card.mb-3 a {
     position: relative;
 }
@@ -13,7 +141,6 @@
     background-image: url('https://i.imgur.com/XSFj4XT.png');
     background-size: 100% auto;
     background-repeat: no-repeat;
-    display: inline-block;
     width: 200px;
     height: 700px;
     position: absolute;
@@ -24,7 +151,7 @@
     filter: brightness(75%);
 }
 
-/* FEATURED WOLF OVERLAY */
+/* FEATURED OVERLAY */
 #main .featured-wolf a:first-of-type {
     position: relative;
 }
@@ -34,7 +161,6 @@
     background-image: url('https://i.imgur.com/XSFj4XT.png');
     background-size: 95% auto;
     background-repeat: no-repeat;
-    display: inline-block;
     width: 200px;
     height: 700px;
     position: absolute;
@@ -46,10 +172,10 @@
 }
 
 /* =========================
-   FEATURED WOLF CLEAN FIX
+   FEATURED WOLF FIXES
    ========================= */
 
-/* Match Lead Wolf size exactly */
+/* SAME SIZE AS LEAD */
 .featured-wolf img {
     width: 140px !important;
     height: 140px !important;
@@ -59,31 +185,50 @@
     margin: 10px auto;
 }
 
-/* Remove ONLY the name text */
+/* REMOVE NAME ONLY */
 .featured-wolf small,
 .featured-wolf .card-title {
     display: none !important;
 }
 
-/* Remove ONLY the "Remove" button */
+/* REMOVE BUTTON */
 .featured-wolf .btn-sm,
 .featured-wolf .btn-group-sm {
     display: none !important;
 }
 
-/* Center layout */
+/* CENTER */
 .featured-wolf {
     text-align: center;
 }
 
-/* Fix spacing after removals */
+/* spacing fix */
 .featured-wolf .card-body {
     padding-bottom: 0 !important;
 }
 
+/* ## ------------------------------------------------------- FOOTER ------------------------------------------------------- ## */
+
+#footer {
+    background: #0b2d36 !important;
+    color: #f7c492;
+}
+
+/* ## ------------------------------------------------------- REMOVE SIDEBAR ------------------------------------------------------- ## */
+
+#sidebar {
+    display: none !important;
+}
+
+#main {
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+
 /* =========================
-   MOBILE RESPONSIVE FIXES
+   MOBILE FIXES
    ========================= */
+
 @media (max-width: 768px) {
 
     #main .table .card.mb-3 a:before {
@@ -95,10 +240,5 @@
     #main .featured-wolf a:first-of-type:before {
         top: -142%;
         left: 26%;
-    }
-
-    .featured-wolf img {
-        width: 140px !important;
-        height: 140px !important;
     }
 }
