@@ -508,12 +508,21 @@ div.card.text-center>img {
     box-shadow: 0px 0px 10px rgba(240 ,180 ,155 ,0.4);
 }
 
+/* Fix text color for Dynasty / Breeding / etc. */
+div.card.text-center, div.card.text-center a, div.card.text-center .card-body, div.card.text-center .card-body * {
+    color: rgba(158, 112, 52, 1) !important;
+}
+
+/* hover colour */
+div.card.text-center a:hover {
+    color: rgba(0, 116, 210, 1) !important;
+}
+
 /* PACK DYNASTY */
 img[src$="packdynasty.png"] {
     content:url('https://i.imgur.com/1VhN6YX.png')!important;
     width:370px;
     height: 150px !important;
-    color: rgba(158, 112, 52, 1);
 }
  
 /* NESTING */
@@ -521,7 +530,6 @@ img[src$="nesting.png"] {
     content:url('https://i.imgur.com/vViCCF2.jpeg')!important;
     width:370px;
     height:150px !important;
-    color: rgba(158, 112, 52, 1);
 }
  
 /* OVERVIEW */
@@ -529,7 +537,6 @@ img[src$="packoverview.png"] {
     content:url('https://i.imgur.com/IYaR9wD.png')!important;
     width:370px;
     height:150px!important;
-    color: rgba(158, 112, 52, 1);
 }
  
 /* BREEDING */
@@ -537,7 +544,6 @@ img[src$="breeding.png"] {
     content:url('https://i.imgur.com/jPsinc9.jpeg')!important;
     width:370px;
     height:150px!important;
-    color: rgba(158, 112, 52, 1);
 }
 
 /* SOCIALIZING */
@@ -545,7 +551,6 @@ img[src$="socializing.png"] {
     content:url('https://i.imgur.com/bWgdxkl.png')!important;
     width:370px;
     height:150px!important;
-    color: rgba(158, 112, 52, 1);
 }
 
 /* PUPSITTING */
@@ -553,8 +558,7 @@ img[src$="pupsitting.png"] {
     content:url('https://i.imgur.com/J2IKL4o.jpeg')!important;
     width:370px;
     height:150px!important;
-    color: rgba(158, 112, 52, 1);
-    }
+}
 
 /* #### Standard View with & without Headshots ### */
 /* WITH & WITHOUT Headshots // Subheader row of Cave tables, 'Name, Stats, Info, etc.' */
