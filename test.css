@@ -489,7 +489,11 @@ i.fas.fa-mars.text-danger {
 /* ### Dynasty, etc. Buttons ### */
 /* Shadow Line */ 
 .card-header {
-    border: none;
+	background: rgba(10, 20, 30, 1) !important; 
+	color: rgba(158, 112, 52, 1) !important; 
+	border-radius: 10px; 
+	border: none !important; 
+	box-shadow: 0px 0px 10px rgba(240 ,180 ,155 ,0.4); 
 } 
 
 /* Dynasty, etc. Images */ 
@@ -500,12 +504,12 @@ div.card.text-center>img {
 } 
 
 /* 'Dynasty, etc.' Buttons */ 
-.col-6 .card.text-center .card-img-overlay, .col-6 .card.text-center .card-img-overlay * {
-    background: rgba(10, 20, 30, 1) !important;
-    color: rgba(158, 112, 52, 1) !important;
-    border-radius: 10px;
-    border: none !important;
-    box-shadow: 0px 0px 10px rgba(240 ,180 ,155 ,0.4);
+.col-6 .card.text-center { 
+	background: rgba(10, 20, 30, 1) !important; 
+	color: rgba(158, 112, 52, 1) !important; 
+	border-radius: 10px; 
+	border: none !important; 
+	box-shadow: 0px 0px 10px rgba(240 ,180 ,155 ,0.4); 
 }
 
 /* PACK DYNASTY */
