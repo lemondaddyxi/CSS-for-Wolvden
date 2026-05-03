@@ -8,7 +8,7 @@ body, .table th {
     center fixed !important;
     background-size:cover !important;
     font-family: caveat;
-    color: rgba(158, 112, 52, 1);
+    color: rgba(188, 142, 76, 1);
 }
 
 body {
@@ -22,29 +22,28 @@ body {
 
 /* Links on entire page */ 
 a {
-    color: rgba(158, 112, 52, 1);
+    color: rgba(188, 142, 76, 1);
 }
 
 /* Hover of links on entire page */
 a:hover {
-    color: rgba(10, 116, 210, 1);
+    color: rgba(0, 116, 210, 1);
     text-decoration: none;
 }
 
 /* Alerts and notifications that appear at the top of the page. */ 
 .alert {
-	
 	background: linear-gradient(90deg, rgba(80,42,65,.6), rgba(0, 116, 210,0.6));
 	border-radius: 15px;
 	box-shadow: 0px 0px 10px rgba(188, 142, 76 ,0.4);
     font-weight: bold;
-    color: rgba(158, 112, 52, 1);
+    color: rgba(188, 142, 76, 1);
     border-radius: 10px;
 } 
 
 /* Separate alert links if desired */ 
 .alert a {
-    color: rgba(255, 235, 215, 1) !important;
+    color: rgba(188, 142, 76, 1) !important;
 }
 
 /* icon color resaturation */
@@ -80,12 +79,12 @@ a:hover {
 /* Report button */ 
 .btn-danger {
     background: rgba(10, 20, 30, 0.65);
-    color: rgba(220, 195, 165, 1);
+    color: rgba(188, 142, 76, 1);
     border-radius: 10px;
     border: 2px solid rgba(10, 20, 30, 1);
 }.btn-danger:hover {
     background: rgba(10, 20, 30, 0.65);
-    color: rgba(255, 240, 215, 1);
+    color: rgba(188, 142, 76, 1);
     border-radius: 10px;
     border: 2px solid rgba(10, 20, 30, 1);
 }
@@ -93,7 +92,7 @@ a:hover {
 /* Update/Save buttons on entire page */ 
 .btn-primary, .btn-success {
     background: rgba(10, 20, 30, 0.65);
-    color: rgba(255, 240, 215, 1);
+    color: rgba(188, 142, 76, 1);
     font-weight: bold;
     border-radius: 10px;
     border: 2px solid rgba(10, 20, 30, 1);
@@ -102,7 +101,7 @@ a:hover {
 /* Hover of the above */
 .btn-primary, .btn-success:hover {
     background: rgba(10, 20, 30, 0.65);
-    color: rgba(220, 195, 165, 1);
+    color: rgba(0, 116, 210, 1);
     font-weight: bold;
     border-radius: 10px;
     border: 2px solid rgba(10, 20, 30, 1);
@@ -110,7 +109,7 @@ a:hover {
 
 /* Bookmark Icon */ 
 #bookmarkPage.fas.fa-bookmark.text-danger {
-    color: rgba(10, 20, 30, 1) !important;
+    color: rgba(130, 68, 106, 1) !important;
 }
 
 
@@ -119,7 +118,7 @@ a:hover {
 /* Small box in combination with Box2 */ 
 .box1 {
 	background-color: rgba(10, 20, 30, 0.8);
-    color: rgba(255, 240, 215, 1);
+    color: rgba(188, 142, 76, 1);
 	text-align: center;
 	font-size: 25px;
 	padding: 15px;
@@ -135,7 +134,7 @@ a:hover {
 /* Round Box in combination with Box2 */
 .box2 {
 	background-color: rgba(255, 240, 215, 0.7);
-    color: rgba(10, 20, 30, 1);
+    color: rgba(188, 142, 76, 1);
 	text-align: center;
 	font-size: 25px;
 	padding: 15px;
@@ -151,7 +150,7 @@ a:hover {
 /* Biggest Box available */ 
 .box3 {
 	background-color: rgba(10, 20, 30, 0.8);
-    color: rgba(255, 240, 215, 1);
+    color: rgba(188, 142, 76, 1);
     text-align: center;
 	font-size: 25px;
 	padding: 15px;
@@ -167,7 +166,7 @@ a:hover {
 /* Medium Box for two of the same beside the other */
 .box4  {
 	background-color: rgba(10, 20, 30, 0.8);
-    color: rgba(255, 240, 215, 1);
+    color: rgba(188, 142, 76, 1);
     text-align: center;
 	font-size: 25px;
 	padding: 15px;
@@ -183,7 +182,7 @@ a:hover {
  /* Medium Box in combination with Box6 */ 
 .box5 {
 	background-color: rgba(10, 20, 30, 0.8);
-    color: rgba(255, 240, 215, 1);
+    color: rgba(188, 142, 76, 1);
     text-align: center;
 	font-size: 25px;
 	padding: 15px;
@@ -199,7 +198,7 @@ a:hover {
 /* Medium Box in combination with Box5 */ 
 .box6 {
 	background-color: rgba(10, 20, 30, 0.8);
-    color: rgba(255, 240, 215, 1);
+    color: rgba(188, 142, 76, 1);
     text-align: center;
 	font-size: 25px;
 	padding: 15px;
@@ -223,20 +222,22 @@ a:hover {
 	background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-    background: var(--accent-2);
+    background-color: rgba(105, 71, 92, 1);
     border-radius: 10px;
 }
 
 /* ## ------------------------------------------------------- NAVBAR MAIN ------------------------------------------------------- ## */
 
-#header .navbar-main /* Section containing the site navigation. */ {
+/* Section containing the site navigation. */ 
+#header .navbar-main {
     background-color: rgba(10, 20, 30, 1);
     border-bottom: 2px dashed rgba(70, 90, 105, 0.8);
     border-right: 2px solid rgba(15, 20, 30, 0.8);
     border-left: 2px solid rgba(15, 20, 30, 0.8);
 } 
 
-.navbar-main .nav-link /* Individual navigation links: 'Den, Crossroads, etc.' */ {
+/* Individual navigation links: 'Den, Crossroads, etc.' */ 
+.navbar-main .nav-link {
 	font-size: 0 !important;
 }
 
@@ -250,39 +251,53 @@ a:hover {
     text-align: center;
 }
 
-#header .navbar-main .nav-link .fa /* Paw Icon, etc. of Den, etc. */ {
+/* Paw Icon, etc. of Den, etc. */ 
+/* #header .navbar-main .nav-link .fa {
     color: rgba(220, 195, 165, 1);
     transition:.5s ease;
     font-size: 2rem !important;
+} */
+
+#header .navbar-main .nav-link .fa {
+    background: linear-gradient(90deg, rgba(80,42,65,.6), rgba(0,116,210,.6));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    transition: .5s ease;
+    font-size: 2rem !important;
 }
 
-#header .navbar-main .nav-link:hover .fa /* Hover of the Icons above */ {
-    color: rgba(255, 235, 215, 1);
+/* Hover of the Icons above */
+#header .navbar-main .nav-link:hover .fa  {
+    color: rgba(0, 116, 210, 1);
 }
 
-.navbar-status /* Status bar containing the currencies, "Welcome back", etc. */ {
+/* Status bar containing the currencies, "Welcome back", etc. */
+.navbar-status  {
     background: rgba(25, 35, 55, 0.7) !important;
-    color: rgba(220, 195, 165, 1) !important;
+    color: rgba(188, 142, 76, 1) !important;
     border-radius: 0px 0px 10px 10px;
     border-left: 2px solid rgba(10, 20, 30, 1);
     border-right: 2px solid rgba(10, 20, 30, 1);
     border-bottom: 2px solid rgba(10, 20, 30, 1);
 }
 
-.btn-group-vertical>.btn, .btn-group>.btn /* Username in that bar */ {
-    color: rgba(255, 235, 215, 1) !important;
+/* Username in that bar */
+.btn-group-vertical>.btn, .btn-group>.btn {
+    color: rgba(188, 142, 76, 1) !important;
 }
 
-.dropdown-menu.show /* Dropdown menu for 'Profile, User Log, Log Out, etc.' */ {
-    background-color: rgba(10, 20, 30, 0.6);
+/* Dropdown menu for 'Profile, User Log, Log Out, etc.' */
+.dropdown-menu.show {
+    background-color: rgba(10, 20, 30, 1);
 }
 
 .dropdown-item:hover {
-    background-color: rgba(10, 20, 30, 0.8);
+    color: rgba(0, 116, 210, 1) !important;
 }
 
 .dropdown-divider {
-    border-top: 1px solid rgba(10, 20, 30, 0.8);
+    border-top: 1px solid rgba(10, 20, 30, 1);
 }
 
 .btn-group-vertical>.btn, .btn-group>.btn {
