@@ -256,16 +256,15 @@ a:hover {
     justify-content: center;
 }
 
-/* ICON BASE (gradient + no clipping safety) */
 #header .navbar-main .nav-link .fa {
     font-size: 2rem !important;
-    line-height: 1;
+    line-height: 1.2;
+
+    display: inline-block;
 
     background: linear-gradient(90deg, rgba(80,42,65,.6), rgba(0,116,210,.6));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    display: block;
 }
 
 /* HOVER (clean gradient change, no flicker, no color fallback issues) */
