@@ -251,13 +251,6 @@ a:hover {
     text-align: center;
 }
 
-/* Paw Icon, etc. of Den, etc. */ 
-/* #header .navbar-main .nav-link .fa {
-    color: rgba(220, 195, 165, 1);
-    transition:.5s ease;
-    font-size: 2rem !important;
-} */
-
 #header .navbar-main .nav-link .fa {
     background: linear-gradient(90deg, rgba(80,42,65,.6), rgba(0,116,210,.6));
     -webkit-background-clip: text;
@@ -275,7 +268,7 @@ a:hover {
 
 /* Status bar containing the currencies, "Welcome back", etc. */
 .navbar-status  {
-    background: rgba(25, 35, 55, 0.7) !important;
+    background: rgba(10, 20, 30, 1) !important;
     color: rgba(188, 142, 76, 1) !important;
     border-radius: 0px 0px 10px 10px;
     border-left: 2px solid rgba(10, 20, 30, 1);
