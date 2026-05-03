@@ -224,17 +224,16 @@ a:hover {
 } 
 
 .navbar-main .nav-link /* Individual navigation links: 'Den, Crossroads, etc.' */ {
-    color: transparent !important;
-    transition:.5s ease;
-}
-
-.navbar-main .nav-link:hover /* Hover of the links above */ {
-    color: transparent !important;
+	font-size: 0 !important;
 }
 
 #header .navbar-main .nav-link .fa /* Paw Icon, etc. of Den, etc. */ {
     color: rgba(220, 195, 165, 1);
     transition:.5s ease;
+    font-size: 2rem !important;
+	display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 #header .navbar-main .nav-link:hover .fa /* Hover of the Icons above */ {
@@ -367,10 +366,14 @@ h1 /* Pack Name Title */ {
     border: none !important;
 }
 
+/* Pack leader name only */
+.table th:first-child {
+    text-align: left !important;
+}
+
 .table th a /* Pack Leader Name in that table */ {
     color: rgba(255, 235, 215, 1) !Important;
     display: inline-block;
-    text-align: left !important;
 }
 
 /* protect lead name */
