@@ -597,7 +597,7 @@ div.card-body.bg-light.p-0.text-center {
 	font-size: 20px;
 }
 
-.text-light a:hover {
+.card-body .text-light a:hover {
 	color: rgba(0, 116, 210, 1) !important;
 }
 
