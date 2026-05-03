@@ -259,24 +259,13 @@ a:hover {
 /* ICON BASE (gradient + no clipping safety) */
 #header .navbar-main .nav-link .fa {
     font-size: 2rem !important;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
     line-height: 1;
-    padding: 4px 0;
-
-    transform: translateY(0);
 
     background: linear-gradient(90deg, rgba(80,42,65,.6), rgba(0,116,210,.6));
     -webkit-background-clip: text;
-    background-clip: text;
-
     -webkit-text-fill-color: transparent;
-    color: transparent;
 
-    transition: .5s ease;
+    display: block;
 }
 
 /* HOVER (clean gradient change, no flicker, no color fallback issues) */
