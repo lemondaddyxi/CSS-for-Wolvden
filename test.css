@@ -548,7 +548,7 @@ img[src$="pupsitting.png"] {
     }
 
 /* #### Standard View with & without Headshots ### */
-/* WITH & WITHOUT Headhots // Subheader row of Cave tables, 'Name, Stats, Info, etc.' */
+/* WITH & WITHOUT Headshots // Subheader row of Cave tables, 'Name, Stats, Info, etc.' */
 .subheader {
     background: rgba(15, 20, 30, 0.8) !important;
     color: rgba(158, 112, 52, 1);
@@ -589,7 +589,7 @@ div.card-body.bg-light.p-0.text-center {
 
 /* Headers above wolf icons */
 .text-light {
-    /* background-color: rgba(10, 30, 60, 0.6) !important; */
+    background-color: rgba(10, 20, 30, 0.5) !important;
     color: rgba(158, 112, 52, 1) !important;
     margin-bottom: -10px;
 }
