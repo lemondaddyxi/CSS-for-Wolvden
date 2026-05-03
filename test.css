@@ -281,6 +281,10 @@ a:hover {
     color: rgba(188, 142, 76, 1) !important;
 }
 
+.btn-group-vertical>.btn:hover, .btn-group>.btn:hover {
+    color: rgba(0, 116, 210, 1) !important;
+}
+
 /* Dropdown menu for 'Profile, User Log, Log Out, etc.' */
 .dropdown-menu.show {
     background-color: rgba(10, 20, 30, .6);
