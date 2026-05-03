@@ -558,18 +558,18 @@ img[src$="pupsitting.png"] {
 
 /* WITHOUT Headshots // Wolf subheaders w/ emojis + FAPA Rollovers Remaining */
 .small, small {
-    filter: sepia(50%) contrast(100%) brightness(90%)
+    filter: sepia(0%) contrast(100%) brightness(90%)
 }
 
  /* WITHOUT Headshots // Icons for jobs, etc. */ 
 table[data-cave-key] tr:nth-of-type(n+3) td:nth-of-type(4) img {
-    filter: sepia(50%) contrast(100%) brightness(90%)
+    filter: sepia(0%) contrast(100%) brightness(90%)
 }
 
 /* WITH Headshots // Affects headshots */ 
 img.border-bottom {
     border: none !important;
-    filter: sepia(30%) contrast(100%) brightness(100%);
+    filter: sepia(0%) contrast(100%) brightness(100%);
     border-radius: 10px;
     margin-top: 4px;
 }
@@ -577,7 +577,7 @@ img.border-bottom {
 /* WITH Headshots // Nursing Puppy icon */
 img.border-bottom.p-2 {
     border: none !important;
-    filter: sepia(30%) contrast(100%) brightness(100%);
+    filter: sepia(0%) contrast(100%) brightness(100%);
     border-radius: 10px;
 }
 
@@ -605,7 +605,7 @@ div.card-body.bg-light.p-0.text-center {
 /* Headshot icons in card den display */
 img.rounded-bottom {
     border-radius: 130px 130px 130px 130px !important;
-	width: 60px !important;
+	width: 160px !important;
 	height: auto !important;
 }
 
@@ -628,7 +628,7 @@ span.badge.badge-info {
 
 /* Icon hover glow */
 table[data-cave-key] tr:nth-of-type(n+3) td:nth-of-type(4) img:hover, img.rounded-bottom:hover {
-	filter: sepia(30%) brightness(115%) contrast(105%) drop-shadow(0 0 6px rgba(180, 220, 255, 0.8)) !important;
+	filter: sepia(0%) brightness(115%) contrast(105%) drop-shadow(0 0 6px rgba(180, 220, 255, 0.8)) !important;
 	transition: all 0.2s ease-in-out;
 }
 
