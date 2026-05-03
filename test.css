@@ -283,11 +283,11 @@ a:hover {
 
 /* Dropdown menu for 'Profile, User Log, Log Out, etc.' */
 .dropdown-menu.show {
-    background-color: rgba(10, 20, 30, 1);
+    background-color: rgba(10, 20, 30, .6);
 }
 
 .dropdown-item:hover {
-    color: rgba(0, 116, 210, 1) !important;
+    color: rgba(0, 116, 210, .8) !important;
 }
 
 .dropdown-divider {
@@ -299,15 +299,11 @@ a:hover {
 }
 
 .navbar-status a /* Currency, Messages, etc. links */ {
-    color: rgba(255, 235, 215, 1) !important;
+    color: rgba(188, 142, 76, 1) !important;
 }
 
 #header .navbar-status a:hover /* Hover of Currency, Messages, etc. links */ {
-    color: rgba(220, 195, 165, 1) !important;
-}
-
-img.mr-2 /* Alert Icons for Hunting, etc. */ {
-    filter: grayscale(100%) contrast(30%) brightness(30%);
+    color: rgba(0, 116, 210, 1) !important;
 }
 
 /* ### BREADCRUMB BAR ### */
