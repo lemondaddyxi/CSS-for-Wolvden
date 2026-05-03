@@ -337,6 +337,11 @@ a:hover {
     right:30px;
     color: rgba(158, 112, 52, 1);
 }
+
+/* override white text */
+.col-6 .card.text-center .text-white {
+    color: rgba(158, 112, 52, 1) !important;
+}
 /* ## ------------------------------------------------------- MAIN PAGE ------------------------------------------------------- ## */
 
 #main /* Section containing the site's main content. */ {
@@ -506,19 +511,6 @@ div.card.text-center>img {
     border-radius: 10px;
     border: none !important;
     box-shadow: 0px 0px 10px rgba(240 ,180 ,155 ,0.4);
-}
-
-/* Fix text color for Dynasty / Breeding / etc. */
-.col-6 .card.text-center .card-body,
-.col-6 .card.text-center .card-body a,
-.col-6 .card.text-center .card-body span,
-.col-6 .card.text-center .card-body div {
-    color: rgba(158, 112, 52, 1) !important;
-}
-
-/* hover colour */
-.col-6 .card.text-center .card-body a:hover {
-    color: rgba(0, 116, 210, 1) !important;
 }
 
 /* PACK DYNASTY */
