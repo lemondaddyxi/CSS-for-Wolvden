@@ -605,6 +605,8 @@ div.card-body.bg-light.p-0.text-center {
 /* Headshot icons in card den display */
 img.rounded-bottom {
     border-radius: 130px 130px 130px 130px !important;
+	width: 60px !important;
+	height: auto !important;
 }
 
 /* Nursing Puppy icon */ 
@@ -626,7 +628,7 @@ span.badge.badge-info {
 
 /* Icon hover glow */
 table[data-cave-key] tr:nth-of-type(n+3) td:nth-of-type(4) img:hover, img.rounded-bottom:hover {
-	filter: sepia(30%) brightness(115%) contast(105%) drop-shadow(0 0 6px rgba(180, 220, 255, 0.8));
+	filter: sepia(30%) brightness(115%) contrast(105%) drop-shadow(0 0 6px rgba(180, 220, 255, 0.8)) !important;
 	transition: all 0.2s ease-in-out;
 }
 
