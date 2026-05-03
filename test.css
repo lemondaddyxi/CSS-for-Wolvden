@@ -557,6 +557,7 @@ img[src$="pupsitting.png"] {
     background: rgba(10, 20, 30, 0.5) !important;
     color: rgba(158, 112, 52, 1) !important;
 	border-radius: 30px 30px 30px 30px !important;
+	font-size: 25px;
 }
 
 /* WITHOUT Headshots // Wolf subheaders w/ emojis + FAPA Rollovers Remaining */
@@ -568,6 +569,7 @@ img[src$="pupsitting.png"] {
  /* WITHOUT Headshots // Icons for jobs, etc. */ 
 table[data-cave-key] tr:nth-of-type(n+3) td:nth-of-type(4) img {
     filter: sepia(0%) contrast(100%) brightness(90%);
+	font-size: 25px;
 }
 
 /* WITH Headshots // Affects headshots */ 
@@ -576,6 +578,7 @@ img.border-bottom {
     filter: sepia(0%) contrast(100%) brightness(100%);
     border-radius: 10px;
     margin-top: 4px;
+	font-size: 25px;
 }
 
 /* WITH Headshots // Nursing Puppy icon */
@@ -583,6 +586,7 @@ img.border-bottom.p-2 {
     border: none !important;
     filter: sepia(0%) contrast(100%) brightness(100%);
     border-radius: 10px;
+	font-size: 20px;
 }
 
 /* ### CARD View Den Display ### */
@@ -599,6 +603,7 @@ div.card-body.bg-light.p-0.text-center {
     color: rgba(158, 112, 52, 1) !important;
     margin-bottom: -10px;
     border-radius: 10px 10px 10px 10px !important;
+	font-size: 25px;
 }
 
 .text-light:hover {
