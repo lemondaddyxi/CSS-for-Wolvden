@@ -547,74 +547,40 @@ img[src$="pupsitting.png"] {
     height:150px!important;
     }
 
-/* #### Standard View with & without Headshots ### */
-/* WITH & WITHOUT Headshots // Subheader row of Cave tables, 'Name, Stats, Info, etc.' */
-.subheader {
-    background: rgba(10, 20, 30, 0.5) !important;
-    color: rgba(158, 112, 52, 1);
-	border-radius: 30px 30px 30px 30px !important;
+/* CAVE PUP/WOLF PROFILES */
+.border,
+.border-bottom,
+.border-left,
+.border-right,
+.border-top {
+	border: solid 3px rgba(158, 112, 52, 1) !important; 
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+	            rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+	            rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	border-radius: 100px;
+	margin: 5px;
 }
 
-/* WITHOUT Headshots // Wolf subheaders w/ emojis + FAPA Rollovers Remaining */
-.small, small {
-    filter: sepia(50%) contrast(100%) brightness(90%)
+.border:hover,
+.border-bottom:hover,
+.border-left:hover,
+.border-right:hover,
+.border-top:hover {
+	border: solid 3px rgba(0, 116, 210, 1) !important; 
+	border-radius: 100px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+	            rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+	            rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	margin: 5px;
+	filter: none;
+	transition: ease-in 0.1s;
 }
 
- /* WITHOUT Headshots // Icons for jobs, etc. */ 
-table[data-cave-key] tr:nth-of-type(n+3) td:nth-of-type(4) img {
-    filter: sepia(50%) contrast(100%) brightness(90%)
-}
+.custom-control-label {
+	color: rgba(158, 112, 52, 1);
+	text-shadow: 2px 0 10px #0E0F0B;
+	font-size: 12px;
 
-/* WITH Headshots // Affects headshots */ 
-img.border-bottom {
-    border: none !important;
-    filter: sepia(30%) contrast(100%) brightness(100%);
-    border-radius: 10px;
-    margin-top: 4px;
-}
-
-/* WITH Headshots // Nursing Puppy icon */
-img.border-bottom.p-2 {
-    border: none !important;
-    filter: sepia(30%) contrast(100%) brightness(100%);
-    border-radius: 10px;
-}
-
-/* ### CARD View Den Display ### */
-/* Card background */
-div.card-body.bg-light.p-0.text-center {
-    background-color: rgba(10, 20, 30, 0.5) !important;
-    border-radius: 30px 30px 30px 30px;
-    padding-bottom: .5rem !Important;
-}
-
-/* Headers above wolf icons */
-.text-light {
-    background-color: rgba(10, 20, 30, 0.5) !important;
-    color: rgba(158, 112, 52, 1) !important;
-    margin-bottom: -10px;
-	border-radius: 30px 30px 30px 30px !important;
-	font-size: 20px;
-}
-
-.text-light:hover {
-	color: rgba(0, 116, 210, 1) !important;
-}
-
-/* Headshot icons in card den display */
-img.rounded-bottom {
-    border-radius: 30px 30px 30px 30px !important;
-}
-
-/* Nursing Puppy icon */ 
-img.rounded-bottom.pl-3.pr-3.pt-2.pb-1 {
-    border: 10px !important;
-}
-
-/* NURSING Icon below puppy icon */ 
-span.badge.badge-info {
-    background-color: rgba(105, 71, 92, .6);
-    color: rgba(158, 112, 52, 1);
 }
 
 /* ########## CAVE Bottom Information ########## */
