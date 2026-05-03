@@ -598,7 +598,7 @@ div.card-body.bg-light.p-0.text-center {
 }
 
 .text-light a:hover {
-	color: rgba(0, 116, 210, 1);
+	color: rgba(0, 116, 210, 1) !important;
 }
 
 /* Headshot icons in card den display */
