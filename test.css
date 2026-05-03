@@ -508,28 +508,28 @@ div.card.text-center>img {
 img[src$="packdynasty.png"] {
     content:url('https://i.pinimg.com/1200x/a4/25/cf/a425cfffe59dd7d701feac5e583c81fb.jpg')!important;
     width:370px;
-    height:150px!important;
+    height: auto !important;
 }
  
 /* NESTING */
 img[src$="nesting.png"] {
     content:url('https://i.pinimg.com/736x/d3/15/54/d31554ca6a155170c1e123c3214b385c.jpg')!important;
     width:370px;
-    height:150px!important;
+    height:auto !important;
 }
  
 /* OVERVIEW */
 img[src$="packoverview.png"] {
     content:url('https://i.pinimg.com/1200x/62/54/a8/6254a8fc448474add6bbbf2539ae1282.jpg')!important;
     width:370px;
-    height:150px!important;
+    height:auto!important;
 }
  
 /* BREEDING */
 img[src$="breeding.png"] {
     content:url('https://i.pinimg.com/1200x/c1/a2/80/c1a28079dda57de84b9aa458a0acf327.jpg')!important;
     width:370px;
-    height:150px!important;
+    height:auto!important;
  
 }
 
@@ -537,14 +537,14 @@ img[src$="breeding.png"] {
 img[src$="socializing.png"] {
     content:url('https://i.pinimg.com/1200x/95/d4/d5/95d4d57d88552651f6bda45118e67801.jpg')!important;
     width:370px;
-    height:150px!important;
+    height:auto!important;
 }
 
 /* PUPSITTING */
 img[src$="pupsitting.png"] {
     content:url('https://i.pinimg.com/736x/d0/bc/ac/d0bcace88aa86090f82ff6a6cbbd8209.jpg')!important;
     width:370px;
-    height:150px!important;
+    height:auto!important;
     }
 
 /* #### Standard View with & without Headshots ### */
