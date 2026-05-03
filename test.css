@@ -550,8 +550,9 @@ img[src$="pupsitting.png"] {
 /* #### Standard View with & without Headshots ### */
 /* WITH & WITHOUT Headshots // Subheader row of Cave tables, 'Name, Stats, Info, etc.' */
 .subheader {
-    background: rgba(15, 20, 30, 0.8) !important;
+    background: rgba(10, 20, 30, 0.8) !important;
     color: rgba(158, 112, 52, 1);
+	border-radius: 30px 30px 30px 30px !important;
 }
 
 /* WITHOUT Headshots // Wolf subheaders w/ emojis + FAPA Rollovers Remaining */
@@ -592,6 +593,7 @@ div.card-body.bg-light.p-0.text-center {
     background-color: rgba(10, 20, 30, 0.5) !important;
     color: rgba(158, 112, 52, 1) !important;
     margin-bottom: -10px;
+	border-radius: 30px 30px 30px 30px !important;
 }
 
 /* Headshot icons in card den display */
