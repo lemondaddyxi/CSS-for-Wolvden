@@ -509,12 +509,15 @@ div.card.text-center>img {
 }
 
 /* Fix text color for Dynasty / Breeding / etc. */
-div.card.text-center, div.card.text-center a, div.card.text-center .card-body, div.card.text-center .card-body * {
+.col-6 .card.text-center .card-body,
+.col-6 .card.text-center .card-body a,
+.col-6 .card.text-center .card-body span,
+.col-6 .card.text-center .card-body div {
     color: rgba(158, 112, 52, 1) !important;
 }
 
 /* hover colour */
-div.card.text-center a:hover {
+.col-6 .card.text-center .card-body a:hover {
     color: rgba(0, 116, 210, 1) !important;
 }
 
