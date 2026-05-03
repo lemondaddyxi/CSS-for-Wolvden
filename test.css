@@ -234,27 +234,16 @@ a:hover {
     border-bottom: 2px dashed rgba(70, 90, 105, 0.8);
     border-right: 2px solid rgba(15, 20, 30, 0.8);
     border-left: 2px solid rgba(15, 20, 30, 0.8);
-
-	/* padding */
-	padding: 8px 0;
 } 
 
 /* Individual navigation links: 'Den, Crossroads, etc.' */ 
 .navbar-main .nav-link {
 	font-size: 0 !important;
-
-	/* alignment */
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 #header .navbar-main .navbar-nav {
     display: flex;
     width: 100%;
-
-	/* alignment */
-	align-items: center;
 }
 
 #header .navbar-main .navbar-nav .nav-item {
@@ -274,7 +263,6 @@ a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: .5s ease;
-    font-size: 2rem !important;
 }
 
 /* Hover of the Icons above */
