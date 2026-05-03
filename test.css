@@ -500,7 +500,7 @@ div.card.text-center>img {
 } 
 
 /* 'Dynasty, etc.' Buttons */ 
-.col-6 .card.text-center {
+.col-6 .card.text-center .card-img-overlay, .col-6 .card.text-center .card-img-overlay * {
     background: rgba(10, 20, 30, 1) !important;
     color: rgba(158, 112, 52, 1) !important;
     border-radius: 10px;
