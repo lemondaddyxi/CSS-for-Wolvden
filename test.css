@@ -332,7 +332,7 @@ a:hover {
 
 .breadcrumb::after /*Author Credit*/ 
 {
-    content:'CSS by #201023 (LemonDaddyXi)';
+    content:'CSS by #201023 - LemonDaddyXi';
     position:absolute;
     right:30px;
     color: rgba(158, 112, 52, 1);
