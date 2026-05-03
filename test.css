@@ -391,10 +391,10 @@ h1 /* Pack Name Title */ {
 .table th {
     text-align: center;
     font-family: Caveat;
-    font-size: 30px !important;
+    font-size: 40px !important;
     font-weight: normal;
     padding-bottom: 0rem !Important;
-    color: rgba(255, 235, 215, 1);
+    color: rgba(158, 112, 52, 1);
     border-radius: 15px 15px 0px 0px;
 	
 	/* Remove content except lead name */
@@ -408,7 +408,7 @@ h1 /* Pack Name Title */ {
 }
 
 .table th a /* Pack Leader Name in that table */ {
-    color: rgba(255, 235, 215, 1) !Important;
+    color: rgba(158, 112, 52, 1) !Important;
     display: inline-block;
 }
 
@@ -427,39 +427,36 @@ tr:nth-of-type(odd) {
     background: rgba(15, 20, 30, 0.75) !important;
 }
 
-
-/* ########## Lead Wolf ########## */
+/* ### Lead Wolf ### */
 
 /* Lead Wolf icon background */ 
 .border-none .card {
     background-color:transparent !important;
 }
 
-.border-none .card-img-top, .table .form-row img /* Lead wolf icon */ {
+/* Lead wolf icon */
+.border-none .card-img-top, .table .form-row img {
     border-radius: 160px;
     margin-top: 20px;
 }
 
-
-i.fas.fa-mars.text-danger /* Breeding Male, Heat, etc. Symbol of Lead Wolf */ {
-    color: rgba(220, 195, 165, 1) !important;
+/* Breeding Male, Heat, etc. Symbol of Lead Wolf */ 
+i.fas.fa-mars.text-danger {
+    color: rgba(158, 112, 52, 1) !important;
     margin-left: 20px;
 }
 
-
-/* ########## Featured Wolf ########## */
-
+/* ### Featured Wolf ### */
 .featured-wolf img {
     border-radius: 160px;
     margin-top: 20px;
 
-    width: 200px !important;   /* increased size */
+	/* increased size */
+    width: 200px !important; 
     height: auto !important;
 }
 
-/* =========================
-   FEATURED WOLF – CLEAN ONLY IMAGE
-   ========================= */
+/* ### Featured Wolf ### */
 
 /* Remove EVERYTHING inside featured wolf */
 .featured-wolf > * {
@@ -471,15 +468,21 @@ i.fas.fa-mars.text-danger /* Breeding Male, Heat, etc. Symbol of Lead Wolf */ {
     display: inline-block !important;
 }
 
-/* ########## Dynasty, etc. Buttons ########## */
-
-.card-header /* Shadow Line */ {
+/* ### Dynasty, etc. Buttons ### */
+/* Shadow Line */ 
+.card-header {
     border: none;
-} div.card.text-center>img /* Dystasy, etc. Images */ {
+} 
+
+/* Dynasty, etc. Images */ 
+div.card.text-center>img {
     transition:.5s ease;
     border: none;
     border-radius: 10px 10px 0px 0px;
-} .col-6 .card.text-center /* 'Dynasty, etc.' Buttons */ {
+} 
+
+/* 'Dynasty, etc.' Buttons */ 
+.col-6 .card.text-center {
     background: rgba(10, 20, 30, 1) !important;
     color: rgba(255, 235, 215, 1);
     border-radius: 10px;
@@ -487,9 +490,50 @@ i.fas.fa-mars.text-danger /* Breeding Male, Heat, etc. Symbol of Lead Wolf */ {
     box-shadow: 0px 0px 10px rgba(240 ,180 ,155 ,0.4);
 }
 
+/* PACK DYNASTY */
+img[src$="packdynasty.png"] {
+    content:url('https://i.pinimg.com/1200x/a4/25/cf/a425cfffe59dd7d701feac5e583c81fb.jpg')!important;
+    width:300px;
+    height:150px!important;
+}
+ 
+/* NESTING */
+img[src$="nesting.png"] {
+    content:url('https://i.pinimg.com/736x/d3/15/54/d31554ca6a155170c1e123c3214b385c.jpg')!important;
+    width:300px;
+    height:150px!important;
+}
+ 
+/* OVERVIEW */
+img[src$="packoverview.png"] {
+    content:url('https://i.pinimg.com/1200x/62/54/a8/6254a8fc448474add6bbbf2539ae1282.jpg')!important;
+    width:300px;
+    height:150px!important;
+}
+ 
+/* BREEDING */
+img[src$="breeding.png"] {
+    content:url('https://i.pinimg.com/1200x/c1/a2/80/c1a28079dda57de84b9aa458a0acf327.jpg')!important;
+    width:300px;
+    height:150px!important;
+ 
+}
 
+/* SOCIALIZING */
+img[src$="socializing.png"] {
+    content:url('https://i.pinimg.com/1200x/95/d4/d5/95d4d57d88552651f6bda45118e67801.jpg')!important;
+    width:300px;
+    height:150px!important;
+}
 
-/* ########## Standard View with & without Headshots ########## */
+/* PUPSITTING */
+img[src$="pupsitting.png"] {
+    content:url('https://i.pinimg.com/736x/d0/bc/ac/d0bcace88aa86090f82ff6a6cbbd8209.jpg')!important;
+    width:300px;
+    height:150px!important;
+    }
+
+/* #### Standard View with & without Headshots ### */
 
 .subheader /* WITH & WITHOUT Headhots // Subheader row of Cave tables, 'Name, Stats, Info, etc.' */ {
     background: rgba(15, 20, 30, 0.8) !important;
