@@ -30,7 +30,7 @@ a:hover {
 /* Alerts and notifications that appear at the top of the page. */ 
 .alert {
 	
-	background: linear-gradient(90deg, rgba(180,108,255,0.6), rgba(110,243,255,0.6));
+	background: linear-gradient(90deg, rgba(140,97,106,0.6), rgba(97,118,140,0.6));
     border: 2px dashed rgba(10, 20, 30, 1);
     font-weight: bold;
     color: rgba(220, 195, 165, 1);
@@ -40,6 +40,13 @@ a:hover {
 /* Separate alert links if desired */ 
 .alert a {
     color: rgba(255, 235, 215, 1) !important;
+}
+
+/* icon color resaturation */
+.alert img, 
+.alert svg {
+    filter: none !important;
+    opacity: 1 !important;
 }
 
 /* ### SC and GC icons ### */
