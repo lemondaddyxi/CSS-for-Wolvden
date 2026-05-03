@@ -2,10 +2,6 @@
 /* Import font */
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
-html {
-    font-size: 150%;
-}
-
 /* Background Image, font family, font color */ 
 body, .table th {
     background:url(https://i.imgur.com/Sc3MGgg.jpeg)
@@ -13,6 +9,10 @@ body, .table th {
     background-size:cover !important;
     font-family: caveat;
     color: rgba(158, 112, 52, 1);
+}
+
+body {
+	font-size: 20px !important;
 }
 
 /* Cursor */
