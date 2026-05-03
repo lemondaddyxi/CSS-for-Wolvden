@@ -396,7 +396,7 @@ h1 /* Pack Name Title */ {
     padding-bottom: 0rem !Important;
     color: rgba(158, 112, 52, 1);
     border-radius: 15px 15px 0px 0px;
-	
+
 	/* Remove content except lead name */
     background: transparent !important;
     border: none !important;
@@ -560,11 +560,10 @@ img.border-bottom.p-2 /* WITH Headshots // Nursing Puppy icon */ {
     border-radius: 10px;
 }
 
-
-/* ########## CARD View Den Display ########## */
+/* ### CARD View Den Display ### */
 
 div.card-body.bg-light.p-0.text-center /* Card background */ {
-    background-color: rgba(15, 20, 30, 0.5) !important;
+    background-color: rgba(105, 71, 92, 0.5) !important;
     border-radius: 0px 0px 50px 50px;
     padding-bottom: 1rem !Important;
 }
@@ -576,7 +575,7 @@ div.card-body.bg-light.p-0.text-center /* Card background */ {
 }
 
 img.rounded-bottom /* Headshot icons in card den display */ {
-    border-radius: 100px 100px 0px 0px !important;
+    border-radius: 50px 50px 50px 50px !important;
 }
 
 img.rounded-bottom.pl-3.pr-3.pt-2.pb-1 /* Nursing Puppy icon */ {
@@ -587,13 +586,11 @@ span.badge.badge-info /* NURSING Icon below puppy icon */ {
     color: rgba(220, 195, 165, 1);
 }
 
-
 /* ########## CAVE Bottom Information ########## */
 
 .bottom /* Background of that table */ {
     background: rgba(15, 20, 30, 0.8) !important;
 }
-
 
 /* ## ------------------------------------------------------- PROGRESS BARS FOR HUNGER, ETC. ------------------------------------------------------- ## */
 
@@ -625,7 +622,6 @@ span.badge.badge-info /* NURSING Icon below puppy icon */ {
     color: rgba(220, 195, 165, 1) !important;
     font-weight: bold;
 }
-
 
 .accordion .card:last-of-type /* PLAY ALL Part */ {
     background-color: rgba(15, 20, 30, 0.8) !important;
