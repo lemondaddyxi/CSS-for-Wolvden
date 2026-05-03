@@ -330,6 +330,15 @@ a:hover {
     display: none !important;
 }
 
+.breadcrumb::after /*Author Credit*/ 
+{
+    content:'CSS by #201023 (LemonDaddyXi)';
+    position:absolute;
+    right:35px;
+    font-weight: bold;
+    color: rgba(158, 112, 52, 1);
+    font-family: 'Times New Roman';
+}
 /* ## ------------------------------------------------------- MAIN PAGE ------------------------------------------------------- ## */
 
 #main /* Section containing the site's main content. */ {
