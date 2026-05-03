@@ -46,6 +46,10 @@ a:hover {
     color: rgba(188, 142, 76, 1) !important;
 }
 
+.alert:hover {
+	color: rgba(0, 116, 210, 1) !important;
+}
+
 /* icon color resaturation */
 .alert img, 
 .alert svg {
