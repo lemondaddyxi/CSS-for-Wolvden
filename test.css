@@ -12,7 +12,7 @@ body, .table th {
 }
 
 body {
-	font-size: 20px !important;
+	font-size: 30px !important;
 }
 
 /* Cursor */
@@ -397,24 +397,9 @@ h1 /* Pack Name Title */ {
     color: rgba(158, 112, 52, 1);
     border-radius: 15px 15px 0px 0px;
 
-	/* Remove content except lead name & add gradient*/
+	/* Remove content except lead name & add transparency*/
     background: linear-gradient(90deg, rgba(80,42,65,.6), rgba(0, 116, 210,0.6));
     border: none !important;
-}
-
-/* Pack leader name only */
-.table th:first-child {
-    text-align: left !important;
-}
-
-.table th a /* Pack Leader Name in that table */ {
-    color: rgba(158, 112, 52, 1) !Important;
-    display: inline-block;
-}
-
-/* protect lead name */
-.table th *:not(a) {
-    display: none !important;
 }
 
 /* Individual 'Stripes' of Pack Information + Caves */
