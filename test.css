@@ -874,12 +874,9 @@ div.card.text-center {
 
 /* ## ------------------------------------------------------- LEAD & FEATURED WOLF OVERRIDE ------------------------------------------------------- ## */
 
-/* ## ------------------------------------------------------- LEAD & FEATURED WOLF OVERRIDE ------------------------------------------------------- ## */
-
-/* LEAD WOLF */
+/* LEAD WOLF OVERLAY */
 #main .table .card.mb-3 a {
     position: relative;
-    display: inline-block;
 }
 
 #main .table .card.mb-3 a:before {
@@ -887,24 +884,23 @@ div.card.text-center {
     background-image: url('https://i.imgur.com/XSFj4XT.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
 
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -13%);
 
-    width: 120%;
-    height: 120%;
+    width: 260px;
+    height: 910px;
 
     pointer-events: none;
     z-index: 10;
+    filter: brightness(75%);
 }
 
-/* FEATURED WOLF */
+/* FEATURED WOLF OVERLAY */
 #main .featured-wolf a:first-of-type {
     position: relative;
-    display: inline-block;
 }
 
 #main .featured-wolf a:first-of-type:before {
@@ -912,26 +908,27 @@ div.card.text-center {
     background-image: url('https://i.imgur.com/TW6vfwB.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
 
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -13%);
 
-    width: 120%;
-    height: 120%;
+    width: 260px;
+    height: 910px;
 
     pointer-events: none;
     z-index: 10;
+    filter: brightness(75%);
 }
 
-/* MOBILE FIX */
+/* MOBILE FIXES */
 @media (max-width: 768px) {
     #main .table .card.mb-3 a:before,
     #main .featured-wolf a:first-of-type:before {
-        width: 110%;
-        height: 110%;
+        width: 180px;
+        height: 600px;
+        transform: translate(-50%, -20%);
     }
 }
 
