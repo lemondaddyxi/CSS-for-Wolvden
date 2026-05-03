@@ -553,34 +553,114 @@ img[src$="pupsitting.png"] {
 .border-left,
 .border-right,
 .border-top {
-	border: solid 3px rgba(158, 112, 52, 1) !important; 
-	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-	            rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-	            rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	border: solid 3px #B34EC4 !important;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 	border-radius: 100px;
 	margin: 5px;
 }
-
 .border:hover,
 .border-bottom:hover,
 .border-left:hover,
 .border-right:hover,
 .border-top:hover {
-	border: solid 3px rgba(0, 116, 210, 1) !important; 
+ border: solid 3px #633C68 !important;
 	border-radius: 100px;
-	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-	            rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-	            rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 	margin: 5px;
 	filter: none;
 	transition: ease-in 0.1s;
 }
 
-.custom-control-label {
-	color: rgba(158, 112, 52, 1);
-	text-shadow: 2px 0 10px #0E0F0B;
-	font-size: 12px;
 
+.custom-control-label {
+  color:#7B4A82;
+  text-shadow: 2px 0 10px #0E0F0B;
+  font-family: 'Viaoda Libre';
+  
+}
+/* CARD LISTING */
+		.bg-light {
+			border: solid 2px #1c304d;
+			border-radius: 10px;
+			background: #261627;
+background: linear-gradient(0deg, rgba(38, 22, 39, 1) 0%, rgba(63, 36, 66, 1) 47%, rgba(87, 51, 92, 1) 79%) !important;
+		}
+		.badge-info {
+		  background-color: #87528E;
+		  color: #EDF2F4;
+		  font-family: 'Viaoda Libre';
+		}
+
+		.text-truncate {
+			background: none !important;
+			color: #EDF2F4 !important;
+		}
+
+		.text-truncate small.b {
+			font-size: 20px;
+			font-weight: lighter;
+		}
+
+		.rounded-bottom,
+		.rounded-left {
+			border-radius: 100px !important;
+			margin-top: 5px;
+			width: 150px;
+			transition: filter 1s ease-in-out;
+		}
+
+		.rounded-bottom:hover,
+		.rounded-left:hover {
+			filter: grayscale(0%) !important;
+			transition: filter 1s ease-in-out !important;
+			box-shadow: 0 0 10px #A76FAE;
+		}
+
+		img.rounded-bottom.pl-3.pr-3.pt-2.pb-1 {
+			padding: 0 !important;
+			width: 150px;
+			height: auto;
+		}
+
+		.pr-4,
+		.px-4 {
+			margin-bottom: 5px;
+		}
+
+.card-header{
+  background:rgba(99, 60, 104,0.6);
+  border: 3px solid #633C68;
+  color: #c0c0c0;
+}
+div.card-body.pt-1.pb-1 {
+  Display: none;
+}
+tr {
+	background: none;
+	border: none;
+	border-radius: 0;
+}
+#main .card{
+  background: transparent !important;
+  color: red !important;
+  text-shadow: 0;
+  border-radius:15px;
+  border-collapse: separate;
+  transition: .5s ease;
+}
+#main .card-body {
+background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGxkZnhmODlnb3huc203amQwM25vd2VlNmJsM2g0MTl3c3ppdGEzNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/r8cPSALOBMPiMZSpfm/giphy.gif'); 
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  color: #EDF2F4 !important;
+  text-shadow: 1px 0 0px #16031A;
+  border-radius:5px;
+  border: none;
+  border-collapse: separate;
+  transition: .5s;
+	padding-left: 35px;
 }
 
 /* ########## CAVE Bottom Information ########## */
