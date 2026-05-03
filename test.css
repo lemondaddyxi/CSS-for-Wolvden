@@ -589,7 +589,7 @@ div.card-body.bg-light.p-0.text-center {
 
 /* Headers above wolf icons */
 .text-light {
-    background-color: rgba(10, 30, 60, 0.6) !important;
+    /* background-color: rgba(10, 30, 60, 0.6) !important; */
     color: rgba(158, 112, 52, 1) !important;
     margin-bottom: -10px;
 }
