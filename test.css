@@ -604,7 +604,7 @@ div.card-body.bg-light.p-0.text-center {
 
 /* Headshot icons in card den display */
 img.rounded-bottom {
-    border-radius: 70px 70px 70px 70px !important;
+    border-radius: 130px 130px 130px 130px !important;
 }
 
 /* Nursing Puppy icon */ 
@@ -622,6 +622,12 @@ span.badge.badge-info {
 /* Background of that table */
 .bottom {
     background: rgba(15, 20, 30, 0.8) !important;
+}
+
+/* Icon hover glow */
+table[data-cave-key] tr:nth-of-type(n+3) td:nth-of-type(4) img:hover, img.rounded-bottom:hover {
+	filter: sepia(30%) brightness(115%) contast(105%) drop-shadow(0 0 6px rgba(180, 220, 255, 0.8));
+	transition: all 0.2s ease-in-out;
 }
 
 /* ## ------------------------------------------------------- PROGRESS BARS FOR HUNGER, ETC. ------------------------------------------------------- ## */
