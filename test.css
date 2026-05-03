@@ -501,9 +501,6 @@ div.card.text-center>img {
     box-shadow: 0px 0px 10px rgba(240 ,180 ,155 ,0.4);
 }
 
-/******************************************/
-/*********** CHANGE ME *******************/
-/******************************************/
 /* PACK DYNASTY */
 img[src$="packdynasty.png"] {
     content:url('https://i.imgur.com/1VhN6YX.png')!important;
@@ -513,7 +510,7 @@ img[src$="packdynasty.png"] {
  
 /* NESTING */
 img[src$="nesting.png"] {
-    content:url(' ')!important;
+    content:url('https://i.imgur.com/vViCCF2.jpeg')!important;
     width:370px;
     height:150px !important;
 }
@@ -642,27 +639,24 @@ table[data-cave-key] tr:nth-of-type(n+3) td:nth-of-type(4) img:hover, img.rounde
     margin-bottom: 2px;
 }
 
-/******************************************/
-/*********** CHANGE ME *******************/
-/******************************************/
 /* ENERGY bars */ 
 .bg-warning, .bg-success {
-    background:url(https://i.imgur.com/dUveVIE.png);
+    background:url(https://i.imgur.com/LRJl5V4.png);
 }
 
 /* HUNGER bars */
 #sidebar .bg-danger, .bg-primary {
-    background:url(https://i.imgur.com/yj7eXYl.png);
+    background:url(https://i.imgur.com/Ti198Bd.png);
 }
 
 /* HP bars */
 #sidebar .bg-info, .bg-danger {
-    background:url(https://i.imgur.com/pYLV2z6.png);
+    background:url(https://i.imgur.com/hao3dOG.png);
 }
 
 /* EXP bars */
 #sidebar .bg-success, .bg-info {
-    background:url(https://i.imgur.com/vj3gNry.png);
+    background:url(https://i.imgur.com/DMuy8Vi.png);
 }
 
 /* ## ------------------------------------------------------- FEED ALL & PLAY ALL BUTTONS ------------------------------------------------------- ## */
