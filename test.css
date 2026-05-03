@@ -513,6 +513,7 @@ img[src$="packdynasty.png"] {
     content:url('https://i.imgur.com/1VhN6YX.png')!important;
     width:370px;
     height: 150px !important;
+    color: rgba(158, 112, 52, 1);
 }
  
 /* NESTING */
@@ -520,6 +521,7 @@ img[src$="nesting.png"] {
     content:url('https://i.imgur.com/vViCCF2.jpeg')!important;
     width:370px;
     height:150px !important;
+    color: rgba(158, 112, 52, 1);
 }
  
 /* OVERVIEW */
@@ -527,6 +529,7 @@ img[src$="packoverview.png"] {
     content:url('https://i.imgur.com/IYaR9wD.png')!important;
     width:370px;
     height:150px!important;
+    color: rgba(158, 112, 52, 1);
 }
  
 /* BREEDING */
@@ -534,7 +537,7 @@ img[src$="breeding.png"] {
     content:url('https://i.imgur.com/jPsinc9.jpeg')!important;
     width:370px;
     height:150px!important;
- 
+    color: rgba(158, 112, 52, 1);
 }
 
 /* SOCIALIZING */
@@ -542,6 +545,7 @@ img[src$="socializing.png"] {
     content:url('https://i.imgur.com/bWgdxkl.png')!important;
     width:370px;
     height:150px!important;
+    color: rgba(158, 112, 52, 1);
 }
 
 /* PUPSITTING */
@@ -549,6 +553,7 @@ img[src$="pupsitting.png"] {
     content:url('https://i.imgur.com/J2IKL4o.jpeg')!important;
     width:370px;
     height:150px!important;
+    color: rgba(158, 112, 52, 1);
     }
 
 /* #### Standard View with & without Headshots ### */
@@ -869,9 +874,12 @@ div.card.text-center {
 
 /* ## ------------------------------------------------------- LEAD & FEATURED WOLF OVERRIDE ------------------------------------------------------- ## */
 
-/* LEAD WOLF OVERLAY */
+/* ## ------------------------------------------------------- LEAD & FEATURED WOLF OVERRIDE ------------------------------------------------------- ## */
+
+/* LEAD WOLF */
 #main .table .card.mb-3 a {
     position: relative;
+    display: inline-block;
 }
 
 #main .table .card.mb-3 a:before {
@@ -879,23 +887,24 @@ div.card.text-center {
     background-image: url('https://i.imgur.com/XSFj4XT.png');
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
 
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -13%);
+    transform: translate(-50%, -50%);
 
-    width: 260px;
-    height: 910px;
+    width: 120%;
+    height: 120%;
 
     pointer-events: none;
     z-index: 10;
-    filter: brightness(75%);
 }
 
-/* FEATURED WOLF OVERLAY */
+/* FEATURED WOLF */
 #main .featured-wolf a:first-of-type {
     position: relative;
+    display: inline-block;
 }
 
 #main .featured-wolf a:first-of-type:before {
@@ -903,30 +912,26 @@ div.card.text-center {
     background-image: url('https://i.imgur.com/TW6vfwB.png');
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
 
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -13%);
+    transform: translate(-50%, -50%);
 
-    width: 260px;
-    height: 910px;
+    width: 120%;
+    height: 120%;
 
     pointer-events: none;
     z-index: 10;
-    filter: brightness(75%);
 }
 
-/* MOBILE FIXES */
+/* MOBILE FIX */
 @media (max-width: 768px) {
-    #main .table .card.mb-3 a:before {
-        width: 180px;
-        height: auto;
-    }
-
+    #main .table .card.mb-3 a:before,
     #main .featured-wolf a:first-of-type:before {
-        width: 180px;
-        height: auto;
+        width: 110%;
+        height: 110%;
     }
 }
 
