@@ -415,8 +415,8 @@ h1 /* Pack Name Title */ {
 }
 
 /* link hover */
-table th:hover {
-	color: rgba(0, 116, 210, 1);
+table th:hover a {
+	color: rgba(0, 116, 210, 1) !important;
 }
 
 /* Individual 'Stripes' of Pack Information + Caves */
