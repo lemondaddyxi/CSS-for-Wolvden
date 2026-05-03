@@ -927,8 +927,13 @@ div.card.text-center {
     #main .table .card.mb-3 a:before,
     #main .featured-wolf a:first-of-type:before {
         width: 180px;
-        height: 600px;
-        transform: translate(-50%, -20%);
+        height: 100%;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        background-size: contain;
     }
 }
 
