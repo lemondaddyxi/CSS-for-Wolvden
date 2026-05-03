@@ -417,6 +417,11 @@ h1 /* Pack Name Title */ {
     display: none !important;
 }
 
+/* link hover */
+table th:hover {
+	color: rgba(0, 116, 210, 1);
+}
+
 /* Individual 'Stripes' of Pack Information + Caves */
 tr:nth-of-type(odd) {
     background: rgba(10, 30, 60, 0.6) !important;
