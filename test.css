@@ -556,14 +556,13 @@ img[src$="pupsitting.png"] {
 .subheader {
     background: rgba(10, 20, 30, 0.5) !important;
     color: rgba(158, 112, 52, 1) !important;
-	font-size: 30px !important; 
+	font-size: 20px !important; 
 	border-radius: 30px 30px 30px 30px !important;
 }
 
 /* WITHOUT Headshots // Wolf subheaders w/ emojis + FAPA Rollovers Remaining */
 .small, small {
     filter: sepia(0%) contrast(100%) brightness(90%);
-	font-size: 30px;
 }
 
  /* WITHOUT Headshots // Icons for jobs, etc. */ 
@@ -600,7 +599,6 @@ div.card-body.bg-light.p-0.text-center {
     color: rgba(158, 112, 52, 1) !important;
     margin-bottom: -10px;
     border-radius: 10px 10px 10px 10px !important;
-	font-size: 30px;
 }
 
 .text-light:hover {
