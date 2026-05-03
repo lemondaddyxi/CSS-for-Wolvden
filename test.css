@@ -370,7 +370,7 @@ h1 /* Pack Name Title */ {
 }
 .nav-tabs .nav-link.active /* Link of the page being viewed */ {
     background-color: rgba(10, 20, 30, 1);
-    color: rgba(220, 195, 165, 1);
+    color: rgba(158, 112, 52, 1);
     border: 2px solid rgba(10, 20, 30, 1);
     font-weight: bold;
     border-radius: 10px 0px 0px 0px;
@@ -490,6 +490,9 @@ div.card.text-center>img {
     box-shadow: 0px 0px 10px rgba(240 ,180 ,155 ,0.4);
 }
 
+/******************************************/
+/*********** CHANGE ME *******************/
+/******************************************/
 /* PACK DYNASTY */
 img[src$="packdynasty.png"] {
     content:url('https://i.pinimg.com/1200x/a4/25/cf/a425cfffe59dd7d701feac5e583c81fb.jpg')!important;
@@ -534,139 +537,175 @@ img[src$="pupsitting.png"] {
     }
 
 /* #### Standard View with & without Headshots ### */
-
-.subheader /* WITH & WITHOUT Headhots // Subheader row of Cave tables, 'Name, Stats, Info, etc.' */ {
+/* WITH & WITHOUT Headhots // Subheader row of Cave tables, 'Name, Stats, Info, etc.' */
+.subheader {
     background: rgba(15, 20, 30, 0.8) !important;
-    color: rgba(220, 195, 165, 1);
+    color: rgba(158, 112, 52, 1);
 }
 
-.small, small /* WITHOUT Headshots // Wolf subheaders w/ emojis + FAPA Rollovers Remaining */ {
+/* WITHOUT Headshots // Wolf subheaders w/ emojis + FAPA Rollovers Remaining */
+.small, small {
     filter: sepia(50%) contrast(100%) brightness(90%)
 }
 
-table[data-cave-key] tr:nth-of-type(n+3) td:nth-of-type(4) img /* WITHOUT Headshots // Icons for jobs, etc. */ {
+ /* WITHOUT Headshots // Icons for jobs, etc. */ 
+table[data-cave-key] tr:nth-of-type(n+3) td:nth-of-type(4) img {
     filter: sepia(50%) contrast(100%) brightness(90%)
 }
 
-img.border-bottom /* WITH Headshots // Affects headshots */ {
+/* WITH Headshots // Affects headshots */ 
+img.border-bottom {
     border: none !important;
     filter: sepia(30%) contrast(100%) brightness(100%);
     border-radius: 10px;
     margin-top: 4px;
 }
-img.border-bottom.p-2 /* WITH Headshots // Nursing Puppy icon */ {
+
+/* WITH Headshots // Nursing Puppy icon */
+img.border-bottom.p-2 {
     border: none !important;
     filter: sepia(30%) contrast(100%) brightness(100%);
     border-radius: 10px;
 }
 
 /* ### CARD View Den Display ### */
-
-div.card-body.bg-light.p-0.text-center /* Card background */ {
+/* Card background */
+div.card-body.bg-light.p-0.text-center {
     background-color: rgba(10, 20, 30, 0.5) !important;
-    border-radius: 0px 0px 50px 50px;
+    border-radius: 30px 30px 30px 30px;
     padding-bottom: 1rem !Important;
 }
 
-.text-light /* Headers above wolf icons */ {
+/* Headers above wolf icons */
+.text-light {
     background-color: rgba(10, 30, 60, 0.6) !important;
-    color: rgba(220, 195, 165, 1) !important;
+    color: rgba(158, 112, 52, 1) !important;
     margin-bottom: -10px;
 }
 
-img.rounded-bottom /* Headshot icons in card den display */ {
-    border-radius: 50px 50px 50px 50px !important;
+/* Headshot icons in card den display */
+img.rounded-bottom {
+    border-radius: 30px 30px 30px 30px !important;
 }
 
-img.rounded-bottom.pl-3.pr-3.pt-2.pb-1 /* Nursing Puppy icon */ {
+/* Nursing Puppy icon */ 
+img.rounded-bottom.pl-3.pr-3.pt-2.pb-1 {
     border: 10px !important;
 }
-span.badge.badge-info /* NURSING Icon below puppy icon */ {
+
+/* NURSING Icon below puppy icon */ 
+span.badge.badge-info {
     background-color: rgba(10, 30, 60, 0.6);
-    color: rgba(220, 195, 165, 1);
+    color: rgba(158, 112, 52, 1);
 }
 
 /* ########## CAVE Bottom Information ########## */
-
-.bottom /* Background of that table */ {
+/* Background of that table */
+.bottom {
     background: rgba(15, 20, 30, 0.8) !important;
 }
 
 /* ## ------------------------------------------------------- PROGRESS BARS FOR HUNGER, ETC. ------------------------------------------------------- ## */
 
-.progress /* Progress bars when empty */ {
+/* Progress bars when empty */
+.progress {
     background-color: rgba(15, 70, 120, 1) !important;
     border-radius: 5px;
     margin-bottom: 2px;
 }
-.bg-warning, .bg-success /* ENERGY bars */ {
+
+/******************************************/
+/*********** CHANGE ME *******************/
+/******************************************/
+/* ENERGY bars */ 
+.bg-warning, .bg-success {
     background:url(https://i.imgur.com/dUveVIE.png);
 }
-#sidebar .bg-danger, .bg-primary  /* HUNGER bars */ {
+
+/* HUNGER bars */
+#sidebar .bg-danger, .bg-primary {
     background:url(https://i.imgur.com/yj7eXYl.png);
 }
-#sidebar .bg-info, .bg-danger /* HP bars */ {
+
+/* HP bars */
+#sidebar .bg-info, .bg-danger {
     background:url(https://i.imgur.com/pYLV2z6.png);
 }
-#sidebar .bg-success, .bg-info /* EXP bars */ {
+
+/* EXP bars */
+#sidebar .bg-success, .bg-info {
     background:url(https://i.imgur.com/vj3gNry.png);
 }
 
-
 /* ## ------------------------------------------------------- FEED ALL & PLAY ALL BUTTONS ------------------------------------------------------- ## */
 
-.accordion .card:first-of-type /* FEED ALL Part */ {
+/* FEED ALL Part */
+.accordion .card:first-of-type {
     background-color: rgba(15, 20, 30, 0.8) !important;
-    color: rgba(220, 195, 165, 1);
-}.accordion .card:first-of-type a /* Rollovers remaining */ {
-    color: rgba(220, 195, 165, 1) !important;
+    color: rgba(158, 112, 52, 1);
+
+/* Rollovers remaining */
+}.accordion .card:first-of-type a {
+    color: rgba(158, 112, 52, 1) !important;
     font-weight: bold;
 }
 
-.accordion .card:last-of-type /* PLAY ALL Part */ {
+/* PLAY ALL Part */
+.accordion .card:last-of-type {
     background-color: rgba(15, 20, 30, 0.8) !important;
-    color: rgba(220, 195, 165, 1);
-}.accordion .card:last-of-type a {
-    color: rgba(220, 195, 165, 1) !important;
+    color: rgba(158, 112, 52, 1);
+}
+
+.accordion .card:last-of-type a {
+    color: rgba(158, 112, 52, 1) !important;
     font-weight: bold;
 }
 
-.btn-link /* FAPA Header Text + 'Remove Icon' from Featured Wolf */ {
+/* FAPA Header Text + 'Remove Icon' from Featured Wolf */ 
+.btn-link {
     color: rgba(255, 235, 215, 1);
-}.btn-link:hover {
-    color: rgba(220, 195, 165, 1);
 }
 
-.btn-info /* Feed/Play Buttons */ {
+.btn-link:hover {
+    color: rgba(158, 112, 52, 1);
+}
+
+/* Feed/Play Buttons */ 
+.btn-info {
     background: rgba(10, 20, 30, 0.65);
     color: rgba(255, 240, 215, 1) !important;
     font-weight: bold;
     border-radius: 10px;
     border: 2px solid rgba(10, 20, 30, 1);
-}.btn-info:hover {
+}
+
+.btn-info:hover {
     background: rgba(10, 20, 30, 0.65);
-    color: rgba(220, 195, 165, 1) !important;
+    color: rgba(158, 112, 52, 1) !important;
     font-weight: bold;
     border-radius: 10px;
     border: 2px solid rgba(10, 20, 30, 1);
 }
-
-
 /* ## ------------------------------------------------------- CAVE BUILD SECTION ------------------------------------------------------- ## */
 
-div.card.mb-3 /* Create New Cave background + Breeding Male background */ {
+/* Create New Cave background + Breeding Male background */
+div.card.mb-3 {
     background-color: transparent !important;
     color: rgba(255, 235, 215, 1);
 }
-button#submitBtn.btn.btn-primary /* Create New Cave button */ {
+
+/* Create New Cave button */ 
+button#submitBtn.btn.btn-primary {
     background: rgba(10, 20, 30, 1);
     color: rgba(255, 240, 215, 1) !important;
     font-weight: bold;
     border-radius: 10px;
     border: 2px solid rgba(15, 20, 30, 0.8);
-}button#submitBtn.btn.btn-primary:hover {
+}
+
+button#submitBtn.btn.btn-primary:hover {
     background: rgba(10, 20, 30, 1);
-    color: rgba(220, 195, 165, 1) !important;
+    color: rgba(158, 112, 52, 1) !important;
     font-weight: bold;
     border-radius: 10px;
     border: 2px solid rgba(15, 20, 30, 0.8);
@@ -724,7 +763,7 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
     color: rgba(255, 240, 215, 1);
 }.btn-warning:hover {
     background-color: rgba(15, 20, 30, 0.8);
-    color: rgba(220, 195, 165, 1);
+    color: rgba(158, 112, 52, 1);
 }
 
 
@@ -737,13 +776,13 @@ div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Bor
 }
 
 #footer a /* Links in that Footer */ {
-    color: rgba(220, 195, 165, 1);
+    color: rgba(158, 112, 52, 1);
 }#footer a:hover /* Hover of the above */ {
     color: rgba(255, 240, 215, 1);
 }
 
 #footer nav .nav-item .nav-link /* Terms of Service, etc. links */ {
-    color: rgba(220, 195, 165, 1);
+    color: rgba(158, 112, 52, 1);
 }  #footer nav .nav-item .nav-link:hover /* Hover of the above */ {
     color: rgba(255, 240, 215, 1);
 }
