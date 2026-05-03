@@ -338,10 +338,6 @@ a:hover {
     color: rgba(158, 112, 52, 1);
 }
 
-/* override white text */
-.col-6 .card.text-center .text-white {
-    color: rgba(158, 112, 52, 1) !important;
-}
 /* ## ------------------------------------------------------- MAIN PAGE ------------------------------------------------------- ## */
 
 #main /* Section containing the site's main content. */ {
