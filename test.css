@@ -236,7 +236,6 @@ a:hover {
 /* Section containing the site navigation. */ 
 #header .navbar-main {
     background-color: rgba(10, 20, 30, 1);
-    border-bottom: 2px dashed rgba(70, 90, 105, 0.8);
     border-right: 2px solid rgba(15, 20, 30, 0.8);
     border-left: 2px solid rgba(15, 20, 30, 0.8);
 } 
