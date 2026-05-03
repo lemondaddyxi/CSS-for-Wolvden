@@ -8,7 +8,7 @@ body, .table th {
     center fixed !important;
     background-size:cover !important;
     font-family: caveat;
-    color: rgba(105, 200, 235, 1);
+    color: rgba(158, 112, 52, 1);
 }
 
 /* Cursor */
@@ -18,23 +18,23 @@ body, .table th {
 
 /* Links on entire page */ 
 a {
-    color: rgba(185, 160, 150, 1);
+    color: rgba(158, 112, 52, 1);
 }
 
 /* Hover of links on entire page */
 a:hover {
-    color: rgba(105, 200, 235, 1);
+    color: rgba(10, 116, 210, 1);
     text-decoration: none;
 }
 
 /* Alerts and notifications that appear at the top of the page. */ 
 .alert {
 	
-	background: linear-gradient(90deg, rgba(180,108,255,0.6), rgba(110,243,255,0.6));
-    border: 2px dashed rgba(10, 20, 30, 1);
+	background: linear-gradient(90deg, rgba(80,42,65,.6), rgba(0, 116, 210,0.6));
     font-weight: bold;
-    color: rgba(220, 195, 165, 1);
-    border-radius: 10px;
+    color: rgba(158, 112, 52, 1);
+    border-radius: 15px;
+	box-shadow: 0px 0px 10px rgba(188, 142, 76 ,0.4);
 } 
 
 /* Separate alert links if desired */ 
@@ -323,7 +323,7 @@ img.mr-2 /* Alert Icons for Hunting, etc. */ {
 }
 
 h1 /* Pack Name Title */ {
-    color: rgba(250, 230, 210, 1);
+    color: rgba(158, 112, 52, 1);
     font-family: Caveat;
     text-align: center;
     font-size: 70px;
@@ -362,10 +362,10 @@ h1 /* Pack Name Title */ {
 
 .table /* Tables containing Pack and User information */ {
     background: rgba(10, 30, 60, 0.6);
-    color: rgba(220, 195, 165, 1);
+    color: rgba(188, 142, 76, 1);
     border: none;
     border-radius: 15px;
-    box-shadow: 0px 0px 10px rgba(240 ,180 ,155 ,0.4);
+    box-shadow: 0px 0px 10px rgba(188, 142, 76 ,0.4);
 }
 
 .table th /* Individual table headers - Title of the lead, Cave Names, etc. */ {
