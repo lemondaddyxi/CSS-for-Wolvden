@@ -399,6 +399,15 @@ h1 /* Pack Name Title */ {
     border: none !important;
 }
 
+/* Cave headers */
+.table th a{
+	font-size: 35px;
+}
+
+.table th a:hover{
+	color: rgba(0, 116, 210, 1);
+}
+
 /* Pack leader name only */
 .table th:first-child {
     text-align: left !important;
