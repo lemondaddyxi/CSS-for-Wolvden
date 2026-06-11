@@ -1,183 +1,1068 @@
-/* ## ------------------------------------------------------- GENERAL ------------------------------------------------------- ## */
+/* ## ------------------------------------------------------- BLUE FLOWER LAKE CSS ------------------------------------------------------- ## */
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&family=Caveat:wght@400;600&display=swap');
-
-:root {
-    --bg-dark: #0b1020;
-    --bg-mid: #141a33;
-    --accent-1: #6ef3ff;
-    --accent-2: #b46cff;
-    --accent-3: #ffd6ff;
-    --panel: rgba(20, 26, 51, 0.65);
-    --border: rgba(110, 243, 255, 0.25);
-}
-
+/* Background Image, font family, font color */ 
 body, .table th {
-    background: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG9la2szM2g1OGk4b2trMXdvMTRsMzQyZHA2OHE0enY1dXVqbDdwNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Dfne6TERzn0SfOgJrp/giphy.gif)
+    background:url(https://i.imgur.com/Sc3MGgg.jpeg)
     center fixed !important;
-    background-size: cover !important;
-    font-family: 'Quicksand', sans-serif;
-    color: var(--accent-3);
+    background-size:cover !important;
+    font-family: caveat;
+    color: rgba(188, 142, 76, 1);
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Caveat', cursive;
-    color: var(--accent-1);
+body {
+	font-size: 20px !important;
 }
 
+/* Cursor */
+* {
+    cursor: url('https://i.imgur.com/5hJL5ms.png'), progress !important;
+}
+
+/* Links on entire page */ 
 a {
-    color: var(--accent-1);
+    color: rgba(188, 142, 76, 1);
 }
+
+/* Hover of links on entire page */
 a:hover {
-    color: var(--accent-2);
+    color: rgba(0, 116, 210, 1);
     text-decoration: none;
 }
 
+/* Alerts and notifications that appear at the top of the page. */ 
 .alert {
-    background: var(--panel);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    color: var(--accent-3);
-    backdrop-filter: blur(6px);
+	background: linear-gradient(90deg, rgba(80,42,65,.6), rgba(0, 116, 210,0.6));
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(188, 142, 76 ,0.4);
+} 
+
+/* Separate alert links if desired */ 
+.alert a {
+    color: rgba(188, 142, 76, 1) !important;
 }
 
-/* ## ------------------------------------------------------- BUTTONS ------------------------------------------------------- ## */
+.alert:hover {
+	color: rgba(0, 116, 210, 1) !important;
+}
 
+/* icon color resaturation */
+.alert img, 
+.alert svg {
+    filter: none !important;
+    opacity: 1 !important;
+}
+
+/* ### SC and GC icons ### */
+.icon-beetle-gold,
+	.icon-gold-cone::before {
+		content: '';
+		background-image: url('https://i.imgur.com/9pEMC9d.png') !important;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 26px;
+		height: 26px;
+	}
+
+	.icon-beetle-silver,
+	.icon-silver-cone::before {
+		content: '';
+		background-image: url('https://i.imgur.com/n2lE2Vo.png') !important;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 26px;
+		height: 26px;
+	}
+
+/* ## ------------------------------------------------------- REPORT, SAVE/UPDATE, BOOKMARK ------------------------------------------------------- ## */
+
+/* Report button */ 
 .btn-danger {
-    background: var(--panel);
-    border: 1px solid var(--border);
-    color: var(--accent-2);
+    background: rgba(10, 20, 30, 0.65);
+    color: rgba(188, 142, 76, 1);
     border-radius: 10px;
-}
-.btn-danger:hover {
-    color: var(--accent-1);
+    border: 2px solid rgba(10, 20, 30, 1);
 }
 
-.btn-primary,
-.btn-success {
-    background: var(--panel);
-    border: 1px solid var(--border);
-    color: var(--accent-3);
+.btn-danger:hover {
+    background: rgba(10, 20, 30, 0.65);
+    color: rgba(188, 142, 76, 1);
     border-radius: 10px;
+    border: 2px solid rgba(10, 20, 30, 1);
 }
-.btn-primary:hover,
-.btn-success:hover {
-    color: var(--accent-1);
+
+/* Update/Save buttons on entire page */ 
+.btn-primary, .btn-success {
+    background: rgba(10, 20, 30, 0.65);
+    color: rgba(188, 142, 76, 1);
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid rgba(10, 20, 30, 1);
 }
+
+/* Hover of the above */
+.btn-primary:hover, .btn-success:hover {
+    background: rgba(10, 20, 30, 0.65);
+    color: rgba(0, 116, 210, 1);
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid rgba(10, 20, 30, 1);
+}
+
+/* Bookmark Icon */ 
+#bookmarkPage.fas.fa-bookmark.text-danger {
+    color: rgba(130, 68, 106, 1) !important;
+}
+
 
 /* ## ------------------------------------------------------- BOXES ------------------------------------------------------- ## */
 
-.box1, .box2, .box3, .box4, .box5, .box6 {
-    background: var(--panel);
-    border: 1px solid var(--border);
-    color: var(--accent-3);
-    backdrop-filter: blur(8px);
-    font-size: 13px;
-    text-align: center;
-    overflow: auto;
+/* Small box in combination with Box2 */ 
+.box1 {
+	background-color: rgba(10, 20, 30, 0.8);
+    color: rgba(188, 142, 76, 1);
+	text-align: center;
+	font-size: 25px;
+	padding: 15px;
+	margin: 0 2% 30px;
+	border-radius: 10px;
+	float: left;
+	width: 30%;
+	height: 145px;
+	overflow: auto;
+    border: 2px solid rgba(15, 20, 30, 0.8);
 }
 
-.box1 { border-radius: 12px; }
-.box2 { border-radius: 50%; }
-.box3 { border-radius: 12px; }
-.box4 { border-radius: 12px; }
-.box5 { border-radius: 20px 60px; }
-.box6 { border-radius: 60px 20px; }
+/* Round Box in combination with Box2 */
+.box2 {
+	background-color: rgba(158, 112, 52, 0.7);
+    color: rgba(188, 142, 76, 1);
+	text-align: center;
+	font-size: 25px;
+	padding: 15px;
+	margin: 0 2% 30px;
+	border-radius: 100px;
+	float: left;
+	width: 28%;
+	height: 145px;
+	overflow: auto;
+    border: 2px solid rgba(158, 112, 52, 1);
+}
 
+/* Biggest Box available */ 
+.box3 {
+	background-color: rgba(10, 20, 30, 0.8);
+    color: rgba(188, 142, 76, 1);
+    text-align: center;
+	font-size: 25px;
+	padding: 15px;
+	margin: 0 2% 30px;
+	border-radius: 10px;
+	float: left;
+	width: 96%;
+	height: 175px;
+	overflow: auto;
+    border: 2px solid rgba(15, 20, 30, 0.8);
+}
+
+/* Medium Box for two of the same beside the other */
+.box4  {
+	background-color: rgba(10, 20, 30, 0.8);
+    color: rgba(188, 142, 76, 1);
+    text-align: center;
+	font-size: 25px;
+	padding: 15px;
+	margin: 0 2% 30px;
+	border-radius: 10px;
+	float: left;
+	width: 46%;
+	height: 145px;
+	overflow: auto;
+    border: 2px solid rgba(15, 20, 30, 0.8);
+}
+
+ /* Medium Box in combination with Box6 */ 
+.box5 {
+	background-color: rgba(10, 20, 30, 0.8);
+    color: rgba(188, 142, 76, 1);
+    text-align: center;
+	font-size: 25px;
+	padding: 15px;
+	margin: 0 2% 30px;
+	border-radius: 10px 50px 10px 50px;
+	float: left;
+	width: 46%;
+	height: 145px;
+	overflow: auto;
+    border: 2px solid rgba(15, 20, 30, 0.8);
+}
+
+/* Medium Box in combination with Box5 */ 
+.box6 {
+	background-color: rgba(10, 20, 30, 0.8);
+    color: rgba(188, 142, 76, 1);
+    text-align: center;
+	font-size: 25px;
+	padding: 15px;
+	margin: 0 2% 30px;
+	border-radius: 50px 10px 50px 10px;
+	float: left;
+	width: 46%;
+	height: 145px;
+	overflow: auto;
+    border: 2px solid rgba(15, 20, 30, 0.8);
+}
+
+/* Scrollbar of boxes and page */
 ::-webkit-scrollbar {
-    width: 8px;
+	width: 10px;
+	height: 0px;
+	border-radius: 10px;
+	overflow: hidden !important;
+}
+::-webkit-scrollbar-track {
+	background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-    background: var(--accent-2);
+    background-color: rgba(105, 71, 92, 1);
     border-radius: 10px;
 }
 
-/* ## ------------------------------------------------------- NAVBAR ------------------------------------------------------- ## */
+/* ## ------------------------------------------------------- NAVBAR MAIN ------------------------------------------------------- ## */
 
+/* Section containing the site navigation. */ 
 #header .navbar-main {
-    background: rgba(11, 16, 32, 0.85);
-    border-bottom: 1px solid var(--border);
-}
+    background-color: rgba(10, 20, 30, 1);
+    border-right: 2px solid rgba(15, 20, 30, 0.8);
+    border-left: 2px solid rgba(15, 20, 30, 0.8);
+} 
 
+/* Individual navigation links: 'Den, Crossroads, etc.' */ 
 .navbar-main .nav-link {
-    color: var(--accent-3) !important;
-}
-.navbar-main .nav-link:hover {
-    color: var(--accent-1) !important;
+	font-size: 0 !important;
 }
 
-.navbar-status {
-    background: rgba(20, 26, 51, 0.8) !important;
-    color: var(--accent-3) !important;
-    border-bottom: 1px solid var(--border);
+#header .navbar-main .navbar-nav {
+    display: flex;
+    width: 100%;
 }
 
-/* ## ------------------------------------------------------- SIDEBAR ------------------------------------------------------- ## */
-
-#sidebar .card {
-    background: var(--panel);
-    border: 1px solid var(--border);
-    color: var(--accent-3);
-    border-radius: 12px;
+#header .navbar-main .navbar-nav .nav-item {
+    flex: 1;
+    text-align: center;
 }
 
-/* ## ------------------------------------------------------- MAIN ------------------------------------------------------- ## */
-
-#main {
-    background: var(--panel);
-    border: 1px solid var(--border);
-    border-radius: 14px;
+/* Paw Icon, etc. of Den, etc. */
+#header .navbar-main .nav-link .fa { 
+	color: rgba(158, 112, 52, 1); 
+	transition:.5s ease; 
+	font-size: 2rem !important; 
 }
 
-.nav-tabs .nav-link {
-    background: rgba(20, 26, 51, 0.7);
-    border: 1px solid var(--border);
-    color: var(--accent-3);
-}
-.nav-tabs .nav-link.active {
-    background: rgba(11, 16, 32, 0.9);
-    color: var(--accent-1);
+/* Hover of the Icons above */
+#header .navbar-main .nav-link:hover .fa  {
+	color: rgba(0, 116, 210, 1);
 }
 
-/* ## ------------------------------------------------------- TABLES ------------------------------------------------------- ## */
+/* Status bar containing the currencies, "Welcome back", etc. */
+.navbar-status  {
+    background: rgba(10, 20, 30, 1) !important;
+    color: rgba(188, 142, 76, 1) !important;
+    border-radius: 0px 0px 10px 10px;
+    border-left: 2px solid rgba(10, 20, 30, 1);
+    border-right: 2px solid rgba(10, 20, 30, 1);
+    border-bottom: 2px solid rgba(10, 20, 30, 1);
+}
 
+/* Username in that bar */
+.btn-group-vertical>.btn, .btn-group>.btn {
+    color: rgba(188, 142, 76, 1) !important;
+}
+
+.btn-group-vertical>.btn:hover, .btn-group>.btn:hover {
+    color: rgba(0, 116, 210, 1) !important;
+}
+
+/* Dropdown menu for 'Profile, User Log, Log Out, etc.' */
+.dropdown-menu.show {
+    background-color: rgba(10, 20, 30, .6);
+}
+
+.dropdown-item:hover {
+    color: rgba(0, 116, 210, .8) !important;
+}
+
+.dropdown-divider {
+    border-top: 1px solid rgba(10, 20, 30, 1);
+}
+
+.btn-group-vertical>.btn, .btn-group>.btn {
+    background-color: transparent !Important;
+}
+
+.navbar-status a /* Currency, Messages, etc. links */ {
+    color: rgba(188, 142, 76, 1) !important;
+}
+
+#header .navbar-status a:hover /* Hover of Currency, Messages, etc. links */ {
+    color: rgba(0, 116, 210, 1) !important;
+}
+
+/* ### BREADCRUMB BAR ### */
+
+.breadcrumb-nav {
+    background-color: transparent !important;
+}
+
+/* remove separators */
+.breadcrumb-item + .breadcrumb-item:before {
+    display: none !important;
+}
+
+/* hide all breadcrumb text */
+.breadcrumb-item,
+.breadcrumb-item a,
+.breadcrumb-item.active {
+    display: none !important;
+}
+
+.breadcrumb::after /*Author Credit*/ 
+{
+    content:'CSS by #201023 - LemonDaddyXi';
+    position:absolute;
+    right:30px;
+    color: rgba(158, 112, 52, 1);
+}
+
+/* ## ------------------------------------------------------- MAIN PAGE ------------------------------------------------------- ## */
+
+#main /* Section containing the site's main content. */ {
+    background: rgba(10, 20, 30, 0.7);
+    border-radius: 10px 10px 0px 0px;
+    border: 2px solid rgba(10, 20, 30, 1)
+}
+
+h1 /* Pack Name Title */ {
+    color: rgba(158, 112, 52, 1);
+    font-family: Caveat;
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 40px !important;
+}
+
+.nav-tabs /* Section containing the Den and Profile buttons */ {
+    justify-content: center;
+    border-bottom: 2px solid rgba(10, 20, 30, 1);
+    margin-top: -20px;
+}
+.nav-tabs .nav-link /* Individual Den and Profile buttons */ {
+    background: rgba(10, 30, 60, 0.6);
+    transition:.5s ease;
+    border: 2px solid rgba(10, 30, 60, 0.6);
+    border-radius: 0px 10px 0px 0px;
+    font-weight: bold;
+}
+.nav-tabs .nav-link:hover /* Hover of inactive button */ {
+    background: rgba(10, 30, 60, 0.6);
+    transition:.5s ease;
+    border: 2px solid rgba(10, 30, 60, 0.6);
+    border-radius: 0px 10px 0px 0px;
+    font-weight: bold;
+}
+.nav-tabs .nav-link.active /* Link of the page being viewed */ {
+    background-color: rgba(10, 20, 30, 1);
+    color: rgba(158, 112, 52, 1);
+    border: 2px solid rgba(10, 20, 30, 1);
+    font-weight: bold;
+    border-radius: 10px 0px 0px 0px;
+}
+
+/* ## ------------------------------------------------------- WOLF & PACK INFORMATION TABLES ------------------------------------------------------- ## */
+
+/* Tables containing Pack and User information */
 .table {
-    background: rgba(20, 26, 51, 0.5);
-    border-radius: 12px;
-    color: var(--accent-3);
+    background: rgba(10, 30, 60, 0.6);
+    color: rgba(188, 142, 76, 1);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(188, 142, 76 ,0.4);
 }
 
-/* ## ------------------------------------------------------- IMAGES / ICON FILTERS ------------------------------------------------------- ## */
+/* Individual table headers - Title of the lead, Cave Names, etc. */
+ {
+    text-align: center;
+    font-family: Caveat;
+    font-size: 45px !important;
+    font-weight: normal;
+    padding-bottom: 0rem !Important;
+    color: rgba(158, 112, 52, 1);
+    border-radius: 15px 15px 0px 0px;
 
-img {
-    filter: hue-rotate(20deg) saturate(1.2) contrast(1.1);
+	/* Remove content except lead name & add transparency*/
+    background: linear-gradient(90deg, rgba(80,42,65,.6), rgba(0, 116, 210,0.6));
+    border: none !important;
 }
 
-/* ## ------------------------------------------------------- PROGRESS BARS ------------------------------------------------------- ## */
+/* Cave headers */
+.table th a{
+	font-size: 35px;
+}
 
+.table th a:hover{
+	color: rgba(0, 116, 210, 1);
+}
+
+/* Pack leader name only */
+.table th:first-child {
+    text-align: left !important;
+}
+
+.table th a /* Pack Leader Name in that table */ {
+    color: rgba(158, 112, 52, 1) !Important;
+    display: inline-block;
+}
+
+/* protect lead name */
+.table th *:not(a) {
+    display: none !important;
+}
+
+/* link hover */
+table th:hover a {
+	color: rgba(0, 116, 210, 1) !important;
+}
+
+/* Individual 'Stripes' of Pack Information + Caves */
+tr:nth-of-type(odd) {
+    background: rgba(10, 30, 60, 0.6) !important;
+}
+
+/* Nursing puppy table rows individually */
+.table tr.pup, .table tr.pup:nth-of-type(odd) {
+    background: rgba(15, 20, 30, 0.75) !important;
+}
+
+/* ### Lead Wolf ### */
+
+/* Lead Wolf icon background */ 
+.border-none .card {
+    background-color:transparent !important;
+}
+
+/* Lead wolf icon */
+.border-none .card-img-top, .table .form-row img {
+    border-radius: 160px;
+    margin-top: 20px;
+}
+
+/* Breeding Male, Heat, etc. Symbol of Lead Wolf */ 
+i.fas.fa-mars.text-danger {
+    color: rgba(158, 112, 52, 1) !important;
+    margin-left: 20px;
+}
+
+/* ### Featured Wolf ### */
+.featured-wolf img {
+    border-radius: 160px;
+    margin-top: 20px;
+
+	/* increased size */
+    width: 200px !important; 
+    height: auto !important;
+}
+
+/* ### Featured Wolf ### */
+
+/* Remove EVERYTHING inside featured wolf */
+.featured-wolf > * {
+    display: none !important;
+}
+
+/* Re-enable ONLY the first link (the image) */
+.featured-wolf a:first-of-type {
+    display: inline-block !important;
+}
+
+/* ### Dynasty, etc. Buttons ### */
+/* Dynasty, etc. text/header */ 
+.card-header {
+	background: rgba(10, 20, 30, 1) !important; 
+	color: rgba(158, 112, 52, 1) !important; 
+	border-radius: 10px; 
+	border: none !important; 
+	box-shadow: 0px 0px 10px rgba(240 ,180 ,155 ,0.4); 
+} 
+
+/* Dynasty, etc. Images */ 
+div.card.text-center>img {
+    transition:.5s ease;
+    border: none;
+    border-radius: 10px 10px 0px 0px;
+} 
+
+/* 'Dynasty, etc.' Buttons */ 
+.col-6 .card.text-center { 
+	background: rgba(10, 20, 30, 1) !important; 
+	color: rgba(158, 112, 52, 1) !important; 
+	border-radius: 10px; 
+	border: none !important; 
+	box-shadow: 0px 0px 10px rgba(240 ,180 ,155 ,0.4); 
+}
+
+/* PACK DYNASTY */
+img[src$="packdynasty.png"] {
+    content:url('https://i.imgur.com/1VhN6YX.png')!important;
+    width:370px;
+    height: 150px !important;
+}
+ 
+/* NESTING */
+img[src$="nesting.png"] {
+    content:url('https://i.imgur.com/vViCCF2.jpeg')!important;
+    width:370px;
+    height:150px !important;
+}
+ 
+/* OVERVIEW */
+img[src$="packoverview.png"] {
+    content:url('https://i.imgur.com/IYaR9wD.png')!important;
+    width:370px;
+    height:150px!important;
+}
+ 
+/* BREEDING */
+img[src$="breeding.png"] {
+    content:url('https://i.imgur.com/jPsinc9.jpeg')!important;
+    width:370px;
+    height:150px!important;
+}
+
+/* SOCIALIZING */
+img[src$="socializing.png"] {
+    content:url('https://i.imgur.com/bWgdxkl.png')!important;
+    width:370px;
+    height:150px!important;
+}
+
+/* PUPSITTING */
+img[src$="pupsitting.png"] {
+    content:url('https://i.imgur.com/J2IKL4o.jpeg')!important;
+    width:370px;
+    height:150px!important;
+}
+
+/* #### Standard View with & without Headshots ### */
+/* WITH & WITHOUT Headshots // Subheader row of Cave tables, 'Name, Stats, Info, etc.' */
+.subheader {
+    background: rgba(10, 20, 30, 0.5) !important;
+    color: rgba(158, 112, 52, 1) !important;
+	border-radius: 30px 30px 30px 30px !important;
+	font-size: 25px;
+}
+
+/* WITHOUT Headshots // Wolf subheaders w/ emojis + FAPA Rollovers Remaining */
+.small, small {
+    filter: sepia(0%) contrast(100%) brightness(90%);
+	font-size: 25px;
+}
+
+ /* WITHOUT Headshots // Icons for jobs, etc. */ 
+table[data-cave-key] tr:nth-of-type(n+3) td:nth-of-type(4) img {
+    filter: sepia(0%) contrast(100%) brightness(90%);
+	font-size: 25px;
+}
+
+/* WITH Headshots // Affects headshots */ 
+img.border-bottom {
+    border: none !important;
+    filter: sepia(0%) contrast(100%) brightness(100%);
+    border-radius: 10px;
+    margin-top: 4px;
+	font-size: 25px;
+}
+
+/* WITH Headshots // Nursing Puppy icon */
+img.border-bottom.p-2 {
+    border: none !important;
+    filter: sepia(0%) contrast(100%) brightness(100%);
+    border-radius: 10px;
+	font-size: 20px;
+}
+
+/* ### CARD View Den Display ### */
+/* Card background */
+div.card-body.bg-light.p-0.text-center {
+    background-color: rgba(10, 20, 30, 0.5) !important;
+    border-radius: 10px 10px 10px 10px;
+    padding-bottom: .5rem !Important;
+}
+
+/* Headers above wolf icons */
+.text-light {
+    background-color: rgba(10, 20, 30, 0.5) !important;
+    color: rgba(158, 112, 52, 1) !important;
+    margin-bottom: -10px;
+    border-radius: 10px 10px 10px 10px !important;
+	font-size: 25px;
+}
+
+.text-light:hover {
+	color: rgba(0, 116, 210, 1) !important;
+}
+
+/* Headshot icons in card den display */
+img.rounded-bottom {
+    border-radius: 130px 130px 130px 130px !important;
+	width: 130px !important;
+	height: auto !important;
+}
+
+/* Nursing Puppy icon */ 
+img.rounded-bottom.pl-3.pr-3.pt-2.pb-1 {
+    border: 10px !important;
+}
+
+/* NURSING Icon below puppy icon */ 
+span.badge.badge-info {
+    background-color: rgba(98, 112, 134, .6);
+    color: rgba(158, 112, 52, 1);
+}
+
+/* ########## CAVE Bottom Information ########## */
+/* Background of that table */
+.bottom {
+    background: rgba(15, 20, 30, 0.8) !important;
+}
+
+/* Icon hover glow */
+table[data-cave-key] tr:nth-of-type(n+3) td:nth-of-type(4) img:hover, img.rounded-bottom:hover, div.card.text-center>img:hover {
+	filter: sepia(0%) brightness(115%) contrast(105%) drop-shadow(0 0 6px rgba(158, 112, 52, 0.8)) !important;
+	transition: all 0.2s ease-in-out;
+}
+
+/* ## ------------------------------------------------------- PROGRESS BARS FOR HUNGER, ETC. ------------------------------------------------------- ## */
+
+/* Progress bars when empty */
 .progress {
-    background: rgba(11, 16, 32, 0.8);
-}
-.bg-warning, .bg-success, .bg-info, .bg-danger {
-    background: linear-gradient(90deg, var(--accent-2), var(--accent-1)) !important;
+    background-color: rgba(98, 112, 134, 1) !important;
+    border-radius: 5px;
+    margin-bottom: 2px;
 }
 
-/* ## ------------------------------------------------------- TEXT OVERRIDES (PLACEHOLDERS ONLY) ------------------------------------------------------- ## */
+/* ENERGY bars */ 
+.bg-warning, .bg-success {
+    background:url(https://i.imgur.com/LRJl5V4.png);
+}
 
-.alert::before,
-.breadcrumb::after {
-    content: "Placeholder";
-    color: var(--accent-2);
+/* HUNGER bars */
+#sidebar .bg-danger, .bg-primary {
+    background:url(https://i.imgur.com/Ti198Bd.png);
+}
+
+/* HP bars */
+#sidebar .bg-info, .bg-danger {
+    background:url(https://i.imgur.com/hao3dOG.png);
+}
+
+/* EXP bars */
+#sidebar .bg-success, .bg-info {
+    background:url(https://i.imgur.com/DMuy8Vi.png);
+}
+
+/* ## ------------------------------------------------------- FEED ALL & PLAY ALL BUTTONS ------------------------------------------------------- ## */
+
+/* FEED ALL Part */
+.accordion .card:first-of-type {
+    background-color: rgba(15, 20, 30, 0.8) !important;
+    color: rgba(158, 112, 52, 1);
+}
+
+/* Rollovers remaining */
+.accordion .card:first-of-type a {
+    color: rgba(158, 112, 52, 1) !important;
+    font-weight: bold;
+}
+
+/* PLAY ALL Part */
+.accordion .card:last-of-type {
+    background-color: rgba(15, 20, 30, 0.8) !important;
+    color: rgba(158, 112, 52, 1);
+}
+
+.accordion .card:last-of-type a {
+    color: rgba(158, 112, 52, 1) !important;
+    font-weight: bold;
+}
+
+/* FAPA Header Text + 'Remove Icon' from Featured Wolf */ 
+.btn-link {
+    color: rgba(158, 112, 52, 1);
+}
+
+.btn-link:hover {
+    color: rgba(0, 116, 210, 1);
+}
+
+/* Feed/Play Buttons */ 
+.btn-info {
+    background: rgba(10, 20, 30, 0.65);
+    color: rgba(158, 112, 52, 1) !important;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid rgba(10, 20, 30, 1);
+}
+
+.btn-info:hover {
+    background: rgba(10, 20, 30, 0.65);
+    color: rgba(0, 116, 210, 1) !important;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid rgba(10, 20, 30, 1);
+}
+
+/* ## ------------------------------------------------------- CAVE BUILD SECTION ------------------------------------------------------- ## */
+
+/* Create New Cave background + Breeding Male background */
+div.card.mb-3 {
+    background-color: transparent !important;
+    color: rgba(158, 112, 52, 1);
+}
+
+/* Create New Cave button */ 
+button#submitBtn.btn.btn-primary {
+    background: rgba(10, 20, 30, 1);
+    color: rgba(158, 112, 52, 1) !important;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid rgba(15, 20, 30, 0.8);
+}
+
+button#submitBtn.btn.btn-primary:hover {
+    background: rgba(10, 20, 30, 1);
+    color: rgba(0, 116, 210, 1) !important;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid rgba(15, 20, 30, 0.8);
+}
+
+/* ## ------------------------------------------------------- BOTTOM EDITOR ------------------------------------------------------- ## */
+
+/* 'Text for Den Options' */
+.h2, h2 {
+
+}
+
+/* Background of Editor, NEEDS same color border */
+#summernote-form  {
+    background-color: rgba(10, 20, 30, 1);
+    border: 10px solid rgba(10, 20, 30, 1);
+}
+
+/* Pack Leader + Wolf Title selection */
+select.form-control  {
+    background-color: rgba(70, 90, 105, 0.8) !important;
+    border: none;
+    color: rgba(158, 112, 52, 1);
+}
+
+/* Bold, Italics, etc. BUTTONS */ 
+button.note-btn.btn.btn-light.btn-sm {
+    background-color: rgba(70, 90, 105, 0.8) !important;
+    color: rgba(158, 112, 52, 1) !important;
+    border: none;
+}
+
+a.dropdown-item {
+    color: rgba(158, 112, 52, 1) !important;
+}
+
+/* Text Background and Text of Editor */ 
+.note-editor.note-airframe .note-editing-area .note-editable, .note-editor.note-frame .note-editing-area .note-editable {
+    background-color: rgba(15, 20, 30, 0.8) !important;
+}
+
+/* Drag Bar below Text Field in Editor */ 
+.note-editor.note-airframe .note-statusbar .note-resizebar, .note-editor.note-frame .note-statusbar .note-resizebar {
+    background: rgba(70, 90, 105, 0.8) !important;
+    border: none !Important;
+}
+
+/* Drag icon in that small bar */ 
+.note-editor.note-airframe .note-statusbar .note-resizebar .note-icon-bar, .note-editor.note-frame .note-statusbar .note-resizebar .note-icon-bar {
+    border: none !important;
+    border-top: 1px solid rgba(15, 20, 30, 0.8) !Important;
+}
+
+/* ## ------------------------------------------------------- EXPAND TERRITORY + ADD IMMORTAL SLOT ------------------------------------------------------- ## */
+/* Expand Territory + Add Immortal Slot Tables // NOTE: Border affect Dynasty, etc. */
+div.card.text-center {
+    background-color: rgba(10, 20, 30, 1) !important;
+    color: rgba(158, 112, 52, 1);
+    border: none;
+    border: 2px solid rgba(15, 20, 30, 0.8) !Important;
+    border-radius: 10px;
+}
+
+/* Buttons for those Tables */
+.btn-warning {
+    background: rgba(15, 20, 30, 0.8);
+    border: none;
+    color: rgba(158, 112, 52, 1);
+}
+
+.btn-warning:hover {
+    background-color: rgba(15, 20, 30, 0.8);
+    color: rgba(0, 116, 210, 1);
 }
 
 /* ## ------------------------------------------------------- FOOTER ------------------------------------------------------- ## */
-
+/* Copyright content at the page bottom // Don't mess with it too much */
 #footer {
-    background: rgba(11, 16, 32, 0.9);
-    color: var(--accent-3);
-    border-top: 1px solid var(--border);
+    background: rgba(10, 20, 30, 1) !important;
+    color: rgba(158, 112, 52, 1);
+    border-radius: 15px 0px 0px 0px;
 }
 
-#footer * {
-    color: var(--accent-1);
+/* Links in that Footer */ 
+#footer a {
+    color: rgba(158, 112, 52, 1);
+}
+
+/* Hover of the above */ 
+#footer a:hover {
+    color: rgba(0, 116, 210, 1);
+}
+
+/* Terms of Service, etc. links */
+#footer nav .nav-item .nav-link {
+    color: rgba(158, 112, 52, 1);
+}  
+
+/* Hover of the above */
+#footer nav .nav-item .nav-link:hover {
+    color: rgba(0, 116, 210, 1);
+}
+
+/* ## ------------------------------------------------------- REMOVE SIDEBAR ------------------------------------------------------- ## */
+
+/* FORCE MAIN LAYOUT TO FILL PAGE WHEN SIDEBAR IS GONE */
+#sidebar {
+    display: none !important;
+}
+
+/* Make the main column behave like full width */
+#main {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+/* Fix Bootstrap row still reserving sidebar space */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Target ONLY main container column behavior (safe override) */
+#main.col-xl-9,
+#main.col-lg-9,
+#main.col-md-9 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+}
+
+/* ## ------------------------------------------------------- LEAD & FEATURED WOLF OVERRIDE ------------------------------------------------------- ## */
+
+/* LEAD WOLF OVERLAY */
+#main .table .card.mb-3 a {
+    position: relative;
+}
+
+#main .table .card.mb-3 a:before {
+    content: '';
+    background-image: url('https://i.imgur.com/XSFj4XT.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -13%);
+
+    width: 260px;
+    height: 910px;
+
+    pointer-events: none;
+    z-index: 10;
+    filter: brightness(75%);
+}
+
+/* FEATURED WOLF OVERLAY */
+#main .featured-wolf a:first-of-type {
+    position: relative;
+}
+
+#main .featured-wolf a:first-of-type:before {
+    content: '';
+    background-image: url('https://i.imgur.com/TW6vfwB.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -13%);
+
+    width: 260px;
+    height: 910px;
+
+    pointer-events: none;
+    z-index: 10;
+    filter: brightness(75%);
+}
+
+/* MOBILE FIXES */
+@media (max-width: 768px) {
+    #main .table .card.mb-3 a:before,
+    #main .featured-wolf a:first-of-type:before {
+        width: 130%;
+        height: 130%;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -42%);
+
+        background-size: contain;
+    }
+}
+
+/*Blue flower falling effect*/
+.petal-container {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* petal asset */
+.petal {
+    position: absolute;
+    top: -10px;
+
+    width: 6px;
+    height: 11px;
+
+    background: #87b8ec;
+
+    border-radius: 60% 60% 60% 0;
+    transform: rotate(35deg);
+
+    opacity: 0.65;
+
+    /* glow*/
+    filter:
+        drop-shadow(0 0 6px rgba(135, 184, 236, 0.65))
+        drop-shadow(0 0 12px rgba(135, 184, 236, 0.35))
+        drop-shadow(0 0 18px rgba(135, 184, 236, 0.20));
+
+    animation: fall linear infinite;
+}
+
+/* animation */
+.petal:nth-child(1)  { left: 4%;  animation-duration: 8s;  animation-delay: -1s; }
+.petal:nth-child(2)  { left: 17%; animation-duration: 10s; animation-delay: -6s; }
+.petal:nth-child(3)  { left: 33%; animation-duration: 7s;  animation-delay: -3s; }
+.petal:nth-child(4)  { left: 61%; animation-duration: 11s; animation-delay: -8s; }
+.petal:nth-child(5)  { left: 88%; animation-duration: 9s;  animation-delay: -5s; }
+
+.petal:nth-child(6)  { left: 11%; animation-duration: 12s; animation-delay: -7s; }
+.petal:nth-child(7)  { left: 46%; animation-duration: 8.5s; animation-delay: -2s; }
+.petal:nth-child(8)  { left: 72%; animation-duration: 13s; animation-delay: -9s; }
+.petal:nth-child(9)  { left: 26%; animation-duration: 9.5s; animation-delay: -4s; }
+.petal:nth-child(10) { left: 95%; animation-duration: 7.5s; animation-delay: -6s; }
+
+.petal:nth-child(11) { left: 39%; animation-duration: 11s; animation-delay: -3s; }
+.petal:nth-child(12) { left: 58%; animation-duration: 8s; animation-delay: -7s; }
+.petal:nth-child(13) { left: 81%; animation-duration: 12s; animation-delay: -2s; }
+.petal:nth-child(14) { left: 7%;  animation-duration: 9s; animation-delay: -8s; }
+.petal:nth-child(15) { left: 52%; animation-duration: 10s; animation-delay: -5s; }
+
+.petal:nth-child(16) { left: 19%; animation-duration: 7s; animation-delay: -1s; }
+.petal:nth-child(17) { left: 67%; animation-duration: 13s; animation-delay: -9s; }
+.petal:nth-child(18) { left: 43%; animation-duration: 8s; animation-delay: -4s; }
+.petal:nth-child(19) { left: 90%; animation-duration: 11s; animation-delay: -6s; }
+.petal:nth-child(20) { left: 31%; animation-duration: 9s; animation-delay: -2s; }
+
+.petal:nth-child(21) { left: 75%; animation-duration: 12s; animation-delay: -7s; }
+.petal:nth-child(22) { left: 14%; animation-duration: 8.5s; animation-delay: -3s; }
+.petal:nth-child(23) { left: 63%; animation-duration: 10s; animation-delay: -5s; }
+.petal:nth-child(24) { left: 97%; animation-duration: 7.5s; animation-delay: -8s; }
+.petal:nth-child(25) { left: 36%; animation-duration: 11s; animation-delay: -4s; }
+
+.petal:nth-child(26) { left: 50%; animation-duration: 9s; animation-delay: -6s; }
+.petal:nth-child(27) { left: 22%; animation-duration: 12s; animation-delay: -2s; }
+.petal:nth-child(28) { left: 84%; animation-duration: 8s; animation-delay: -9s; }
+.petal:nth-child(29) { left: 57%; animation-duration: 10s; animation-delay: -3s; }
+.petal:nth-child(30) { left: 9%;  animation-duration: 13s; animation-delay: -7s; }
+
+.petal:nth-child(31) { left: 12%; animation-duration: 8s;  animation-delay: -2s; }
+.petal:nth-child(32) { left: 41%; animation-duration: 11s; animation-delay: -6s; }
+.petal:nth-child(33) { left: 78%; animation-duration: 9s;  animation-delay: -4s; }
+.petal:nth-child(34) { left: 54%; animation-duration: 12s; animation-delay: -8s; }
+.petal:nth-child(35) { left: 6%;  animation-duration: 7.5s; animation-delay: -3s; }
+
+.petal:nth-child(36) { left: 69%; animation-duration: 10s; animation-delay: -5s; }
+.petal:nth-child(37) { left: 27%; animation-duration: 13s; animation-delay: -9s; }
+.petal:nth-child(38) { left: 93%; animation-duration: 8.5s; animation-delay: -1s; }
+.petal:nth-child(39) { left: 48%; animation-duration: 9.5s; animation-delay: -7s; }
+.petal:nth-child(40) { left: 15%; animation-duration: 11s; animation-delay: -2s; }
+
+.petal:nth-child(41) { left: 60%; animation-duration: 7s;  animation-delay: -6s; }
+.petal:nth-child(42) { left: 85%; animation-duration: 12s; animation-delay: -4s; }
+.petal:nth-child(43) { left: 34%; animation-duration: 10s; animation-delay: -8s; }
+.petal:nth-child(44) { left: 73%; animation-duration: 8s;  animation-delay: -3s; }
+.petal:nth-child(45) { left: 2%;  animation-duration: 13s; animation-delay: -9s; }
+
+.petal:nth-child(46) { left: 44%; animation-duration: 9s;  animation-delay: -5s; }
+.petal:nth-child(47) { left: 66%; animation-duration: 11s; animation-delay: -7s; }
+.petal:nth-child(48) { left: 29%; animation-duration: 8s;  animation-delay: -2s; }
+.petal:nth-child(49) { left: 96%; animation-duration: 10s; animation-delay: -6s; }
+.petal:nth-child(50) { left: 38%; animation-duration: 12s; animation-delay: -4s; }
+
+.petal:nth-child(51) { left: 11%; animation-duration: 7.5s; animation-delay: -8s; }
+.petal:nth-child(52) { left: 57%; animation-duration: 9s;  animation-delay: -3s; }
+.petal:nth-child(53) { left: 82%; animation-duration: 13s; animation-delay: -5s; }
+.petal:nth-child(54) { left: 23%; animation-duration: 8.5s; animation-delay: -9s; }
+.petal:nth-child(55) { left: 71%; animation-duration: 10s; animation-delay: -1s; }
+
+.petal:nth-child(56) { left: 49%; animation-duration: 11s; animation-delay: -6s; }
+.petal:nth-child(57) { left: 5%;  animation-duration: 9s;  animation-delay: -2s; }
+.petal:nth-child(58) { left: 88%; animation-duration: 12s; animation-delay: -7s; }
+.petal:nth-child(59) { left: 32%; animation-duration: 8s;  animation-delay: -4s; }
+.petal:nth-child(60) { left: 64%; animation-duration: 10s; animation-delay: -8s; }
+
+/* swirl motion  */
+@keyframes fall {
+    0% {
+        transform: translateY(-10vh) translateX(0) rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(25vh) translateX(40px) rotate(90deg);
+    }
+
+    50% {
+        transform: translateY(55vh) translateX(-40px) rotate(180deg);
+    }
+
+    75% {
+        transform: translateY(85vh) translateX(30px) rotate(270deg);
+    }
+
+    100% {
+        transform: translateY(120vh) translateX(-30px) rotate(360deg);
+    }
 }
